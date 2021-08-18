@@ -6,7 +6,7 @@
 .home, .about, .skills, .portfolio, .contact {transition: margin 0.3s;min-height: 100vh;}
 .home, .about, .skills, .portfolio, .contact, footer {margin-left: 10vh;}
 @media (max-width:600px) {
-  .home, .about, .skills, .portfolio, .contact, footer {
+  .home, .about, .skills, .portfolio, .contact {
     margin-left: 0;
     margin-top: 6.2vh;
   }
