@@ -8,7 +8,7 @@
 @media (max-width:600px) {
   .home, .about, .skills, .portfolio, .contact {
     margin-left: 0;
-    margin-top: 6.2vh;
+    margin-top: 5.6vh;
   }
   
   footer {
