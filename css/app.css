@@ -11,8 +11,8 @@
     margin-top: 6.2vh;
   }
   
-  footer {
-    margin-left: 0;
+  .footer, footer {
+    margin: 0;
   }
 
   .anime-box {
