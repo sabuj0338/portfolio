@@ -54,7 +54,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px}
 .w3-sidebar{
-  width: 10vh;
+  width: 5rem;
   height:100%;
   top: 0;
   position:fixed!important;
