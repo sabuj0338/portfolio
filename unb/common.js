@@ -1,12 +1,15 @@
 function alpinejs() {
     // console.log("👍common js initiated👍");
     return {
-        drawer: false,
-        toggleDrawer() {
-            this.drawer = !this.drawer;
+        isDrawerOpen: true,
+        openDrawer() {
+            this.isDrawerOpen = true;
+            this.$nextTick(() => {
+                this.$refs.drawerPanel.focus()
+            })
         },
         closeDrawer() {
-            this.drawer = false;
+            this.isDrawerOpen = false;
         },
         searchForm: false,
         toggleSearchForm() {
@@ -15,6 +18,13 @@ function alpinejs() {
         closeSearchForm() {
             this.searchForm = false;
         },
+        // isSettingsPanelOpen: true,
+        // openSettingsPanel() {
+        //   this.isSettingsPanelOpen = true
+        //   this.$nextTick(() => {
+        //     this.$refs.settingsPanel.focus()
+        //   })
+        // },
     }
 }
 
