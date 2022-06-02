@@ -24,7 +24,7 @@
         x-show="isDrawerOpen"
         @click="isDrawerOpen = false"
         class="fixed inset-0 z-10 bg-blue-800 bg-opacity-10"
-        style="backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);"
+        style="backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);display: none;"
     ></div>
     <!-- Panel -->
     <section
@@ -39,6 +39,7 @@
         x-show="isDrawerOpen"
         @keydown.escape="isDrawerOpen = false"
         class="fixed inset-y-0 left-0 z-20 w-full max-w-xs bg-white shadow-xl sm:max-w-md focus:outline-none"
+        style="display: none;"
     >
         <div class="absolute h-full flex flex-col justify-center right-0 transform translate-x-full">
             <!-- Close button -->
