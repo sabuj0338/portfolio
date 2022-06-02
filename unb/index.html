@@ -487,15 +487,15 @@
     
     <!--Nav-->
     <nav class="w-full">
-        <div class="w-full flex flex-wrap items-center justify-between py-3 px-4">
+        <div class="w-full flex items-center justify-between py-3 px-4">
 
-            <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
+            <a class="w-16 flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
                 <img class="w-16" src="unb-logo.png" alt="unb-logo">
             </a>
 
-            <div x-show="searchForm" class="flex" style="display: none;">
-                <form class="w-full flex items-center">
-                    <input type="text" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block w-full px-3 py-1" placeholder="Search" required>
+            <div class="flex w-full px-3">
+                <form x-show="!searchForm" class="w-full flex items-center" style="display: none;">
+                    <input type="text" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block px-3 py-1" placeholder="Search" required>
                 </form>
             </div>
 
