@@ -1,12 +1,12 @@
 function alpinejs() {
     // console.log("👍common js initiated👍");
     return {
-        isDrawerOpen: true,
+        isDrawerOpen: false,
         openDrawer() {
             this.isDrawerOpen = true;
             this.$nextTick(() => {
                 this.$refs.drawerPanel.focus()
-            })
+            });
         },
         closeDrawer() {
             this.isDrawerOpen = false;
