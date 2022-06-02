@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "For tailwind css production build",
+  "main": "index.js",
+  "scripts": {
+    "watch": "postcss ./css/tailwind.css -o ./css/tailwind.min.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabuj0338/portfolio.git"
+  },
+  "author": "Sabuj Islam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabuj0338/portfolio/issues"
+  },
+  "homepage": "https://github.com/sabuj0338/portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
+  }
+}

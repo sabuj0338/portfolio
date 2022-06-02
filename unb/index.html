@@ -7,7 +7,8 @@
     <title>UNB | new design</title>
 
     <link rel="stylesheet" href="common.css">
-	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body class="font-sans antialiased bg-gray-100">
@@ -29,22 +30,23 @@
     <!-- Panel -->
     <section
         x-transition:enter="transition duration-300 ease-in-out transform sm:duration-500"
-        x-transition:enter-start="-translate-x-full"
+        x-transition:enter-start="translate-x-full"
         x-transition:enter-end="translate-x-0"
         x-transition:leave="transition duration-300 ease-in-out transform sm:duration-500"
         x-transition:leave-start="translate-x-0"
-        x-transition:leave-end="-translate-x-full"
+        x-transition:leave-end="translate-x-full"
         x-ref="drawerPanel"
         tabindex="-1"
         x-show="isDrawerOpen"
         @keydown.escape="isDrawerOpen = false"
-        class="fixed inset-y-0 left-0 z-20 w-full max-w-xs bg-white shadow-xl sm:max-w-md focus:outline-none"
+        class="fixed inset-y-0 right-0 z-20 w-full max-w-xs bg-white shadow-xl sm:max-w-md focus:outline-none"
         style="display: none;"
     >
-        <div class="absolute h-full flex flex-col justify-center right-0 transform translate-x-full">
+        <div class="absolute h-full flex flex-col justify-center left-0 transform -translate-x-full">
             <!-- Close button -->
-            <button @click="isDrawerOpen = false" class="px-0 py-3 bg-white text-gray-500 rounded-r focus:outline-none focus:ring-0" >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <button @click="isDrawerOpen = false" class="px-0 py-3 bg-white text-gray-500 rounded-l focus:outline-none focus:ring-0" >
+                <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </div>
         <!-- Panel content -->
@@ -494,7 +496,15 @@
             </a>
 
             <div class="flex w-full px-3">
-                <form x-show="!searchForm" class="w-full flex items-center" style="display: none;">
+                <form
+                    x-show="searchForm"
+                    x-transition:enter="transition duration-500 ease-in-out"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition duration-500 ease-in-out"
+                    x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0"
+                    class="w-full flex items-center" style="display: none;">
                     <input type="text" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block px-3 py-1" placeholder="Search" required>
                 </form>
             </div>
