@@ -13,6 +13,63 @@
 </head>
 <body class="font-sans antialiased bg-gray-100">
 
+    <div class="bg-gray-300">
+        <div 
+            @keydown.window.escape="searchForm = false"
+            x-show="searchForm" 
+            class="relative z-20"
+            style="display: none;"
+        >
+            <div 
+                x-show="searchForm" 
+                x-transition:enter="ease-out duration-100" 
+                x-transition:enter-start="opacity-0" 
+                x-transition:enter-end="opacity-100" 
+                x-transition:leave="ease-in duration-100" 
+                x-transition:leave-start="opacity-100" 
+                x-transition:leave-end="opacity-0" 
+                class="fixed inset-0 bg-gray-500 bg-opacity-20 transition-opacity"
+                style="backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);"
+                ></div>
+        
+    
+            <div class="fixed z-10 inset-0 overflow-y-auto">
+                <div class="flex items-start sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+                
+                    <div 
+                        x-show="searchForm" 
+                        x-transition:enter="ease-in duration-100" 
+                        x-transition:enter-start="opacity-0 -translate-y-4" 
+                        x-transition:enter-end="opacity-100 -translate-y-0" 
+                        x-transition:leave="ease-out duration-100" 
+                        x-transition:leave-start="opacity-100 -translate-y-0" 
+                        x-transition:leave-end="opacity-0 -translate-y-4" 
+                        class="relative bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all w-full" 
+                        @click.away="searchForm = false"
+                    >
+                        <div class="relative bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all w-full p-4">
+                            <div class="relative mt-1">
+                                <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Search...">
+                                <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-gray-400 focus:outline-none hover:text-gray-900 transition-colors">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="absolute top-0 left-0 w-full h-2 flex">
+                                <div class="h-2 bg-blue-500 flex-1"></div>
+                                <div class="h-2 bg-red-500 flex-1"></div>
+                                <div class="h-2 bg-yellow-500 flex-1"></div>
+                                <div class="h-2 bg-blue-500 flex-1"></div>
+                                <div class="h-2 bg-green-500 flex-1"></div>
+                                <div class="h-2 bg-red-500 flex-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+  
     <!-- Settings Panel -->
     <!-- Backdrop -->
     <div
@@ -55,20 +112,20 @@
                 <!-- Sidebar links -->
                 <nav class="flex-1 py-4 space-y-2 overflow-y-hidden hover:overflow-y-auto">
                     <!-- Dashboards links -->
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
                         <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
                             <span  @click="$event.preventDefault(); open = !open">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                     <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                 </svg>
                             </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
+                            <span class="ml-2"> Dashboards </span>
                         </a>
                         <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
                             <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
                                 <span class="flex items-center">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -77,7 +134,7 @@
                                     <span class="mx-4 font-medium">sub-menu link 1</span>
                                 </span>
                             </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
                                 <span class="flex items-center">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -86,385 +143,7 @@
                                     <span class="mx-4 font-medium">sub-menu link 1</span>
                                 </span>
                             </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div x-data="{ isActive: false, open: false}" class="px-2" :class="{ 'border-b': open }">
-                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="index.html" class="flex items-center p-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
-                            <span  @click="$event.preventDefault(); open = !open">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                </svg>
-                            </span>
-                            <span class="ml-2 text-sm"> Dashboards </span>
-                        </a>
-                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
-                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
-                                <span class="flex items-center">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                    </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
-                                </span>
-                            </a>
-                            <a href="#" class="block p-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
                                 <span class="flex items-center">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -495,7 +174,7 @@
                 <img class="w-full" src="unb-logo.png" alt="unb-logo">
             </a>
 
-            <div class="flex w-full px-3">
+            <!-- <div class="flex w-full px-3">
                 <form
                     x-show="searchForm"
                     x-transition:enter="transition duration-500 ease-in-out"
@@ -507,7 +186,7 @@
                     class="w-full flex items-center" style="display: none;">
                     <input type="text" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block px-3 py-1" placeholder="Search" required>
                 </form>
-            </div>
+            </div> -->
 
             <div class="flex items-center space-x-2">
                 <button @click="toggleSearchForm" type="button" class="hover:text-red-500">
@@ -521,7 +200,7 @@
 
         <!-- today's date -->
         <div class="w-full flex items-center">
-            <div class="w-full bg-gray-500 font-medium text-xs text-white px-3 py-1 m-0">
+            <div class="w-full bg-gray-400 font-medium text-xs text-white px-3 py-1 m-0">
                 Friday, May 30, 2022
             </div>
             <div class="w-20 px-3 m-0"><a class="flex-none font-bold hover:text-red-500" href="#">BNG</a></div>
@@ -562,8 +241,8 @@
         </div>
 
         <!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
-        <div class="flex w-full px-3">
-            <div class="flex-none bg-red-500 px-2 justify-center uppercase text-white font-bold">Breaking News</div>
+        <div class="flex w-full">
+            <div class="flex-none bg-red-500 px-2 justify-center uppercase text-white font-medium tracking-tight">Breaking News</div>
             <div class="overflow-hidden bg-gray-900 text-white">
                 <div class="flex px-2 animation-delay-2s ticker">
                     <p class="self-start flex-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo cupiditate sunt itaque maxime nulla laborum cum perferendis voluptas quidem nihil eos iste, maiores pariatur aspernatur, eaque sequi deleniti numquam?</p>
