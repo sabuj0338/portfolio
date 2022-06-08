@@ -54,14 +54,6 @@
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                                 </button>
                             </div>
-                            <div class="absolute top-0 left-0 w-full h-2 flex">
-                                <div class="h-2 bg-blue-500 flex-1"></div>
-                                <div class="h-2 bg-red-500 flex-1"></div>
-                                <div class="h-2 bg-yellow-500 flex-1"></div>
-                                <div class="h-2 bg-blue-500 flex-1"></div>
-                                <div class="h-2 bg-green-500 flex-1"></div>
-                                <div class="h-2 bg-red-500 flex-1"></div>
-                            </div>
                         </div>
                     </div>
                 
@@ -203,11 +195,11 @@
             <div class="w-full bg-gray-400 font-medium text-xs text-white px-3 py-1 m-0">
                 Friday, May 30, 2022
             </div>
-            <div class="w-20 px-3 m-0"><a class="flex-none font-bold hover:text-red-500" href="#">BNG</a></div>
+            <div class="w-20 px-3 m-0"><a class="flex-none font-bold hover:text-red-500" href="#">Bangla</a></div>
         </div>
         
         <!-- slideable menu  -->
-        <div class="flex justify-center items-center px-2 uppercase">
+        <div class="flex justify-center items-center px-2 uppercase bg-white">
             <div class="flex items-center">
                 <button class="hover:text-red-500" id="left">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -252,6 +244,33 @@
     </nav>
 
     <main>
+        <div class="flex space-x-2 px-3 py-3">
+            <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('murad.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 flex justify-center items-center">
+                    <a class="text-red-500" href="#">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('murad.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 flex justify-center items-center">
+                    <a class="text-red-500" href="#">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('murad.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 flex justify-center items-center">
+                    <a class="text-red-500" href="#">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="flex items-center justify-center bg-gray-200 h-20">Advertisement</div>
         
         <div class="flex flex-col">
@@ -270,7 +289,7 @@
                         </div>
                         <div class="">
                             <h1 class="text-4xl font-bold py-2">Winter comes<br> for Murad Hasan</h1>
-                            <h2 class="text-gray-400 text-sm py-2">Today</h2>
+                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
                             <p>
                                 It is difficult to believe that we have become so used to having instant access to information at...
                                 <a class="inline-flex text-indigo-500" href="#">Read More</a>
@@ -286,9 +305,9 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium">World</span>
-                            <span class="text-gray-700 text-xs">/</span>
-                            <span class="text-gray-700 text-xs">South Asia</span>
+                            <span class="text-gray-700 text-xs font-bold">World</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-400 text-xs font-bold">South Asia</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -305,14 +324,14 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium">World</span>
-                            <span class="text-gray-700 text-xs">/</span>
-                            <span class="text-gray-700 text-xs">South Asia</span>
+                            <span class="text-gray-700 text-xs font-bold">Sports</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-400 text-xs font-bold">Cricket</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
+                            <span>yesterday</span>
                         </div>
                     </div>
                     <div class="w-1/3 grid place-items-center">
@@ -324,14 +343,52 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium">World</span>
-                            <span class="text-gray-700 text-xs">/</span>
-                            <span class="text-gray-700 text-xs">South Asia</span>
+                            <span class="text-gray-700 text-xs font-bold">Entertainment</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="w-1/3 grid place-items-center">
+                        <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                    <div class="w-2/3 flex flex-col">
+                        <div class="flex space-x-1">
+                            <span class="text-gray-700 text-xs font-bold">Sports</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-400 text-xs font-bold">Cricket</span>
+                        </div>
+                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>yesterday</span>
+                        </div>
+                    </div>
+                    <div class="w-1/3 grid place-items-center">
+                        <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                    <div class="w-2/3 flex flex-col">
+                        <div class="flex space-x-1">
+                            <span class="text-gray-700 text-xs font-bold">Entertainment</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                        </div>
+                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>2 hours ago</span>
                         </div>
                     </div>
                     <div class="w-1/3 grid place-items-center">
@@ -342,7 +399,7 @@
         </div>
 
         <!-- photos -->
-        <div class="">
+        <div class="bg-gray-200 px-3 py-3">
             <div class="w-full relative">
                 <img src="murad.jpg" class="w-full max-h-60 object-cover" alt="">
                 <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-gray-900 to-transparent"></div>
@@ -371,7 +428,7 @@
                         </div>
                         <div class="px-3 ">
                             <h1 class="text-4xl font-bold py-2">Kalidas karmakar:<br>forever in<br>loving memories</h1>
-                            <h2 class="text-gray-400 text-sm py-2">Today</h2>
+                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
                         </div>
                         <div class="py-3">
                             <img alt="blog photo" src="murad.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
@@ -392,9 +449,8 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium"></span>
-                            <span class="text-gray-700 text-xs text-red-500">/</span>
-                            <span class="text-gray-700 text-xs font-medium">South Asia</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-700 text-xs font-bold">South Asia</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -411,9 +467,8 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium"></span>
-                            <span class="text-gray-700 text-xs text-red-500">/</span>
-                            <span class="text-gray-700 text-xs font-medium">South Asia</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-700 text-xs font-bold">South East Asia</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -430,9 +485,8 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium"></span>
-                            <span class="text-gray-700 text-xs text-red-500">/</span>
-                            <span class="text-gray-700 text-xs font-medium">South Asia</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-700 text-xs font-bold">Europe</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -447,23 +501,23 @@
             </a>
         </div>
 
-        <div class="flex flex-col py-3">
-            <div class="flex items-end justify-center p-3">
-                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none">World</div>
+        <div class="flex flex-col py-5 bg-white">
+            <div class="flex items-end justify-center">
+                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">World</div>
                 <div class="w-full border-b-2 border-red-500"></div>
             </div>
-            <div class="grid grid-cols-2">
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="grid grid-cols-2 mt-3">
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
             </div>
         </div>
@@ -478,12 +532,12 @@
                         <div class="px-3 flex items-center justify-between">
                             <span class="text-gray-700 font-bold text-lg uppercase">World</span>
                             <div class="flex space-x-1">
-                                <span class="uppercase text-gray-400 text-xs font-medium">South Asia</span>
+                                <span class="text-gray-400 text-xs font-bold">SOUTH ASIA</span>
                             </div>
                         </div>
                         <div class="px-3 ">
                             <h1 class="text-4xl font-bold py-2">Kalidas karmakar:<br>forever in<br>loving memories</h1>
-                            <h2 class="text-gray-400 text-sm py-2">4 hours ago</h2>
+                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
                         </div>
                         <div class="py-3">
                             <img alt="blog photo" src="murad.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
@@ -504,9 +558,8 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium"></span>
-                            <span class="text-gray-700 text-xs text-red-500">/</span>
-                            <span class="text-gray-700 text-xs font-medium">South Asia</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-700 text-xs font-bold">South Asia</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -523,9 +576,8 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium"></span>
-                            <span class="text-gray-700 text-xs text-red-500">/</span>
-                            <span class="text-gray-700 text-xs font-medium">South Asia</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-700 text-xs font-bold">Europe</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -542,9 +594,8 @@
                 <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                     <div class="w-2/3 flex flex-col">
                         <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-medium"></span>
-                            <span class="text-gray-700 text-xs text-red-500">/</span>
-                            <span class="text-gray-700 text-xs font-medium">South Asia</span>
+                            <span class="text-red-500 text-xs font-bold">/</span>
+                            <span class="text-gray-700 text-xs font-bold">Africa</span>
                         </div>
                         <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
                         <div class="flex items-center space-x-2 text-gray-500 text-xs">
@@ -559,23 +610,29 @@
             </a>
         </div>
         
-        <div class="flex flex-col py-3">
-            <div class="flex items-end justify-center p-3">
-                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none">World</div>
+        <div class="flex flex-col py-5 bg-white">
+            <div class="flex items-end justify-center">
+                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">World</div>
                 <div class="w-full border-b-2 border-red-500"></div>
             </div>
-            <div class="grid grid-cols-2">
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="grid grid-cols-2 mt-3">
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="p-3 border-b m-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
             </div>
         </div>
