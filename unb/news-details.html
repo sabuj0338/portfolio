@@ -62,8 +62,7 @@
         </div>
     </div>
   
-    <!-- Settings Panel -->
-    <!-- Backdrop -->
+    <!-- Sidebar Panel -->
     <div
         x-transition:enter="transition duration-300 ease-in-out"
         x-transition:enter-start="opacity-0"
@@ -76,7 +75,7 @@
         class="fixed inset-0 z-10 bg-blue-800 bg-opacity-10"
         style="backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);display: none;"
     ></div>
-    <!-- Panel -->
+    <!-- Sidebar -->
     <section
         x-transition:enter="transition duration-300 ease-in-out transform sm:duration-500"
         x-transition:enter-start="translate-x-full"
@@ -104,6 +103,18 @@
                 <!-- Sidebar links -->
                 <nav class="flex-1 py-4 space-y-2 overflow-y-hidden hover:overflow-y-auto">
                     <!-- Dashboards links -->
+                    
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2"> Today's News </span>
+                        </a>
+                    </div>
                     <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
                         <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
                         <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
@@ -113,35 +124,469 @@
                                     <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                 </svg>
                             </span>
-                            <span class="ml-2"> Dashboards </span>
+                            <span class="ml-2"> Bangladesh </span>
                         </a>
                         <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
                             <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                             <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
                                 <span class="flex items-center">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                     </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                    <span class="mx-4 font-medium">Today's News</span>
                                 </span>
                             </a>
                             <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
                                 <span class="flex items-center">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                     </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                    <span class="mx-4 font-medium">All District News</span>
                                 </span>
                             </a>
                             <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
                                 <span class="flex items-center">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                     </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                    <span class="mx-4 font-medium">Politics</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Education</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Crime</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Foreign Affairs</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Environment</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2"> World </span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">South Asia</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">South East Asia</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Politics</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Europe</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">America</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Middle East</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Africa</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Australia</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2"> Business & Economy </span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Economy</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Banking</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Share Market</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Telcos</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Startup & Tech News</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Analysis</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Job & Opportunities</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Tech & Gadget</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Science & Technology</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Gadget & Electronics</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Gaming</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Digital Content</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Sports</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">News</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Cricket</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Football</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Others</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Health</span>
+                        </a>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Entertainment</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Arts & Culture</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">TV & Film</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Music</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Books</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Celebrity News</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Lifestyle & Society</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Travel & Tourism</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Fasion & Style</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Food & Recipes</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Health & Fitness</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Parenting</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Youth</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">People & Reletionship</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Royal Family</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Self Improvement</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Milestones</span>
                                 </span>
                             </a>
                         </div>
