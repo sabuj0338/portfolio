@@ -113,7 +113,7 @@
                                     <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                 </svg>
                             </span>
-                            <span class="ml-2"> Dashboards </span>
+                            <span class="ml-2"> Bangladesh </span>
                         </a>
                         <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
                             <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
@@ -123,7 +123,7 @@
                                         <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                         <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                     </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                    <span class="mx-4 font-medium">Today's News</span>
                                 </span>
                             </a>
                             <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
@@ -132,7 +132,7 @@
                                         <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                         <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                     </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                    <span class="mx-4 font-medium">All District News</span>
                                 </span>
                             </a>
                             <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
@@ -141,7 +141,487 @@
                                         <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                         <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                     </svg>
-                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                    <span class="mx-4 font-medium">Politics</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Education</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Crime</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Foreign Affairs</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Environment</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2"> World </span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">South Asia</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">South East Asia</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Politics</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Europe</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">America</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Middle East</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Africa</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Australia</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2"> Business & Economy </span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Economy</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Banking</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Share Market</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Telcos</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Startup & Tech News</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Analysis</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Job & Opportunities</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Tech & Gadget</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Science & Technology</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Gadget & Electronics</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Gaming</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Digital Content</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Sports</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">News</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Cricket</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Football</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Others</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: true}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Health</span>
+                        </a>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Entertainment</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Arts & Culture</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">TV & Film</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Music</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Books</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Celebrity News</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Lifestyle & Society</span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Travel & Tourism</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Fasion & Style</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Food & Recipes</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Health & Fitness</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Parenting</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Youth</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">People & Reletionship</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Royal Family</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Self Improvement</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">Milestones</span>
                                 </span>
                             </a>
                         </div>
@@ -244,163 +724,278 @@
     </nav>
 
     <main>
-        <div class="flex space-x-2 px-3 py-3">
-            <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/6273789_Thumbnail%20PSD%20File.jpg');">
-                <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
-                <div class="relative w-full h-full px-4 flex justify-center items-center">
-                    <a class="text-red-500" href="#">
-                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-                    </a>
+        <!-- video section -->
+        <section>
+            <div class="flex space-x-2 px-3 py-3">
+                <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/6273789_Thumbnail%20PSD%20File.jpg');">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                    <div class="relative w-full h-full px-4 flex justify-center items-center">
+                        <a class="text-red-500" href="#">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/photo/photo_album/2774131_IMG_7321.jpg');">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                    <div class="relative w-full h-full px-4 flex justify-center items-center">
+                        <a class="text-red-500" href="#">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('murad.jpg');">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                    <div class="relative w-full h-full px-4 flex justify-center items-center">
+                        <a class="text-red-500" href="#">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/photo/photo_album/2774131_IMG_7321.jpg');">
-                <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
-                <div class="relative w-full h-full px-4 flex justify-center items-center">
-                    <a class="text-red-500" href="#">
-                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="relative w-full h-20 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('murad.jpg');">
-                <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
-                <div class="relative w-full h-full px-4 flex justify-center items-center">
-                    <a class="text-red-500" href="#">
-                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <div class="flex items-center justify-center bg-gray-200 h-20">Advertisement</div>
         
-        <div class="flex flex-col">
-            <a href="#">
-                <div class="flex flex-col cursor-pointer">
-                    <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/6210493_modi.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
-                    <div class="w-20 bg-red-500 h-2 mx-3"></div>
-                    <div class="w-full p-3">
-                        <div class="flex items-center justify-between">
-                            <span class="text-gray-700 font-bold text-lg uppercase">Top Stories</span>
-                            <div class="flex space-x-1">
-                                <span class="text-gray-700 text-xs font-bold">Bangladesh</span>
-                                <span class="text-gray-700 text-xs font-bold">/</span>
-                                <span class="text-gray-400 text-xs font-bold">Politics</span>
+        <!-- top stories  -->
+        <section>
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-col cursor-pointer">
+                        <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/6210493_modi.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
+                        <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                        <div class="w-full p-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700 font-bold text-lg uppercase">Top Stories</span>
+                                <div class="flex space-x-1">
+                                    <span class="text-gray-700 text-xs font-bold">Bangladesh</span>
+                                    <span class="text-gray-700 text-xs font-bold">/</span>
+                                    <span class="text-gray-400 text-xs font-bold">Politics</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-4xl font-bold py-2">Winter comes<br> for Murad Hasan</h1>
+                                <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                                <p>
+                                    It is difficult to believe that we have become so used to having instant access to information at...
+                                    <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="">
-                            <h1 class="text-4xl font-bold py-2">Winter comes<br> for Murad Hasan</h1>
-                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
-                            <p>
-                                It is difficult to believe that we have become so used to having instant access to information at...
-                                <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
-                            </p>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">World</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">South Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
                         </div>
                     </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Sports</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Cricket</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>yesterday</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/8689668_New%20Project%20-%202022-06-07T182110.819.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Entertainment</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/7370260_novoair.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Sports</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Cricket</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>yesterday</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/4952848_Vivo%20T2x%20review.png" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Entertainment</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/5114253_Bidrohi.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="flex flex-col py-5 bg-white">
+            <div class="flex items-end justify-center">
+                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">Trending</div>
+                <div class="w-full border-b-2 border-red-500"></div>
+            </div>
+            <div class="grid grid-cols-2 mt-3">
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-            </a>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="border-b m-3 pb-3 font-bold">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+            </div>
         </div>
 
-        <div class="flex flex-col">
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-bold">World</span>
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-400 text-xs font-bold">South Asia</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-bold">Sports</span>
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-400 text-xs font-bold">Cricket</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>yesterday</span>
+        <!-- top stories bangla  -->
+        <section>
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-col cursor-pointer">
+                        <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/6210493_modi.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
+                        <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                        <div class="w-full p-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700 font-bold text-lg uppercase">শীর্ষ সংবাদ</span>
+                                <div class="flex space-x-1">
+                                    <span class="text-gray-700 text-xs font-bold">বাংলাদেশ</span>
+                                    <span class="text-gray-700 text-xs font-bold">/</span>
+                                    <span class="text-gray-400 text-xs font-bold">রাজনীতি</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-4xl font-bold py-2">পাচার হওয়া অর্থ দেশে ফিরিয়ে আনলে কোনো প্রশ্ন করা হবে না: অর্থমন্ত্রী</h1>
+                                <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                                <p>অর্থমন্ত্রী আ হ ম মুস্তফা কামাল বলেছেন, যারা পাচার হওয়া অর্থ দেশে ফিরিয়ে আনবে তাদের কোনো প্রশ্ন করা হবে না, আইন করে তাদের সেই সহায়তার ব্যবস্থা করা হয়েছে।...
+                                    <a class="inline-flex text-indigo-500 text-xs" href="#">আরও পড়ুন</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/8689668_New%20Project%20-%202022-06-07T182110.819.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-bold">Entertainment</span>
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                </a>
+            </div>
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">বিশ্ব</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">এশিয়া</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">ভারতে বাস খাদে পড়ে নিহত ২৬</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
                         </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>2 hours ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/7370260_novoair.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-bold">Sports</span>
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-400 text-xs font-bold">Cricket</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>yesterday</span>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/bn_news/6835280_8594322_New%20Project%20-%202022-06-06T154055.920.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
                         </div>
                     </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/4952848_Vivo%20T2x%20review.png" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-gray-700 text-xs font-bold">Entertainment</span>
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">খেলাধুলা</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">ক্রিকেট</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">বাংলাদেশে ফিফা বিশ্বকাপ ট্রফিকে স্বাগত জানিয়েছেন প্রধানমন্ত্রী</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>yesterday</span>
+                            </div>
                         </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>2 hours ago</span>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/bn_news/9146137_pm.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
                         </div>
                     </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/5114253_Bidrohi.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">বিনোদন</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">সিনেমা</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">হুমকির পর সালমান খানের নিরাপত্তা জোরদার</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/bn_news/8610687_New%20Project%20(1).jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
+        </section>
 
         <!-- photos -->
         <div class="bg-gray-200 px-3 py-3">
-            <div class="w-full relative">
+            <!-- <div class="w-full relative">
                 <img src="murad.jpg" class="w-full max-h-60 object-cover" alt="">
                 <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-gray-900 to-transparent"></div>
                 <div class="absolute w-full h-full inset-0 z-10 flex flex-col-reverse">
@@ -410,7 +1005,46 @@
                         <div class="w-20 bg-red-500 h-2"></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="relative">
+                <div class="w-full">
+                    <!-- first -->
+                    <div class="w-full relative carousel-item" id="carousel-item-0" style="display: block;">
+                        <input class="hidden" type="radio" name="carousel" value="carousel-0" id="carousel-0" checked />
+                        <img src="murad.jpg" class="w-full h-60 object-cover" alt="">
+                        <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div class="absolute w-full h-full inset-0 z-10 flex flex-col-reverse">
+                            <div class="p-6 flex flex-col space-y-2 inner">
+                                <div class="text-xs font-medium text-white uppercase">Years in review</div>
+                                <h1 class="text-2xl font-bold text-white uppercase leading-none">Photos of 2022</h1>
+                                <div class="w-20 bg-red-500 h-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second -->
+                    <div class="w-full relative carousel-item" id="carousel-item-1" style="display: none;">
+                        <input class="hidden" type="radio" name="carousel" value="carousel-1" id="carousel-1" />
+                        <img src="http://cssslider.com/sliders/pen/images/buns.jpg" class="w-full h-60 object-cover" alt="">
+                        <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div class="absolute w-full h-full inset-0 z-10 flex flex-col-reverse">
+                            <div class="p-6 flex flex-col space-y-2 inner">
+                                <div class="text-xs font-medium text-white uppercase">Months in review</div>
+                                <h1 class="text-2xl font-bold text-white uppercase leading-none">Photos of May</h1>
+                                <div class="w-20 bg-red-500 h-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- controls -->
+                <div class="absolute top-1/2 w-full flex justify-between z-20 px-1">
+                     <label onclick="carousel.prev()" class="cursor-pointer text-white hover:text-red-500 rounded-full">
+                         <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                     </label>
+                     <label onclick="carousel.next()" class="cursor-pointer text-white hover:text-red-500 rounded-full">
+                         <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                     </label>
+                </div>
+             </div>
         </div>
 
         <div class="flex items-center justify-center bg-gray-200 h-20">Advertisement</div>

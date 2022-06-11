@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html x-data="alpinejs()" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNB | new design</title>
+
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body class="font-sans antialiased bg-gray-100">
+
+    <div class="bg-gray-300">
+        <div 
+            @keydown.window.escape="searchForm = false"
+            x-show="searchForm" 
+            class="relative z-20"
+            style="display: none;"
+        >
+            <div 
+                x-show="searchForm" 
+                x-transition:enter="ease-out duration-100" 
+                x-transition:enter-start="opacity-0" 
+                x-transition:enter-end="opacity-100" 
+                x-transition:leave="ease-in duration-100" 
+                x-transition:leave-start="opacity-100" 
+                x-transition:leave-end="opacity-0" 
+                class="fixed inset-0 bg-gray-500 bg-opacity-20 transition-opacity"
+                style="backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);"
+                ></div>
+        
+    
+            <div class="fixed z-10 inset-0 overflow-y-auto">
+                <div class="flex items-start sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+                
+                    <div 
+                        x-show="searchForm" 
+                        x-transition:enter="ease-in duration-100" 
+                        x-transition:enter-start="opacity-0 -translate-y-4" 
+                        x-transition:enter-end="opacity-100 -translate-y-0" 
+                        x-transition:leave="ease-out duration-100" 
+                        x-transition:leave-start="opacity-100 -translate-y-0" 
+                        x-transition:leave-end="opacity-0 -translate-y-4" 
+                        class="relative bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all w-full" 
+                        @click.away="searchForm = false"
+                    >
+                        <div class="relative bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all w-full p-4">
+                            <div class="relative mt-1">
+                                <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Search...">
+                                <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-gray-400 focus:outline-none hover:text-gray-900 transition-colors">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Settings Panel -->
+    <!-- Backdrop -->
+    <div
+        x-transition:enter="transition duration-300 ease-in-out"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition duration-300 ease-in-out"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        x-show="isDrawerOpen"
+        @click="isDrawerOpen = false"
+        class="fixed inset-0 z-10 bg-blue-800 bg-opacity-10"
+        style="backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);display: none;"
+    ></div>
+    <!-- Panel -->
+    <section
+        x-transition:enter="transition duration-300 ease-in-out transform sm:duration-500"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition duration-300 ease-in-out transform sm:duration-500"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        x-ref="drawerPanel"
+        tabindex="-1"
+        x-show="isDrawerOpen"
+        @keydown.escape="isDrawerOpen = false"
+        class="fixed inset-y-0 right-0 z-20 w-full max-w-xs bg-white shadow-xl sm:max-w-md focus:outline-none"
+        style="display: none;"
+    >
+        <div class="absolute h-full flex flex-col justify-center left-0 transform -translate-x-full">
+            <!-- Close button -->
+            <button @click="isDrawerOpen = false" class="px-0 py-3 bg-white text-gray-500 rounded-l focus:outline-none focus:ring-0" >
+                <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+        <!-- Panel content -->
+        <div class="flex flex-col h-screen">
+            <div class="flex flex-col h-full">
+                <!-- Sidebar links -->
+                <nav class="flex-1 py-4 space-y-2 overflow-y-hidden hover:overflow-y-auto">
+                    <!-- Dashboards links -->
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="index.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2"> Dashboards </span>
+                        </a>
+                        <div x-show="open" class="mt-2 space-y-2 px-6" style="display: none;">
+                            <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                </span>
+                            </a>
+                            <a href="#" class="block px-2 text-sm text-gray-500 transition-colors duration-200 rounded-md hover:text-red-500">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path x-show="! open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                    </svg>
+                                    <span class="mx-4 font-medium">sub-menu link 1</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+    
+                <!-- Sidebar footer -->
+                <!-- <div class="flex px-2 py-4 space-y-2 justify-center">
+                    <button @click="openDrawer" type="button" class="rounded-full bg-gray-700 hover:bg-red-500 p-2 text-white shadow">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <!--Nav-->
+    <nav class="w-full">
+        <div class="w-full flex items-center justify-between py-3 px-4">
+
+            <a class="w-20 flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
+                <img class="w-full" src="unb-logo.png" alt="unb-logo">
+            </a>
+
+            <!-- <div class="flex w-full px-3">
+                <form
+                    x-show="searchForm"
+                    x-transition:enter="transition duration-500 ease-in-out"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition duration-500 ease-in-out"
+                    x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0"
+                    class="w-full flex items-center" style="display: none;">
+                    <input type="text" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block px-3 py-1" placeholder="Search" required>
+                </form>
+            </div> -->
+
+            <div class="flex items-center space-x-2">
+                <button @click="toggleSearchForm" type="button" class="hover:text-red-500">
+                    <svg class="w-8 h-8 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </button>
+                <button @click="openDrawer" id="drawerSidebar" type="button" class="hover:text-red-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- today's date -->
+        <div class="w-full flex items-center">
+            <div class="w-full bg-gray-400 font-medium text-xs text-white px-3 py-1 m-0">
+                Friday, May 30, 2022
+            </div>
+            <div class="w-20 px-3 m-0"><a class="flex-none font-bold hover:text-red-500" href="#">বাংলা</a></div>
+        </div>
+        
+        <!-- slideable menu  -->
+        <div class="flex justify-center items-center px-2 uppercase bg-white">
+            <div class="flex items-center">
+                <button class="hover:text-red-500" id="left">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+            </div>
+            <div class="w-full flex py-3 space-x-2 scroll-auto scroll-smooth overflow-hidden" id="menu">
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">home</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">about</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 1</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 2</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 3</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 4</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 5</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 6</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 7</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 8</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 9</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 10</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 11</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 12</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 13</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 14</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 15</a>
+                <a class="flex-none font-bold px-2 hover:text-red-500" href="#">link 16</a>
+            </div>
+            <div class="flex items-center">
+                <button class="hover:text-red-500" id="right">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
+        <div class="flex w-full">
+            <div class="flex-none bg-red-500 px-2 justify-center uppercase text-white font-medium tracking-tight">Breaking</div>
+            <div class="overflow-hidden bg-gray-900 text-white">
+                <div class="flex px-2 animation-delay-2s ticker">
+                    <p class="self-start flex-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo cupiditate sunt itaque maxime nulla laborum cum perferendis voluptas quidem nihil eos iste, maiores pariatur aspernatur, eaque sequi deleniti numquam?</p>
+                </div>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="flex items-center justify-center bg-gray-200 h-20">Advertisement</div>
+
+        <div class="flex flex-col">
+            <a href="#">
+                <div class="flex flex-col cursor-pointer">
+                    <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/6210493_modi.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
+                    <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                    <div class="w-full p-3">
+                        <div class="">
+                            <h1 class="text-4xl font-bold py-2">Winter comes<br> for Murad Hasan</h1>
+                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                            <p>
+                                It is difficult to believe that we have become so used to having instant access to information at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, accusamus at ex vitae autem aliquid dolorem corrupti rerum ab hic perspiciatis ad quasi commodi recusandae tempora modi, architecto soluta est!
+                                It is difficult to believe that we have become so used to having instant access to information at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, accusamus at ex vitae autem aliquid dolorem corrupti rerum ab hic perspiciatis ad quasi commodi recusandae tempora modi, architecto soluta est!
+                                It is difficult to believe that we have become so used to having instant access to information at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, accusamus at ex vitae autem aliquid dolorem corrupti rerum ab hic perspiciatis ad quasi commodi recusandae tempora modi, architecto soluta est!
+                                It is difficult to believe that we have become so used to having instant access to information at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, accusamus at ex vitae autem aliquid dolorem corrupti rerum ab hic perspiciatis ad quasi commodi recusandae tempora modi, architecto soluta est!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="h-40"></div>
+    </main>
+
+    <script src="common.js"></script>
+
+</body>
+</html>
