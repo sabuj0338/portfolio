@@ -1,7 +1,7 @@
 function alpinejs() {
     // console.log("👍common js initiated👍");
     return {
-        isDrawerOpen: true,
+        isDrawerOpen: false,
         openDrawer() {
             this.isDrawerOpen = true;
             this.$nextTick(() => {
