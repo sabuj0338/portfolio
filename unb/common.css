@@ -1,2 +1,20 @@
 @keyframes ticker-kf {0% {transform: translate3d(0, 0, 0);}100% {transform: translate3d(-80rem, 0, 0);}}.ticker {animation: ticker-kf 30s linear infinite;}.animation-delay-2s {animation-delay: 2s;}
 .border-b-3 {border-bottom-width: 3px;}
+
+.nav-scroller {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

@@ -18,19 +18,13 @@ function alpinejs() {
         closeSearchForm() {
             this.searchForm = false;
         },
-        // isSettingsPanelOpen: true,
-        // openSettingsPanel() {
-        //   this.isSettingsPanelOpen = true
-        //   this.$nextTick(() => {
-        //     this.$refs.settingsPanel.focus()
-        //   })
-        // },
     }
 }
 
 const menu = document.getElementById('menu');
 const left = document.getElementById('left');
 const right = document.getElementById('right');
+const back2Top = document.querySelector('#back2Top');
 
 const scroll = menu.offsetWidth / 2;
 
@@ -43,6 +37,18 @@ left.addEventListener('click', (event) => {
     menu.scrollLeft -= scroll;
 });
 
+back2Top.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scroll({ top:0, left:0, behavior: 'smooth'});
+});
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      back2Top.style.display = "block";
+    } else {
+      back2Top.style.display = "none";
+    }
+};
 // carousel slider of photos
 
 const carousel = (function () {
