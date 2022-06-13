@@ -801,6 +801,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-l-\[4px\] {
   border-left-width: 4px;
 }
+.border-b-\[3px\] {
+  border-bottom-width: 3px;
+}
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
