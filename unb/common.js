@@ -18,6 +18,19 @@ function alpinejs() {
         closeSearchForm() {
             this.searchForm = false;
         },
+        isVideoModalOpen: false,
+        openVideoModal: function (videoUrl) {
+            // console.log("videoUrl")
+            let iframe = `<iframe  class="w-full aspect-video" src="${videoUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            const videoFrame = document.getElementById('videoIframe');
+            videoFrame.innerHTML = iframe;
+            this.isVideoModalOpen = true;
+        },
+        closeVideoModal: function () {
+            const videoFrame = document.getElementById('videoIframe');
+            videoFrame.innerHTML = "";
+            this.isVideoModalOpen = false;
+        }
     }
 }
 
