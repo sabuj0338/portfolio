@@ -619,13 +619,13 @@
                     </div>
                     <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
                         <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                        <a href="photos.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                        <a href="videos.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
                             <span  @click="$event.preventDefault(); open = !open">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                                 </svg>
                             </span>
-                            <span class="ml-2">Photo Gallery</span>
+                            <span class="ml-2">Opinion</span>
                         </a>
                     </div>
                     <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
@@ -637,6 +637,17 @@
                                 </svg>
                             </span>
                             <span class="ml-2">Video</span>
+                        </a>
+                    </div>
+                    <div x-data="{ isActive: false, open: false}" class="px-2 py-2" :class="{ 'border-b': open }">
+                        <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                        <a href="photos.html" class="flex items-center px-2 text-gray-500 transition-colors rounded-md hover:text-red-500" :class="{'text-red-500': isActive || open}">
+                            <span  @click="$event.preventDefault(); open = !open">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                </svg>
+                            </span>
+                            <span class="ml-2">Photo Gallery</span>
                         </a>
                     </div>
                 </nav>
@@ -944,6 +955,11 @@
                 </a>
             </div>
             <div class="flex flex-col">
+                <div class="flex items-end justify-center my-4">
+                    <div class="w-48 px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">শীর্ষ সংবাদ</div>
+                    <div class="w-full border-b-[3px] border-red-500 mb-0.5"></div>
+                </div>
+                
                 <a href="#">
                     <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
                         <div class="w-2/3 flex flex-col">
@@ -1002,7 +1018,7 @@
                     </div>
                 </a>
             </div>
-            <div class="flex flex-col py-5">
+            <!-- <div class="flex flex-col py-5">
                 <div class="flex items-end justify-center">
                     <div class="w-48 px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">শীর্ষ সংবাদ</div>
                     <div class="w-full border-b-[3px] border-red-500 mb-0.5"></div>
@@ -1021,6 +1037,246 @@
                         <p>বাজেটে নিম্ন-মধ্যম আয়ের জনগণের জন্য কোনো সুখবর নেই: সিপিডি</p>
                     </div>
                 </div>
+            </div> -->
+        </section>
+
+        <!-- top stories  -->
+        <section>
+            <div class="flex flex-col">
+                <a href="news-details.html">
+                    <div class="flex flex-col cursor-pointer">
+                        <div @click="openVideoModal('https://www.youtube.com/embed/UBOj6rqRUME')" class="relative w-full h-60 bg-cover bg-center group overflow-hidden transition duration-300 ease-in-out" style="background-image: url('https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/5957422_Padma.jpg');">
+                            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                            <div class="relative w-full h-full px-4 flex justify-center items-center">
+                                <a class="text-gray-50 bg-red-500 opacity-80 rounded-full p-2 flex items-center justify-center text-center" href="#">
+                                    <svg class="w-6 h-6 pl-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                        <div class="w-full p-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700 font-bold text-lg uppercase">Top Stories</span>
+                                <div class="flex space-x-1">
+                                    <span class="text-gray-700 text-xs font-bold">Bangladesh</span>
+                                    <span class="text-gray-700 text-xs font-bold">/</span>
+                                    <span class="text-gray-400 text-xs font-bold">Politics</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-4xl font-bold py-2">Winter comes<br> for Murad Hasan</h1>
+                                <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                                <p>
+                                    It is difficult to believe that we have become so used to having instant access to information at...
+                                    <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">World</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">South Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/small/news/8508545_New%20Project%20-%202022-06-12T210056.682.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Sports</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Cricket</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>yesterday</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/8689668_New%20Project%20-%202022-06-07T182110.819.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Entertainment</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/7370260_novoair.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Sports</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Cricket</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>yesterday</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/4952848_Vivo%20T2x%20review.png" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-gray-700 text-xs font-bold">Entertainment</span>
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-400 text-xs font-bold">Arts and Culture</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/medium/news/5114253_Bidrohi.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- category news  -->
+        <section>
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-col cursor-pointer">
+                        <div class="w-full py-3">
+                            <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/5002718_New%20Project%20(17).jpg" class="max-h-60 w-full object-cover bg-red-300"/>
+                            <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                            <div class="px-3 flex items-center justify-between">
+                                <span class="text-gray-700 font-bold text-lg uppercase">Sports</span>
+                                <div class="flex space-x-1">
+                                    <span class="text-gray-400 text-xs font-bold">Cricket</span>
+                                </div>
+                            </div>
+                            <div class="px-3 ">
+                                <h1 class="text-4xl font-bold py-2">Antigua Test: WI take early control after Bangladesh’s poor batting</h1>
+                                <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                            </div>
+                            <div class="px-3 ">
+    
+                                <p> It is difficult to believe that we have become so used to having instant access to information at...
+                                    <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">South Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/1093150_tamim.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">South East Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/9459165_6297627_crick.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">Europe</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/7716305_The%20moment%20of%20toss%20during%20Bangladesh%20vs%20West%20Indies%20First%20Test.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">Europe</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/9217059_New%20Project.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -1080,227 +1336,234 @@
 
         <div class="flex items-center justify-center bg-gray-200 h-20">Advertisement</div>
 
-        <div class="flex flex-col">
-            <a href="#">
-                <div class="flex flex-col cursor-pointer">
-                    <div class="w-20 bg-red-500 h-2 mx-3"></div>
-                    <div class="w-full py-3">
-                        <div class="px-3 flex items-center justify-between">
-                            <span class="text-gray-700 font-bold text-lg uppercase">Entertainment</span>
-                            <div class="flex space-x-1">
-                                <span class="text-gray-400 text-xs font-bold">ARTS and Culture</span>
+        <!-- category news  -->
+        <section>
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-col cursor-pointer">
+                        <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                        <div class="w-full py-3">
+                            <div class="px-3 flex items-center justify-between">
+                                <span class="text-gray-700 font-bold text-lg uppercase">Entertainment</span>
+                                <div class="flex space-x-1">
+                                    <span class="text-gray-400 text-xs font-bold">ARTS and Culture</span>
+                                </div>
+                            </div>
+                            <div class="px-3 ">
+                                <h1 class="text-4xl font-bold py-2">Kalidas karmakar:<br>forever in<br>loving memories</h1>
+                                <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                            </div>
+                            <div class="py-3">
+                                <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/7537473_7311959_1356266_New%20Project%20-%202022-04-20T221109.743.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
+                            </div>
+                            <div class="px-3 ">
+    
+                                <p> It is difficult to believe that we have become so used to having instant access to information at...
+                                    <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="px-3 ">
-                            <h1 class="text-4xl font-bold py-2">Kalidas karmakar:<br>forever in<br>loving memories</h1>
-                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
-                        </div>
-                        <div class="py-3">
-                            <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/7537473_7311959_1356266_New%20Project%20-%202022-04-20T221109.743.jpg" class="max-h-60 w-full object-cover bg-red-300"/>
-                        </div>
-                        <div class="px-3 ">
-
-                            <p> It is difficult to believe that we have become so used to having instant access to information at...
-                                <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
-                            </p>
-                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="flex flex-col">
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-700 text-xs font-bold">South Asia</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/3325678_Russia%202.jpeg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-700 text-xs font-bold">South East Asia</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/6281437_Covid.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-700 text-xs font-bold">Europe</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/9101555_k.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="flex flex-col py-5 bg-white">
-            <div class="flex items-end justify-center">
-                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">Special</div>
-                <div class="w-full border-b-[3px] border-red-500 mb-0.5"></div>
+                </a>
             </div>
-            <div class="grid grid-cols-2 mt-3">
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+    
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">South Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/3325678_Russia%202.jpeg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">South East Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/6281437_Covid.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">Europe</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/slider/news/9101555_k.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="flex flex-col py-5 bg-white">
+                <div class="flex items-end justify-center">
+                    <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">Special</div>
+                    <div class="w-full border-b-[3px] border-red-500 mb-0.5"></div>
                 </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                <div class="grid grid-cols-2 mt-3">
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
 
         <div class="flex items-center justify-center bg-gray-200 h-20">Advertisement</div>
-
-        <div class="flex flex-col">
-            <a href="#">
-                <div class="flex flex-col cursor-pointer">
-                    <div class="w-20 bg-red-500 h-2 mx-3"></div>
-                    <div class="w-full py-3">
-                        <div class="px-3 flex items-center justify-between">
-                            <span class="text-gray-700 font-bold text-lg uppercase">World</span>
-                            <div class="flex space-x-1">
-                                <span class="text-gray-400 text-xs font-bold">SOUTH ASIA</span>
+        
+        <!-- category news  -->
+        <section>
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-col cursor-pointer">
+                        <div class="w-20 bg-red-500 h-2 mx-3"></div>
+                        <div class="w-full py-3">
+                            <div class="px-3 flex items-center justify-between">
+                                <span class="text-gray-700 font-bold text-lg uppercase">World</span>
+                                <div class="flex space-x-1">
+                                    <span class="text-gray-400 text-xs font-bold">SOUTH ASIA</span>
+                                </div>
+                            </div>
+                            <div class="px-3 ">
+                                <h1 class="text-4xl font-bold py-2">Kalidas karmakar:<br>forever in<br>loving memories</h1>
+                                <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
+                            </div>
+                            <div class="py-3">
+                                <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/7213255_Thumbnail%20(1).jpg" class="max-h-60 w-full object-cover bg-red-300"/>
+                            </div>
+                            <div class="px-3 ">
+    
+                                <p> It is difficult to believe that we have become so used to having instant access to information at...
+                                    <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="px-3 ">
-                            <h1 class="text-4xl font-bold py-2">Kalidas karmakar:<br>forever in<br>loving memories</h1>
-                            <h2 class="text-gray-400 text-sm py-2 font-bold">Today</h2>
-                        </div>
-                        <div class="py-3">
-                            <img alt="blog photo" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/7213255_Thumbnail%20(1).jpg" class="max-h-60 w-full object-cover bg-red-300"/>
-                        </div>
-                        <div class="px-3 ">
-
-                            <p> It is difficult to believe that we have become so used to having instant access to information at...
-                                <a class="inline-flex text-indigo-500 text-xs" href="#">Read More</a>
-                            </p>
-                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="flex flex-col">
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-700 text-xs font-bold">South Asia</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/lead/news/7849111_mitu.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-700 text-xs font-bold">Europe</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/7213255_Thumbnail%20(1).jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
-                    <div class="w-2/3 flex flex-col">
-                        <div class="flex space-x-1">
-                            <span class="text-red-500 text-xs font-bold">/</span>
-                            <span class="text-gray-700 text-xs font-bold">Africa</span>
-                        </div>
-                        <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
-                        <div class="flex items-center space-x-2 text-gray-500 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>41 minutes ago</span>
-                        </div>
-                    </div>
-                    <div class="w-1/3 grid place-items-center">
-                        <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/8175898_Thumbnail%20(7).jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
-                    </div>
-                </div>
-            </a>
-        </div>
-        
-        <div class="flex flex-col py-5 bg-white">
-            <div class="flex items-end justify-center">
-                <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">Recent</div>
-                <div class="w-full border-b-[3px] border-red-500 mb-0.5"></div>
+                </a>
             </div>
-            <div class="grid grid-cols-2 mt-3">
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+    
+            <div class="flex flex-col">
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">South Asia</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/lead/news/7849111_mitu.jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">Europe</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/7213255_Thumbnail%20(1).jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-row space-x-2 p-3 border-y cursor-pointer">
+                        <div class="w-2/3 flex flex-col">
+                            <div class="flex space-x-1">
+                                <span class="text-red-500 text-xs font-bold">/</span>
+                                <span class="text-gray-700 text-xs font-bold">Africa</span>
+                            </div>
+                            <h1 class="text-2xl font-bold py-3 m-0 leading-tight">The Majestic and Wonderful Bahamas in Bangladesh</h1>
+                            <div class="flex items-center space-x-2 text-gray-500 text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>41 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="w-1/3 grid place-items-center">
+                            <img src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/video_album/8175898_Thumbnail%20(7).jpg" alt="tailwind logo" class="max-h-32 w-full object-cover bg-red-300" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="flex flex-col py-5 bg-white">
+                <div class="flex items-end justify-center">
+                    <div class="px-3 uppercase font-bold text-gray-700 m-0 leading-none text-xl">Recent</div>
+                    <div class="w-full border-b-[3px] border-red-500 mb-0.5"></div>
                 </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="border-b m-3 pb-3 font-bold">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                <div class="grid grid-cols-2 mt-3">
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="border-b m-3 pb-3 font-bold">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         
     </main>
     
