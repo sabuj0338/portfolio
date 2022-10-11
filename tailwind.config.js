@@ -23,6 +23,14 @@ module.exports = {
             },
             animation: {
                 'spin-slow': 'spin 30s linear infinite',
+                wiggle: 'wiggle 3s ease-in-out infinite',
+            },
+            
+            keyframes: {
+                wiggle: {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.05)' },
+                }
             }
         },
         fontFamily: {
