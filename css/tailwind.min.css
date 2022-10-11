@@ -1456,6 +1456,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:overflow-y-auto:hover {
   overflow-y: auto;
 }
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+.hover\:border-t-8:hover {
+  border-top-width: 8px;
+}
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
