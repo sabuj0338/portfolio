@@ -1,754 +1,537 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <!-- all meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords"
-        content="portfolio, sabuj islam, github portfolio, web developer, software developer, full stack web developer, mobile app developer, flutter developer, bangladesh, Bangla" />
-    <meta name="description" content="This is a portfolio page for MD. SABUJ ISLAM" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="language" content="English">
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio | Sabuj Islam</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/portfolio/favicon.ico" type="image/x-icon">
+    
     <meta name="copyright" content="MD. SABUJ ISLAM">
     <meta name="author" content="MD. SABUJ ISLAM, sabuj0338@gmail.com">
+    <meta name="title" content="MD. SABUJ ISLAM | Portfolio | sabuj0338" />
+    <meta name="abstract" content="Hi, I am Sabuj Islam. I am a full-stack software developer. My experties areas are Node Js, PHP, React, Next, Vue and Flutter mobile app development." />
+    <meta name="description" content="Hi, I am Sabuj Islam. I am a full-stack software developer. My experties areas are Node Js, PHP, React, Next, Vue and Flutter mobile app development." />
+    <meta name="keywords" content="portfolio, sabuj islam, github portfolio, web developer, software developer, full stack web developer, mobile app developer, flutter developer, bangladesh, Bangla" />
     <meta name="url" content="http://sabuj0338.github.io/portfolio">
-    <link rel="shortcut icon" href="/portfolio/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- all css file -->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta property="og:title" content="MD. SABUJ ISLAM | Portfolio | sabuj0338">
+    <meta property="og:description" content="Hi, I am Sabuj Islam. I am a full-stack software developer. My experties areas are Node Js, PHP, React, Next, Vue and Flutter mobile app development.">
+    <meta property="og:url" content="http://sabuj0338.github.io/portfolio">
+    <meta property="og:image" content="http://sabuj0338.github.io/portfolio/images/sabuj0338.webp">
+    <meta property="og:image:secure_url" content="http://sabuj0338.github.io/portfolio/images/sabuj0338.webp">
 
+    <meta property="og:image:alt" content="http://sabuj0338.github.io/portfolio/images/sabuj0338.webp">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="sabuj0338.github.io">
+    <meta name="twitter:title" content="MD. SABUJ ISLAM | Portfolio | sabuj0338">
+    <meta name="twitter:description" content="Hi, I am Sabuj Islam. I am a full-stack software developer. My experties areas are Node Js, PHP, React, Next, Vue and Flutter mobile app development.">
+    <meta name="twitter:url" content="http://sabuj0338.github.io/portfolio" />
+    <meta name="twitter:image" content="http://sabuj0338.github.io/portfolio/images/sabuj0338.webp" />
+
+    
     <!-- fontawesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-
-    <title>Protfolio | Sabuj Islam</title>
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
+    
+    <!-- all css file -->
+    <link rel="stylesheet" href="css/tailwind.min.css">
     <style>
-        @media (max-width: 360px) {
-            .w3-bar-block .w3-bar-item {
-                padding: 8px 4px;
+        body {
+            font-family: 'Roboto Mono';
+        }
+        /* .box {
+            position: relative;
+        }
+        .box>img {
+            border-radius: 50%;
+            width: 24vh;
+            height: 24vh;
+            object-fit: cover;
+            border: 10px solid #d8c8a5;
+        }
+        .box>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box div:nth-child(2) {
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: #e98074;
+            border-bottom-color: #e98074;
+            border-left-style: dotted;
+            border-right-style: dotted;
+            border-left-color: lightgray;
+            border-right-color: lightgray;
+            width:30vh;
+            height:30vh;
+            margin-left: -3vh;
+            margin-top: -3vh;
+            animation: spin 30s linear infinite;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
             }
-        }
-
-        @media (max-width: 320px) {
-            .w3-bar-block .w3-bar-item {
-                padding: 8px 12px;
+            100%{
+                transform: rotate(360deg);
             }
-
-            .btn i {
-                display: block;
-                font-size: 1.3rem;
-            }
-
-            .btn span {
-                display: none;
-            }
-        }
-
-        ul.dashed {
-            list-style-type: none;
-        }
-
-        ul.dashed>li {
-            text-indent: -5px;
-        }
-
-        ul.dashed>li:before {
-            content: "- ";
-            text-indent: -5px;
-        }
+        } */
     </style>
+
 </head>
-
-<body>
-
-    <!-- Side navbar start -->
-    <nav class="w3-sidebar c-bg-e py-1">
-        <!-- Head icon -->
-        <div class="w3-bar-block c-t-b nav-header">
-            <p class="w3-bar-item w3-center p-0 m-0"><img class="w3-round-xxlarge" src="images/sabuj0338.webp" width="40"
-                    height="40" alt=""></p>
-        </div>
-        <!-- Navbar buttons links -->
-        <div class="w3-bar-block w3-center nav-body c-t-d p-0 m-0">
-            <a href="#home" class="home-marker w3-bar-item btn active"><i class="fas fa-home"></i><span>HOME</span></a>
-            <a href="#about" class="about-marker w3-bar-item btn"><i class="fas fa-user"></i><span>ABOUT</span></a>
-            <a href="#skills" class="skills-marker w3-bar-item btn"><i class="fas fa-cog"></i><span>SKILLS</span></a>
-            <a href="#portfolio" class="portfolio-marker w3-bar-item btn"><i
-                    class="fas fa-eye"></i><span>PORTFOLIO</span></a>
-            <a href="#contact" class="contact-marker w3-bar-item btn"><i
-                    class="fas fa-envelope"></i><span>CONTACT</span></a>
-        </div>
-        <!-- Contact information links -->
-        <div class="w3-bar-block w3-center nav-footer w3-text-white p-0 m-0">
-            <a href="https://www.facebook.com/sabuj0338" class="w3-bar-item btn-2"><i class="fab fa-facebook-f"></i></a>
-            <!-- <a href="#" class="w3-bar-item btn-2"><i class="fab fa-twitter"></i></a>
-        <a href="sabuj0338@gmail.com" class="w3-bar-item btn-2"><i class="fas fa-envelope-open-text"></i></a> -->
-        </div>
-    </nav><!-- Side navbar end -->
-
-    <!-- Home section start -->
-    <section id="home" class="home">
-        <div class="anime-box">
-            <div class="box">
-                <img src="images/sabuj0338.webp" alt="">
-                <div class=""></div>
-                <!-- <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div> -->
-            </div>
-        </div>
-        <div class="w3-center title-box">
-            <h1 class="name-text">SABUJ ISLAM</h1>
-            <p><span class="name-title">FULL-STACK WEB & MOBILE APP DEVELOPER</span></p>
-            <a class="w3-button w3-black" href="/portfolio/resume.pdf"><i class="fa fa-download" aria-hidden="true"></i>
-                View Resume</a>
-        </div>
-    </section><!-- Home section end -->
-
-    <!-- About section start -->
-    <section id="about" class="about">
-        <div class="w3-container py-4">
-            <!-- About section title -->
-            <div class="px-4 py-2">
-                <h1 class="section-title-font">ABOUT ME</h1>
-            </div>
-            <!-- About section content -->
-            <div class="w3-row-padding">
-                <div class="w3-half px-3">
-                    <div class="">
-                        <p class="">Hi, I'm <span class="w3-wide w3-text-red">Sabuj Islam</span> better known as <span
-                                class="w3-wide w3-text-red">Sabuj</span>. I am a software developer, started my career
-                            as an intern in speaklar.com as a laravel developer 2019. Then slowly I was learning and
-                            working with different technologies like Raw PHP, CakePHP, Codeigniter, WordPress, modern
-                            SPA frameworks like Vue, React. And I also learned flutter for mobile app development. I
-                            worked with many existing projects and developed from scratch using those technologies. I am
-                            proficient with PHP (Laravel), React, and Flutter. From my school life, I dreamed about
-                            being a software engineer. I dreamed about doing something amazing and I am continuing my
-                            hard work to fulfill my dream :)</p>
-                    </div>
-
-                    <hr>
-                    <!-- Skills -->
-                    <div class="">
-                        <h3><b>SKILLS</b></h3>
-                        <hr>
-                        <div>
-                            <div>
-                                <b>Languages</b>
-                                <ul class="dashed">
-                                    <li>PHP, JavaScript, C, C++, Dart, HTML, CSS, SQL, NoSQL</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>Libraries & Frameworks</b>
-                                <ul class="dashed">
-                                    <li>React JS, Next JS, Redux, Vue JS, Vuex</li>
-                                    <li>Laravel, Lumen, CakePHP, CodeIgniter</li>
-                                    <li>Bootstrap, Tailwind, jQuery, Ajax, Charts JS, DataTable</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>Tools & Platforms</b>
-                                <ul class="dashed">
-                                    <li>Git, Postman, Jira, Trello, Firebase, MySQL, MongoDB, Linux, Little Bit Vagrant,
-                                        Docker</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>App Development</b>
-                                <ul class="dashed">
-                                    <li>Flutter</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+<body class="bg-background-light">
+    
+    <section class="px-8 lg:px-20">
+        <header>
+            <nav class="flex flex-wrap justify-between items-center py-5">
+                <div class="w-full md:w-3/12 lg:w-3/12 py-2">
+                    <h1 class="text-xl uppercase text-gray-400"><span class="text-gray-50">Sabuj</span> Islam</h1>
                 </div>
-                <div class="w3-half px-3">
-                    <div class="">
-                        <h4> <b>ACADEMIC QUALIFICATION</b> </h4>
-                    </div>
-                    <div class="">
-                        <ul class="w3-ul">
-                            <li class="w3-bar w3-border-0">
-                                <i class="w3-bar-item w3-padding w3-hide-small c-t-d fas fa-graduation-cap"
-                                    style="font-size:3rem;"></i>
-                                <div class="w3-bar-item w3-padding">
-                                    <span class="c-t-d">2015-2018</span><br>
-                                    <span><b>PRIME UNIVERSITY</b> | BSc in CSE</span><br>
-                                    <span>CGPA: 3.52 Out of 4</span>
-                                </div>
-                            </li>
-                            <li class="w3-bar w3-border-0">
-                                <i class="w3-bar-item w3-padding w3-hide-small c-t-d fas fa-graduation-cap"
-                                    style="font-size:3rem;"></i>
-                                <div class="w3-bar-item w3-padding">
-                                    <span class="c-t-d">2013-2014</span><br>
-                                    <span><b>GOVT. AKBAR ALI COLLEGE</b> | HSC (Science)</span><br>
-                                    <span>CGPA: 4.20 Out of 5</span>
-                                </div>
-                            </li>
-                            <li class="w3-bar w3-border-0">
-                                <i class="w3-bar-item w3-padding w3-hide-small c-t-d fas fa-graduation-cap"
-                                    style="font-size:3rem;"></i>
-                                <div class="w3-bar-item w3-padding">
-                                    <span class="c-t-d">2011-2012</span><br>
-                                    <span><b>FALIA HIGH SCHOOL</b> | SSC (Science)</span><br>
-                                    <span>CGPA: 4.69 Out of 5</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="">
-                        <h4> <b>LANGUAGE</b> </h4>
-                    </div>
-                    <div class="px-5">
-                        <p>
-                            <b>Bangla</b> - Native Proficiency
-                        </p>
-                        <p>
-                            <b>English</b> - Professional Working Proficiency
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- About section end -->
 
-    <!-- Skills section start -->
-    <!-- <section id="skills" class="skills">
-      <div class="w3-container py-4"> -->
-    <!-- Skills section title -->
-    <!-- <div class="px-4 py-2">
-            <h1 class="section-title-font">SKILLS</h1>
-            <div class="w3-right">
-                <i class="fas fa-check-circle w3-text-red"> Basic</i>
-                <i class="fas fa-check-circle w3-text-amber"> Advance</i>
-                <i class="fas fa-check-circle w3-text-green"> Professional</i>
-            </div>
-        </div> -->
-    <!-- Skills section content -->
-    <!-- <div class="w3-row-padding">
-          
-          <div class="w3-third px-3">
-            <div class="">
-              <h3><b>Languages</b></h3>
-            </div>
-            <ul class="fa-ul">
-              <li><i class="fas fa-check-circle w3-text-green"></i> PHP, JavaScript, C, C++, Dart</li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> HTML, CSS</li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> SQL, NoSQL</li> -->
-    <!-- <li><i class="fas fa-check-circle w3-text-green"></i> <b>HTML & HTML5</b>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>CSS & CSS3 (Bootstrap, Tailwind)</b>
-              </li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>JAVASCRIPT</b>
-                <ul class="fa-ul">
-                  <li><i class="fas fa-check-circle w3-text-green"></i> React JS
-                    <ul class="fa-ul">
-                      <li><i class="fas fa-check-circle w3-text-green"></i> Context & Hooks</li>
-                      <li><i class="fas fa-check-circle w3-text-green"></i> Redux</li>
-                      <li><i class="fas fa-check-circle w3-text-green"></i> React Router</li>
-                      <li><i class="fas fa-check-circle w3-text-green"></i> More</li>
+                <div class="w-full md:w-5/12 lg:w-4/12 py-3">
+                    <ul class="flex justify-start">
+                        <li class="w-1/3">
+                            <a href="#" class="transition ease-in-out delay-100 text-primary font-semibold text-xs nav-link group">
+                                <span class="group-hover:inline mr-1"><</span>Service<span class="group-hover:inline ml-1">></span>
+                            </a>
+                        </li>
+                        <li class="w-1/3">
+                            <a href="#" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold text-xs nav-link group">
+                                <span class="group-hover:inline hidden mr-1"><</span>Contact<span class="group-hover:inline hidden ml-1">></span>
+                            </a>
+                        </li>
+                        <li class="w-1/3">
+                            <a href="#" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold text-xs nav-link group">
+                                <span class="group-hover:inline hidden mr-1"><</span>About<span class="group-hover:inline hidden ml-1">></span>
+                            </a>
+                        </li>
                     </ul>
-                  </li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> JQuery</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Ajax</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Vue JS
-                  </li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Third Party Libraries</li>
-                </ul>
-              </li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>PHP (OOP)</b>
-                <ul class="fa-ul">
-                      <li><i class="fas fa-check-circle w3-text-green"></i> LUMEN</li>
-                      <li><i class="fas fa-check-circle w3-text-amber"></i> CAKEPHP</li>
-                      <li><i class="fas fa-check-circle w3-text-amber"></i> CODEIGNATOR</li>
-                      <li><i class="fas fa-check-circle w3-text-green"></i> Wordpress</li>
-                </ul>
-              </li>
-              
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>SQL, MySQL</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>NoSQL, MongoDB</b></li>
-              <br>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>Rest API</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>Payment Gateway Integration (SSLCOMMERZ, Bkash, Nagad)</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>JWT, Social Authentication</b></li>
-              <li class="w3-text-red"><i class="fas fa-check-circle w3-text-green"></i> <b>Extreme Bug Fixing Skill</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>VPS server configuration</b></li>
-              <li><i class="fas fa-check-circle w3-text-amber"></i> <b>Email server configuration (SMTP)</b></li>
-              <li><i class="fas fa-check-circle w3-text-amber"></i> <b>CDN server configuration</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>Domain configure with vps server</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>SSL certification</b></li>
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>NodeJS, PHP projects Hosting</b></li> -->
-    <!-- </ul>
-            <div class="">
-                <h3><b>Libraries & Frameworks</b></h3>
-              </div>
-            <ul class="fa-ul">
-                <li><i class="fas fa-check-circle w3-text-green"></i> React JS, Next JS, Redux</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Vue JS, Vuex</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> jQuery, Ajax</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Laravel, Lumen, CakePHP, CodeIgniter</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Charts JS, DataTable</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Charts JS, DataTable</li>
-            </ul>
-            <div class="">
-                <h3><b>Tools & Platforms</b></h3>
-              </div>
-            <ul class="fa-ul">
-                <li><i class="fas fa-check-circle w3-text-green"></i> React JS, Next JS, Redux</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Vue JS, Vuex</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> jQuery, Ajax</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Laravel, Lumen, CakePHP, CodeIgniter</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Charts JS, DataTable</li>
-                <li><i class="fas fa-check-circle w3-text-green"></i> Charts JS, DataTable</li>
-            </ul>
-          </div>
-          <div class="w3-third px-3">
-            <div class="">
-              <h3><b>MOBILE APP DEVELOPMENT</b></h3>
+                </div>
+                <div class="w-full md:w-4/12 lg:w-3/12 py-3">
+                    <ul class="flex justify-between items-center">
+                        <li>
+                            <a href="https://www.facebook.com/sabuj0338" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold nav-link flex space-x-2 group">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="transition ease-in-out delay-100 text-xs text-gray-400 group-hover:text-primary">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sabuj0338" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold nav-link flex space-x-2 group">
+                                <i class="fab fa-github"></i>
+                                <span class="transition ease-in-out delay-100 text-xs text-gray-400 group-hover:text-primary">Github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="transition ease-in-out delay-100 text-gray-400 hover:text-white font-semibold nav-link bg-primary bg-opacity-20 hover:bg-opacity-80 px-4 py-3 rounded-full">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="flex flex-wrap justify-center">
+            <div class="py-8 lg:py-20 w-full lg:w-1/2">
+
+                <div class="">
+                    <span class="px-3 py-2 bg-primary bg-opacity-80 hover:bg-opacity-100 text-gray-900 rounded">Full-Stack Developer</span>
+                </div>
+                
+                <div class="my-12">
+                    <h1 class="text-gray-100 rounded text-4xl">Talk is cheap. <br/>Show me the code</h1>
+                    
+                    <p class="mt-4 text-gray-400 text-sm">I design and code beautifully simple things, <br/>and I love what I do.</p>
+                </div>
+
+                <div class="mt-20">
+                    <a href="/portfolio/resume.pdf" class="py-2 underline hover:no-underline text-primary text-opacity-80 hover:text-opacity-100 rounded font-bold text-2xl uppercase ">View Resume!</a>
+                </div>
+
+                <div class="mt-20 mb-20 flex justify-between space-x-4">
+                    <div class="flex space-x-2 items-center">
+                        <span class="text-3xl text-gray-100">3+</span>
+                        <div class="flex flex-col">
+                            <span class="text-xs text-gray-400 uppercase">Years</span>
+                            <span class="text-xs text-gray-400 uppercase">Experience</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2 items-center">
+                        <span class="text-3xl text-gray-100">15+</span>
+                        <div class="flex flex-col">
+                            <span class="text-xs text-gray-400 uppercase">Projects</span>
+                            <span class="text-xs text-gray-400 uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="fa-ul">
-              <li><i class="fas fa-check-circle w3-text-green"></i> <b>FLUTTER</b>
-                <ul class="fa-ul">
-                  <li><i class="fas fa-check-circle w3-text-green"></i> SharedPreference</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> SQLite (<i class="fas fa-mobile-alt"></i>)</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Provider</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Push Notification</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Firebase</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> Foreground Service</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> HTTP Handling</li>
-                  <li><i class="fas fa-check-circle w3-text-green"></i> More</li>
-                </ul>
-              </li> -->
-    <!-- <li><i class="fas fa-check-circle w3-text-red"></i> <b>REACT NATIVE</b></li> -->
-    <!-- </ul>
-          </div>
-          <div class="w3-third px-3">
-            <div class="">
-              <h3><b>OTHERS SKILLS</b></h3>
-            </div>
-            <div class="">
-                <div class="w3-bar py-1">
-                    <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>Great problem solving skill</span>
+            <div class="py-12 lg:py-20 w-full lg:w-1/2 order-first lg:order-last">
+                <div class="w-full flex justify-center items-center relative">
+                    <div class="animate-spin-slow absolute border-b-8 border-t-2 border-dashed border-green-500 rounded-full w-96 h-96"></div>
+                    <img class="w-80 h-80 object-cover rounded-full hover:scale-105 transform transition duration-500" src="images/sabuj0338.webp" alt="sabuj islam">
                 </div>
-              <div class="w3-bar py-1">
-                <b class="w3-bar-item">TOOLS</b>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>Android Studio</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>GIT</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>Github, Gitlab, Bitbucket</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>Trello</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>VS Code, PhpStorm, Atom, Sublime</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>ILLUSTRATOR</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>MS OFFICE SUITE</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>PHOTOSHOP</span>
-              </div>
-              <div class="w3-bar py-1">
-                <span class="w3-bar-item"><span class="w3-bar-item px-2"><i class="fas fa-check-circle w3-text-green"></i></span>Adobe XD</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-    <!-- Skills section end -->
-
-    <!-- Portfolio section start -->
-    <section id="portfolio" class="portfolio">
-        <div class="w3-container py-4">
-            <!-- section title -->
-            <div class="px-4 py-2">
-                <h1 class="section-title-font">PORTFOLIO</h1>
-            </div>
-            <!-- Portfolio section content -->
-            <div class="p-3">
-                <!-- tab links -->
-                <div class="w3-bar px-2">
-                    <button class="w3-bar-item w3-button tablink bg-dark w3-red w3-text-white"
-                        onclick="openTab(event, 'ALL')">ALL</button>
-                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'PHP')">PHP</button>
-                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'API')">REST API</button>
-                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'REACT')">REACT</button>
-                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'VUE')">VUE</button>
-                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'FLUTTER')">FLUTTER</button>
-                </div>
-
-                <!-- all tabs are here-->
-                <div id="ALL" class="tab">
-                    <div class="w3-row-padding">
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://bebsha.com/images/logo/1608808095_1.png" alt="bebsha.com">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://bebsha.com/">www.bebsha.com</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://laalsobuj.com/images/logo/laalsobuj.png" alt="laalsobuj.com">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://laalsobuj.com/">www.laalsobuj.com</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://futureskyltd.com/welcome/logo.png" alt="futureskyltd.com">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://futureskyltd.com/">www.futureskyltd.com</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="images/e-cab.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://registration.e-cab.net/">registration.e-cab.net</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="images/e-cab.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://complaint.e-cab.net/">complaint.e-cab.net</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="images/barisal.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="#">Barisal City Corporation Water Billing System</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://kopacopy-diamond-topup.firebaseapp.com/logo.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://kopacopy-diamond-topup.firebaseapp.com">Diamond Topup (React, Vue, Next)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://e-genius-hunt.web.app/static/media/e-genius-logo.4110921b.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://e-genius-hunt.web.app">e-genius-hunt.web.app (React)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="images/store-3.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://store-buysell.web.app/">Store Management (Buy & Sell) (Vue)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/HUsy-pMD71XdOZww-zYeexcdxB8swPf3V-PXxOMv7cWd18k3EBv__U_DaAHmZJy3e4FN=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.app.fantacyseller">Laalsobuj Seller App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/lZOp6bCrhaAQkuBFJ-7i9MYcWAPKlIa9hLk3s6EU6kLUIeaVx0QHXAtkjhstpIslqknd=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.app.fantacy">Laalsobuj Customer App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/ThFbW4yyh_e-CG29OStrXyTImCVzNOGUSOnAPbnfNtr0NSp8HlQE3wizT3RBx40Aszxq=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.totthoapalalsobuj">Laalsobuj TotthoApa App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/UWE4rzT8WLF3dMxTCe2AnTcXsWOzXPuFFzImbtxKFWCIaLEMmTgziCjJbVNijzAqzw=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.trackingmate">Field Force Tracking App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/dCjx09cSsSF_T6GpUX0ATMib0vJFxIrHDztPU1CUjYMFJ60HqX-Vl9vdpYf_fXYmr8A=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.fivepeacetime.peace_time">Auto Silent Scheduler App (Flutter)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/X3qPmqR49s8qEhfTcLgyhOPHbJDJgH568jWuFo-3nUQUHpKlAu1BesW-CgY0jg3DARU=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.fivepeacetime.kopacopy_diamond_topup">Diamond TopUp App (Flutter)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PHP tab -->
-                <div id="PHP" class="tab" style="display:none">
-                    <div class="w3-row-padding">
-                        
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://bebsha.com/images/logo/1608808095_1.png" alt="bebsha.com">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://bebsha.com/">www.bebsha.com</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://laalsobuj.com/images/logo/laalsobuj.png" alt="laalsobuj.com">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://laalsobuj.com/">www.laalsobuj.com</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://futureskyltd.com/welcome/logo.png" alt="futureskyltd.com">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://futureskyltd.com/">www.futureskyltd.com</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="images/e-cab.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://registration.e-cab.net/">registration.e-cab.net</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="images/e-cab.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="http://complaint.e-cab.net/">complaint.e-cab.net</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="images/barisal.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="#">Barisal City Corporation Water Billing System</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- API tab -->
-                <div id="API" class="tab" style="display:none">
-                    <div class="w3-row-padding">
-                        
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/HUsy-pMD71XdOZww-zYeexcdxB8swPf3V-PXxOMv7cWd18k3EBv__U_DaAHmZJy3e4FN=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.app.fantacyseller">Laalsobuj Seller App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/lZOp6bCrhaAQkuBFJ-7i9MYcWAPKlIa9hLk3s6EU6kLUIeaVx0QHXAtkjhstpIslqknd=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.app.fantacy">Laalsobuj Customer App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/ThFbW4yyh_e-CG29OStrXyTImCVzNOGUSOnAPbnfNtr0NSp8HlQE3wizT3RBx40Aszxq=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.totthoapalalsobuj">Laalsobuj TotthoApa App Api</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/UWE4rzT8WLF3dMxTCe2AnTcXsWOzXPuFFzImbtxKFWCIaLEMmTgziCjJbVNijzAqzw=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.futureskyltd.trackingmate">Field Force Tracking App Api</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VUE tab -->
-                <div id="VUE" class="tab" style="display:none">
-                    <div class="w3-row-padding">
-                        
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://kopacopy-diamond-topup.firebaseapp.com/logo.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://kopacopy-diamond-topup.firebaseapp.com">Diamond Topup (React, Vue, Next)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="images/store-3.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://store-buysell.web.app/">Store Management (Buy & Sell) (Vue)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- REACT tab -->
-                <div id="REACT" class="tab" style="display:none">
-                    <div class="w3-row-padding">
-                        
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://kopacopy-diamond-topup.firebaseapp.com/logo.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://kopacopy-diamond-topup.firebaseapp.com">Diamond Topup (React, Vue, Next)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off p-5" style="height: 250px !important; object-fit: contain;" src="https://e-genius-hunt.web.app/static/media/e-genius-logo.4110921b.png" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://e-genius-hunt.web.app">e-genius-hunt.web.app (React)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flutter tab -->
-                <div id="FLUTTER" class="tab" style="display:none">
-                    <div class="w3-row-padding">
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/dCjx09cSsSF_T6GpUX0ATMib0vJFxIrHDztPU1CUjYMFJ60HqX-Vl9vdpYf_fXYmr8A=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.fivepeacetime.peace_time">Auto Silent Scheduler App (Flutter)</a>
-                            </div>
-                        </div>
-                        <div class="w3-quarter p-2">
-                            <div class="w3-card-2">
-                                <div class="image-box">
-                                    <img class="w3-opacity w3-hover-opacity-off" style="height: 250px !important; object-fit: contain;" src="https://play-lh.googleusercontent.com/X3qPmqR49s8qEhfTcLgyhOPHbJDJgH568jWuFo-3nUQUHpKlAu1BesW-CgY0jg3DARU=s180-rw" alt="">
-                                </div>
-                                <a class="w3-button w3-block" style="background-color: #e85a4f;" href="https://play.google.com/store/apps/details?id=com.fivepeacetime.kopacopy_diamond_topup">Diamond TopUp App (Flutter)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section><!-- Portfolio section end -->
+    </section>
 
-    <!-- Contact section start -->
-    <section id="contact" class="contact">
-        <div class="w3-container py-4">
-            <!-- Section title -->
-            <div class="px-4 py-2">
-                <h1 class="section-title-font">CONTACTS</h1>
-            </div>
-            <!-- Contact section content -->
-            <div class="w3-row-padding">
-                <div class="w3-third px-3">
-                    <div class="py-3">
-                        <p class="p-0 m-0">Get in touch with me. I would like to hear from you.</p>
+    <section class="px-8 lg:px-20 bg-background">
+        <!-- intro -->
+        <div class="flex flex-wrap py-20">
+            <div class="w-full lg:w-1/2">
+                <div class="flex flex-col space-y-3 py-4 lg:py-0">
+                    <div class="">
+                        <div class="p-8 rounded bg-background-light hover:shadow-2xl hover:-translate-y-1 hover:scale-110 transform transition duration-500">
+                            <div class="flex justify-between text-primary">
+                                <span>Front-End</span>
+                                <span class=""><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></span>
+                            </div>
+    
+                            <div class="">
+                                <p class="text-gray-400 text-xs">I develop front-en with coding super smooth.</p>
+                            </div>
+    
+                            <div class="mt-3">
+                                <a href="#" class="uppercase text-xs underline text-gray-100">4+ projects</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w3-bar py-2">
-                        <span><i class="fas fa-map-marker-alt"></i> <b>ADDRESS</b></span><br>
-                        <span>H-02, R-02, Turag City, Priyanka House, Mirpur-1, Dhaka-1216</span>
+                    <div class="">
+                        <div class="p-8 rounded bg-background-light hover:shadow-2xl hover:-translate-y-1 hover:scale-110 transform transition duration-500">
+                            <div class="flex justify-between text-primary">
+                                <span>Back-End</span>
+                                <span class="">{}</span>
+                            </div>
+    
+                            <div class="">
+                                <p class="text-gray-400 text-xs">Develop back-end like you can say what else we can do.</p>
+                            </div>
+    
+                            <div class="mt-3">
+                                <a href="#" class="uppercase text-xs underline text-gray-100">15+ projects</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w3-bar py-2">
-                        <span><i class="fas fa-phone"></i> <b>PHONE</b></span><br>
-                        <span>+8801775559622</span>
-                    </div>
-                    <div class="w3-bar py-2">
-                        <span><i class="fas fa-envelope"></i> <b>E-MAIL</b></span><br>
-                        <span>sabuj0338@gmail.com</span>
-                    </div>
-                    <div class="w3-bar py-2">
-                        <span><i class="fab fa-skype"></i> <b>SKYPE</b></span><br>
-                        <span>sabujullapara@gmail.com</span>
-                    </div>
-                    <div class="w3-bar py-2">
-                        <span><i class="fas fa-rss"></i> <b>WEBSITE</b></span><br>
-                        <span>sabuj0338.github.io/portfolio</span>
+                    <div class="">
+                        <div class="p-8 rounded bg-background-light hover:shadow-2xl hover:-translate-y-1 hover:scale-110 transform transition duration-500">
+                            <div class="flex justify-between text-primary">
+                                <span>Mobile App</span>
+                                <span class=""><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></span>
+                            </div>
+    
+                            <div class="">
+                                <p class="text-gray-400 text-xs">Trust your crazy ideas.</p>
+                            </div>
+    
+                            <div class="mt-3">
+                                <a href="#" class="uppercase text-xs underline text-gray-100">6+ projects</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="w3-twothird px-3">
+            </div>
+
+            <div class="w-full lg:w-1/2 px-0 lg:px-12 order-first lg:order-last">
+                <h1 class="text-gray-500">Introduction</h1>
+                <h1 class="my-5 text-gray-50 rounded text-4xl">Hello! I'm Sabuj Islam</h1>
+                <h1 class="my-8 text-gray-200 italic">Every great project begin with an even better story</h1>
+                <p class="my-5 text-gray-500 text-justify">I started my career
+                    as an intern in speaklar.com as a laravel developer 2019. Then slowly I was learning and
+                    working with different technologies like Raw PHP, CakePHP, Codeigniter, WordPress, modern
+                    SPA frameworks like Vue, React. And I also learned flutter for mobile app development. I
+                    worked with many existing projects and developed from scratch using those technologies. I am
+                    proficient with PHP (Laravel), React, and Flutter. From my school life, I dreamed about
+                    being a software engineer. I dreamed about doing something amazing and I am continuing my
+                    hard work to fulfill my dream :)</p>
+            </div>
+        </div>
+
+        <!-- compony -->
+        <div class="flex flex-wrap justify-evenly items-center py-12 h-80">
+            <div class="">
+                <img class="h-10" src="images/cosmos-group.png" alt="cosmos-group-logo">
+            </div>
+            <div class="">
+                <img class="h-10" src="images/unb-logo.png" alt="unb-logo">
+            </div>
+            <div class="">
+                <img class="h-10 opacity-40" src="images/e-cab.png" alt="e-cab-logo">
+            </div>
+            <div class="">
+                <img class="h-10 opacity-40" src="images/futureskty-logo.png" alt="e-cab-logo">
+            </div>
+        </div>
+
+        <!-- latest works -->
+        <div class="flex flex-wrap">
+            <div class="w-1/2 md:w-1/3 p-3">
+                <h1 class="text-gray-50 text-2xl">Latest Works</h1>
+                <h2 class="text-gray-500 text-xs">Perfect solution for digital experience</h2>
+            </div>
+            <div class="w-1/2 md:w-1/3 p-3">
+                <div class="h-full rounded opacity-40 hover:opacity-100 transform transition duration-500 hover:scale-125">
+                    <img class="rounded h-full cover" src="images/unb.png" alt="unb-logo">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 p-3">
+                <div class="h-full rounded opacity-40 hover:opacity-100 transform transition duration-500 hover:scale-125">
+                    <img class="rounded h-full cover" src="images/e-cab-registration.png" alt="e-cab-logo">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 p-3">
+                <div class="h-full rounded opacity-40 hover:opacity-100 transform transition duration-500 hover:scale-125">
+                    <img class="rounded h-full cover" src="images/barisal.png" alt="e-cab-logo">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 p-3">
+                <div class="h-full rounded opacity-40 hover:opacity-100 transform transition duration-500 hover:scale-125">
+                    <img class="rounded h-full cover" src="images/laalsobuj.png" alt="laalsobuj">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 p-3">
+                <div class="h-full flex flex-col justify-end items-end py-5">
+                    <h1 class="text-primary underline text-xl uppercase font-semibold">All Projects</h1>
+                    <h2 class="text-gray-500 text-xs mt-2">* Some projects are not allowed to visit without login. If you want to see more, <a href="#" class="text-primary underline">contact</a></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-8 lg:px-20 bg-background-light hidden">
+        <div class="py-32 flex flex-wrap">
+            <div class="w-full lg:w-1/2">
+                <div class="">
+                    <div class="flex">
+                        <span class="text-2xl text-gray-50">ACADEMIC QUALIFICATION</span>
+                    </div>
+    
+                    <div class="my-6 flex">
+                        <div class="w-1/5">
+                            <span class="text-xs text-primary">2015 - 2018</span>
+                        </div>
+                        <div class="w-4/5">
+                            <div class="flex flex-col">
+                                <span class="text-md text-gray-100 uppercase">PRIME UNIVERSITY | BSc in CSE</span>
+                                <span class="text-xs text-primary text-gray-500">CGPA: 3.52 Out of 4</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="my-6 flex">
+                        <div class="w-1/5">
+                            <span class="text-xs text-primary">2013 - 2014</span>
+                        </div>
+                        <div class="w-4/5">
+                            <div class="flex flex-col">
+                                <span class="text-md text-gray-100 uppercase">GOVT. AKBAR ALI COLLEGE | HSC</span>
+                                <span class="text-xs text-primary text-gray-500">CGPA: 4.20 Out of 5</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="my-6 flex">
+                        <div class="w-1/5">
+                            <span class="text-xs text-primary">2011 - 2012</span>
+                        </div>
+                        <div class="w-4/5">
+                            <div class="flex flex-col">
+                                <span class="text-md text-gray-100 uppercase">FALIA HIGH SCHOOL | SSC</span>
+                                <span class="text-xs text-primary text-gray-500">CGPA: 4.69 Out of 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 mt-20 lg:mt-0">
+                <div class="flex">
+                    <div class="w-1/5">
+                        <span class="text-2xl text-gray-50">LANGUAGE</span>
+                    </div>
+                    <div class="w-4/5">
+                        <!-- <span class="text-xs text-gray-500">Awards make my projects become valuable</span> -->
+                    </div>
+                </div>
+    
+                <div class="my-5 flex">
+                    <div class="">
+                        <h1>
+                            <span class="text-xs text-primary font-semibold">Bangla</span>
+                            <span class="px-2 text-gray-500">-</span>
+                            <span class="text-xs text-gray-400">Native Proficiency</span>
+                        </h1>
+                        <h1>
+                            <span class="text-xs text-primary font-semibold">English</span>
+                            <span class="px-2 text-gray-500">-</span>
+                            <span class="text-xs text-gray-400">Professional Working Proficiency</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="px-8 lg:px-20 bg-background">
+        <div class="py-32 ">
+            <div class="flex">
+                <span class="text-2xl text-gray-50 uppercase">My Expertise</span>
+            </div>
+            <div class="flex flex-wrap justify-between my-12">
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg" alt="Flutter">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Flutter</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://www.php.net/images/logos/new-php-logo.svg" alt="php">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">PHP</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://nodejs.org/static/images/logo.svg" alt="nodejs">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">NODE JS</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://laravel.com/img/logomark.min.svg" alt="laravel">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Laravel</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="react">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">react</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/311px-Nextjs-logo.svg.png" alt="Next Js">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Next Js</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558" alt="Vue Js">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Vue Js</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://cdn.hackersandslackers.com/2020/05/nosql.png" alt="NoSQL">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500">NoSQL</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">SQL</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="h-full" src="https://cdn.worldvectorlogo.com/logos/lumen-1.svg" alt="Lumen">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Lumen</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/900px-Tailwind_CSS_Logo.svg.png?20211001194333" alt="Tailwind CSS">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Tailwind CSS</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="Bootstrap">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Bootstrap</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png" alt="Redis">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Redis</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://www.nginx.com/wp-content/uploads/2020/05/NGINX-product-icon.svg" alt="Nginx">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Nginx</h1>
+                </div>
+                <div class="py-3 flex flex-col justify-center items-center group">
+                    <div class="w-40 h-48 flex items-center justify-center bg-background-light rounded-lg group-hover:shadow-lg p-5 group-hover:translate-y-2 transform transition duration-500">
+                        <img class="" src="https://cdn-icons-png.flaticon.com/512/25/25719.png" alt="Linux">
+                    </div>
+                    <h1 class="mt-4 text-gray-500 group-hover:text-gray-50 transition duration-500 uppercase">Linux</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="px-8 lg:px-20 bg-background">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 py-12">
+            <div class="">
+                <h1 class="text-2xl text-gray-50">Let's make something amaizing together.</h1>
+                <h1 class="my-8 text-xl text-gray-50">Start by <span class="text-primary underline">saying hi</span></h1>
+            </div>
+            <div class="">
+                <h1 class="text-xs text-gray-500">Information</h1>
+                <h1 class="mt-4 text- text-gray-500">Mirpur-1, Dhaka-1216, Bangladesh</h1>
+                <h1 class="mt- text-xl text-gray-50">sabuj0338@gmail.com</h1>
+
+                <div class="mt-12">
+                    <ul class="flex flex-col justify-start">
+                        <li class="w-1/3">
+                            <a href="#" class="transition ease-in-out delay-100 text-primary font-semibold text-xs nav-link group">
+                                <span class="group-hover:inline mr-1"><</span>Service<span class="group-hover:inline ml-1">></span>
+                            </a>
+                        </li>
+                        <li class="w-1/3">
+                            <a href="#" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold text-xs nav-link group">
+                                <span class="group-hover:inline hidden mr-1"><</span>Contact<span class="group-hover:inline hidden ml-1">></span>
+                            </a>
+                        </li>
+                        <li class="w-1/3">
+                            <a href="#" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold text-xs nav-link group">
+                                <span class="group-hover:inline hidden mr-1"><</span>About<span class="group-hover:inline hidden ml-1">></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex flex-wrap justify-between items-center py-5">
+            <div class="flex items-center justify-between space-x-4 py-2">
+                <h1 class="uppercase text-gray-400"><span class="text-gray-50">Sabuj</span> Islam</h1>
+                <span class="text-xs text-gray-500">2022. All Rights Reserved</span>
+            </div>
             <div class="py-3">
-              <h3 class="p-0 m-0"> <b>MESSAGE ME</b> </h3>
-              <p class="p-0 m-0">If you have question or anything want to, please send me a email to <strong>sabuj0338@gmail.com</strong></p>
+                <ul class="flex space-x-4 justify-end items-center">
+                    <li>
+                        <a href="https://www.facebook.com/sabuj0338" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold nav-link flex space-x-2 group">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sabuj0338" class="transition ease-in-out delay-100 text-gray-50 hover:text-primary font-semibold nav-link flex space-x-2 group">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </div> -->
-            </div>
-        </div>
-    </section><!-- Contact section end -->
-
-    <!-- Footer section start -->
-    <footer>
-        <div class="w3-container py-4 w3-center w3-black">
-            <h5>Copyright &copy 2019 SABUJ ISLAM. All rights reserved.</h5>
-        </div>
-    </footer><!-- Footer section end -->
-
-    <!-- all JavaScript files links -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/my.js"></script>
-
+        </nav>
+    </footer>
 </body>
-
 </html>

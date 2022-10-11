@@ -21,6 +21,9 @@ module.exports = {
                 'bubble-gum': '#ff77e9',
                 'bermuda': '#78dcca',
             },
+            animation: {
+                'spin-slow': 'spin 30s linear infinite',
+            }
         },
         fontFamily: {
             'sans': ['Roboto Mono'],
