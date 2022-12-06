@@ -5,5 +5,19 @@
 		"message": null,
 		"domain": "https://api.peacetime.xyz",
 		"ads_network": "applovin"
+	},
+	"wordle": {
+		"version": "1.0.0",
+		"status": true,
+		"message": null,
+		"domain": "https://api.peacetime.xyz",
+		"ads_network": "applovin"
+	},
+	"tic_tac_toe": {
+		"version": "1.0.0",
+		"status": true,
+		"message": null,
+		"domain": "https://api.peacetime.xyz",
+		"ads_network": "applovin"
 	}
 }
