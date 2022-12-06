@@ -6,14 +6,21 @@
 		"domain": "https://api.peacetime.xyz",
 		"ads_network": "applovin"
 	},
-	"wordle": {
+	"com.fivepeacetime.kopacopy_diamond_topup": {
 		"version": "1.0.0",
 		"status": true,
 		"message": null,
 		"domain": "https://api.peacetime.xyz",
 		"ads_network": "applovin"
 	},
-	"tic_tac_toe": {
+	"com.fivepeacetime.wordle": {
+		"version": "1.0.0",
+		"status": true,
+		"message": null,
+		"domain": "https://api.peacetime.xyz",
+		"ads_network": "applovin"
+	},
+	"com.fivepeacetime.tic_tac_toe": {
 		"version": "1.0.0",
 		"status": true,
 		"message": null,
