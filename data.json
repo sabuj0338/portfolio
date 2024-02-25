@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "title": "",
+      "short_description": "",
+      "image": "",
+      "skill_icons": [],
+      "live_url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Flutter",
+      "icon_url": ""
+    }
+  ]
+}
