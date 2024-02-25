@@ -9,7 +9,7 @@ module.exports = {
             colors: {
                 transparent: 'transparent',
                 current: 'currentColor',
-                'primary': '#6ef3a4',
+                'primary': '#0dcb8a',// '#6ef3a4',
                 'background-light': '#2d2e32',
                 'background': '#25262a',
                 'white': '#ffffff',
@@ -33,9 +33,9 @@ module.exports = {
                 }
             }
         },
-        fontFamily: {
-            'sans': ['Roboto Mono'],
-            'roboto': ['Roboto Mono'],
-        }
+        // fontFamily: {
+        //     'sans': ['Roboto Mono'],
+        //     'roboto': ['Roboto Mono'],
+        // }
     },
 }
