@@ -274,8 +274,8 @@ export default function App() {
             <div className="w-full md:w-1/2 hidden md:block">
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  className="w-60 h-96 object-cover rounded-full border-b-4 border-t-8 border-double border-green-500"
-                  src="sabuj0338.webp"
+                  className="w-52 h-full object-cover bg-white rounded-full border-b-4 border-t-8 border-double border-green-500"
+                  src="sabuj0338_2.webp"
                   alt="sabuj islam"
                 />
               </div>
