@@ -949,7 +949,6 @@ export default function App() {
 
       <hr className="border-1 border-gray-900 my-12" />
 
-      {/* <!-- contact section --> */}
       <footer id="contact" className="container mx-auto py-10">
         <div className="flex gap-3 justify-center">
           <svg
