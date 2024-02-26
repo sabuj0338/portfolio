@@ -1,5 +1,6 @@
 import About from "./about";
 import AppBar from "./appbar";
+import Companies from "./companies";
 import Footer from "./footer";
 import Projects from "./projects";
 import Service from "./service";
@@ -18,6 +19,11 @@ export default function HomePage() {
 
         {/* <!-- service section --> */}
         <Service />
+
+        <hr className="border-1 border-gray-900 my-12" />
+
+        {/* <!-- companies section --> */}
+        <Companies />
 
         <hr className="border-1 border-gray-900 my-12" />
 

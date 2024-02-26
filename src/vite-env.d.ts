@@ -3,7 +3,7 @@
 interface IProject {
   title: string;
   short_description: string;
-  image: string;
+  images: string[];
   technologies: string[];
   live_url: string;
   type: string;
@@ -15,7 +15,14 @@ interface ISkill {
   type: string;
 }
 
+interface ICompany {
+  name: string;
+  link: string;
+  image: string;
+}
+
 interface IDataResponse {
   projects: IProject[],
   skills: ISkill[],
+  companies: ICompany[],
 }

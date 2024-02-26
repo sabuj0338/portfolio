@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
+import PhotoGallerySlider from "../../components/photo-gallery-slider";
 import getData from "../../utils/getData";
 
 export default function Projects() {
@@ -53,13 +54,15 @@ export default function Projects() {
         </button>
       </div>
 
-      {query.isLoading && (<div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {Array(4)
-          .fill(1)
-          .map((project: IProject, index: number) => (
-            <ProjectCard key={`${project?.type}${index}`} />
-          ))}
-      </div>)}
+      {query.isLoading && (
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {Array(4)
+            .fill(1)
+            .map((project: IProject, index: number) => (
+              <ProjectCard key={`${project?.type}${index}`} />
+            ))}
+        </div>
+      )}
 
       <div
         style={{ display: tab == "frontend" ? "" : "none" }}
@@ -105,7 +108,18 @@ interface IProductCard {
 export function ProjectCard({ project }: IProductCard) {
   return project ? (
     <div className="bg-slate-500 hover:bg-[#171819] bg-opacity-10 hover:bg-opacity-100 cursor-pointer hover:shadow rounded">
-      <img className="aspect-[16/9] rounded-t" src={project?.image} alt="" loading="lazy" />
+      {/* <PhotoGallerySlider arrow={project?.images?.length > 1}> */}
+      <PhotoGallerySlider>
+        {project?.images?.map((image) => (
+          <img
+            key={image}
+            className="aspect-[16/9] rounded-t"
+            src={image}
+            alt=""
+            loading="lazy"
+          />
+        ))}
+      </PhotoGallerySlider>
 
       <div className="p-5">
         <h2 className="uppercase text-sm">{project?.title}</h2>

@@ -34,3 +34,7 @@ body {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #0dcb8a !important;
+}
