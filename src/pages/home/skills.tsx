@@ -33,7 +33,7 @@ export function SkillCard({ skill }: ISkillCard) {
   return (
     <div className="w-40 h-40 flex flex-col items-center justify-center bg-[#171819] hover:bg-primary hover:bg-opacity-20 hover:shadow-lg p-5 rounded">
       <img className="w-auto h-16" src={skill?.icon_url} alt={skill?.name} />
-      <p className="mt-2 text-sm">{skill?.name}</p>
+      <p className="mt-3 text-sm text-gray-400">{skill?.name}</p>
     </div>
   );
 }

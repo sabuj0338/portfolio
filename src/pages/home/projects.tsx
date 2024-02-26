@@ -42,12 +42,12 @@ export function ProjectCard({ project }: IProductCard) {
         <p className="mt-1 text-xs text-gray-500 line-clamp-2">
           {project?.short_description}
         </p>
-        <div className="mt-5 w-full flex items-center gap-3">
+        <div className="mt-5 w-full flex gap-3">
           <div className="w-full flex flex-wrap items-center gap-x-2 gap-y-1">
             {project?.technologies?.map((tech) => (
               <div
                 key={tech?.toString()?.replace(" ", "_")}
-                className="rounded-sm px-1 py-0.5 bg-slate-500 bg-opacity-30 text-[8px]"
+                className="rounded-sm px-1 py-0.5 bg-slate-500 bg-opacity-30 text-gray-400 text-[9px]"
               >
                 {tech}
               </div>
