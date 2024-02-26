@@ -13,7 +13,7 @@ export default function About() {
         <div className="w-full md:w-1/2">
           <div className="mt-5 flex items-center gap-2 ">
             <h3 className="text-white text-3xl font-bold">Hi, I'm Sabuj</h3>
-            <WaveHandIcon/>
+            <WaveHandIcon />
           </div>
           <div className="mt-2">
             <h4 className="text-3xl text-gray-400">
@@ -34,32 +34,32 @@ export default function About() {
                 href="https://github.com/sabuj0338"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
               >
-                <GithubIcon className="w-6 h-6 text-primary"/>
+                <GithubIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="https://www.linkedin.com/in/sabuj0338/"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
               >
-                <LinkedinIcon className="w-6 h-6 text-primary"/>
+                <LinkedinIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="https://www.facebook.com/sabuj0338"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
               >
-                <FacebookIcon className="w-6 h-6 text-primary"/>
+                <FacebookIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="mailto: sabuj0338@gmail.com"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
               >
-                <EmailIcon className="w-6 h-6 text-primary"/>
+                <EmailIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="resume.pdf"
                 className="px-4 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm border border-gray-800 hover:border-primary hover:text-primary group"
               >
                 <span>Resume</span>
-                <ArrowMoveRightIcon/>
+                <ArrowMoveRightIcon />
               </a>
             </div>
           </div>
@@ -84,12 +84,15 @@ export default function About() {
           </div>
         </div>
         <div className="w-full md:w-1/2 hidden md:block">
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className="w-52 h-full object-cover bg-white rounded-full border-b-4 border-t-8 border-double border-green-500"
-              src="sabuj0338_2.webp"
-              alt="sabuj islam"
-            />
+          <div className="flex items-center justify-center">
+            <div className="w-52 h-full rounded-full flex items-center justify-center border-b-8 border-x-2 border-t-4 border-dashed border-green-500">
+              <img
+                className="w-52 h-full object-cover bg-white rounded-full"
+                src="sabuj0338_2.webp"
+                alt="sabuj islam"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>

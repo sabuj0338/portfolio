@@ -8,6 +8,9 @@ export default {
         current: "currentColor",
         primary: "#0dcb8a", // '#6ef3a4',
       },
+      animation: {
+        "spin-slow": "spin 30s linear infinite",
+      },
     },
   },
   plugins: [],
