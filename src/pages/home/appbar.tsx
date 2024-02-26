@@ -3,7 +3,7 @@ import WhatsAppIcon from "../../icons/whatsapp-icon";
 
 export default function AppBar() {
   return (
-    <nav className="sticky top-0 bg-[#0e0e0e]">
+    <nav className="sticky top-0 bg-[#0e0e0e] z-30">
       <div className="container mx-auto px-5">
         <div className="flex items-center justify-between py-5">
           <div className="">
