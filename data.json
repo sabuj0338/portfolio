@@ -5,91 +5,116 @@
       "title": "QCOOM-ECOMMERCE",
       "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
       "technologies": ["Tailwind", "Antd", "Next JS", "Tenstack React Query", "React Hook Form", "React Slick"],
-      "live_url": "https://qcoom.com"
+      "live_url": "https://qcoom.com",
+      "type": "frontend"
     },
     {
       "image": "https://radwananik.com/jmr/qdmin-qcoom.png",
       "title": "QCOOM: ADMIN",
       "short_description": "Admin panel where manages all qcoom services like qcoom.com, qfood.com.bd, pickmeexpress.com and more",
       "technologies": ["Tailwind", "Antd", "React JS", "Tenstack React Query", "React Hook Form", "React Slick"],
-      "live_url": "https://admin.qcoom.com"
+      "live_url": "https://admin.qcoom.com",
+      "type": "frontend"
     },
     {
       "image": "https://radwananik.com/jmr/qfood.png",
       "title": "QFOOD: FOOD & GROCERIES",
       "short_description": "Food delivery system using millions of users in Dhaka",
       "technologies": ["Tailwind", "Next JS", "Tenstack React Query", "React Hook Form"],
-      "live_url": "https://qcoom.com.bd"
+      "live_url": "https://qcoom.com.bd",
+      "type": "frontend"
     }
   ],
   "skills": [
     {
       "name": "Flutter",
-      "icon_url": "https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg"
+      "icon_url": "https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg",
+      "type": "tech"
     },
     {
       "name": "PHP",
-      "icon_url": "https://www.php.net/images/logos/new-php-logo.svg"
+      "icon_url": "https://www.php.net/images/logos/new-php-logo.svg",
+      "type": "tech"
     },
     {
       "name": "Laravel",
-      "icon_url": "https://laravel.com/img/logomark.min.svg"
+      "icon_url": "https://laravel.com/img/logomark.min.svg",
+      "type": "tech"
     },
     {
       "name": "Lumen",
-      "icon_url": "https://cdn.worldvectorlogo.com/logos/lumen-1.svg"
+      "icon_url": "https://cdn.worldvectorlogo.com/logos/lumen-1.svg",
+      "type": "tech"
     },
     {
       "name": "Node JS",
-      "icon_url": "https://nodejs.org/static/images/logo.svg"
+      "icon_url": "https://nodejs.org/static/images/logo.svg",
+      "type": "tech"
     },
     {
       "name": "Nest JS",
-      "icon_url": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg"
+      "icon_url": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg",
+      "type": "tech"
     },
     {
       "name": "React JS",
-      "icon_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+      "icon_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      "type": "tech"
     },
     {
       "name": "Next JS",
-      "icon_url": "https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png"
+      "icon_url": "https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png",
+      "type": "tech"
     },
     {
       "name": "Vue JS",
-      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558"
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558",
+      "type": "tech"
     },
     {
       "name": "MongoDB",
-      "icon_url": "https://cdn.hackersandslackers.com/2020/05/nosql.png"
+      "icon_url": "https://cdn.hackersandslackers.com/2020/05/nosql.png",
+      "type": "tech"
     },
     {
       "name": "SQL",
-      "icon_url": "https://cdn-icons-png.flaticon.com/512/2772/2772128.png"
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/2772/2772128.png",
+      "type": "tech"
     },
     {
       "name": "MUI",
-      "icon_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 32' fill='none' class='css-1170n61'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M30.343 21.976a1 1 0 00.502-.864l.018-5.787a1 1 0 01.502-.864l3.137-1.802a1 1 0 011.498.867v10.521a1 1 0 01-.502.867l-11.839 6.8a1 1 0 01-.994.001l-9.291-5.314a1 1 0 01-.504-.868v-5.305c0-.006.007-.01.013-.007.005.003.012 0 .012-.007v-.006c0-.004.002-.008.006-.01l7.652-4.396c.007-.004.004-.015-.004-.015a.008.008 0 01-.008-.008l.015-5.201a1 1 0 00-1.5-.87l-5.687 3.277a1 1 0 01-.998 0L6.666 9.7a1 1 0 00-1.499.866v9.4a1 1 0 01-1.496.869l-3.166-1.81a1 1 0 01-.504-.87l.028-16.43A1 1 0 011.527.86l10.845 6.229a1 1 0 00.996 0L24.21.86a1 1 0 011.498.868v16.434a1 1 0 01-.501.867l-5.678 3.27a1 1 0 00.004 1.735l3.132 1.783a1 1 0 00.993-.002l6.685-3.839zM31 7.234a1 1 0 001.514.857l3-1.8A1 1 0 0036 5.434V1.766A1 1 0 0034.486.91l-3 1.8a1 1 0 00-.486.857v3.668z' fill='%23007FFF'%3E%3C/path%3E%3C/svg%3E"
+      "icon_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 32' fill='none' class='css-1170n61'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M30.343 21.976a1 1 0 00.502-.864l.018-5.787a1 1 0 01.502-.864l3.137-1.802a1 1 0 011.498.867v10.521a1 1 0 01-.502.867l-11.839 6.8a1 1 0 01-.994.001l-9.291-5.314a1 1 0 01-.504-.868v-5.305c0-.006.007-.01.013-.007.005.003.012 0 .012-.007v-.006c0-.004.002-.008.006-.01l7.652-4.396c.007-.004.004-.015-.004-.015a.008.008 0 01-.008-.008l.015-5.201a1 1 0 00-1.5-.87l-5.687 3.277a1 1 0 01-.998 0L6.666 9.7a1 1 0 00-1.499.866v9.4a1 1 0 01-1.496.869l-3.166-1.81a1 1 0 01-.504-.87l.028-16.43A1 1 0 011.527.86l10.845 6.229a1 1 0 00.996 0L24.21.86a1 1 0 011.498.868v16.434a1 1 0 01-.501.867l-5.678 3.27a1 1 0 00.004 1.735l3.132 1.783a1 1 0 00.993-.002l6.685-3.839zM31 7.234a1 1 0 001.514.857l3-1.8A1 1 0 0036 5.434V1.766A1 1 0 0034.486.91l-3 1.8a1 1 0 00-.486.857v3.668z' fill='%23007FFF'%3E%3C/path%3E%3C/svg%3E",
+      "type": "tech"
+    },
+    {
+      "name": "Ant Design",
+      "icon_url": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      "type": "tech"
     },
     {
       "name": "Tailwind",
-      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/900px-Tailwind_CSS_Logo.svg.png?20211001194333"
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/900px-Tailwind_CSS_Logo.svg.png?20211001194333",
+      "type": "tech"
     },
     {
       "name": "Bootstrap",
-      "icon_url": "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+      "icon_url": "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
+      "type": "tech"
     },
     {
       "name": "Redis",
-      "icon_url": "https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png"
+      "icon_url": "https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png",
+      "type": "tech"
     },
     {
       "name": "Linux",
-      "icon_url": "https://cdn-icons-png.flaticon.com/512/25/25719.png"
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/25/25719.png",
+      "type": "tech"
     },
     {
       "name": "Docker",
-      "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png"
+      "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png",
+      "type": "tech"
     }
   ]
 }
