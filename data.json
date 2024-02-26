@@ -32,14 +32,6 @@
       "icon_url": "https://www.php.net/images/logos/new-php-logo.svg"
     },
     {
-      "name": "Node JS",
-      "icon_url": "https://nodejs.org/static/images/logo.svg"
-    },
-    {
-      "name": "Nest JS",
-      "icon_url": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg"
-    },
-    {
       "name": "Laravel",
       "icon_url": "https://laravel.com/img/logomark.min.svg"
     },
@@ -48,12 +40,20 @@
       "icon_url": "https://cdn.worldvectorlogo.com/logos/lumen-1.svg"
     },
     {
+      "name": "Node JS",
+      "icon_url": "https://nodejs.org/static/images/logo.svg"
+    },
+    {
+      "name": "Nest JS",
+      "icon_url": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg"
+    },
+    {
       "name": "React JS",
       "icon_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
     },
     {
       "name": "Next JS",
-      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/311px-Nextjs-logo.svg.png"
+      "icon_url": "https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png"
     },
     {
       "name": "Vue JS",
