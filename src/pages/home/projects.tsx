@@ -1,7 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 import getData from "../../utils/getData";
 
 export default function Projects() {
+  const [tab, setTab] = useState<"frontend" | "backend" | "app">("frontend");
+
   const query = useQuery({
     queryKey: ["data"],
     queryFn: getData,
@@ -17,12 +20,79 @@ export default function Projects() {
       </div>
 
       <br />
+      <div className="flex gap-5">
+        <button
+          onClick={() => setTab("frontend")}
+          className={
+            tab == "frontend"
+              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
+              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
+          }
+        >
+          Frontend
+        </button>
+        <button
+          onClick={() => setTab("backend")}
+          className={
+            tab == "backend"
+              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
+              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
+          }
+        >
+          Backend
+        </button>
+        <button
+          onClick={() => setTab("app")}
+          className={
+            tab == "app"
+              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
+              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
+          }
+        >
+          App
+        </button>
+      </div>
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {query.data &&
-          query.data?.projects?.map((project: IProject, index: number) => (
-            <ProjectCard key={index} project={project} />
+      {query.isLoading && (<div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {Array(4)
+          .fill(1)
+          .map((project: IProject, index: number) => (
+            <ProjectCard key={`${project?.type}${index}`} />
           ))}
+      </div>)}
+
+      <div
+        style={{ display: tab == "frontend" ? "" : "none" }}
+        className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        {query.data &&
+          query.data?.projects
+            ?.filter((it) => it?.type == "frontend")
+            ?.map((project: IProject, index: number) => (
+              <ProjectCard key={`${project?.type}${index}`} project={project} />
+            ))}
+      </div>
+      <div
+        style={{ display: tab == "backend" ? "" : "none" }}
+        className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        {query.data &&
+          query.data?.projects
+            ?.filter((it) => it?.type == "backend")
+            ?.map((project: IProject, index: number) => (
+              <ProjectCard key={`${project?.type}${index}`} project={project} />
+            ))}
+      </div>
+      <div
+        style={{ display: tab == "app" ? "" : "none" }}
+        className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        {query.data &&
+          query.data?.projects
+            ?.filter((it) => it?.type == "app")
+            ?.map((project: IProject, index: number) => (
+              <ProjectCard key={`${project?.type}${index}`} project={project} />
+            ))}
       </div>
     </section>
   );
@@ -33,9 +103,9 @@ interface IProductCard {
 }
 
 export function ProjectCard({ project }: IProductCard) {
-  return (
+  return project ? (
     <div className="bg-slate-500 hover:bg-[#171819] bg-opacity-10 hover:bg-opacity-100 cursor-pointer hover:shadow rounded">
-      <img className="aspect-[16/9] rounded-t" src={project?.image} alt="" />
+      <img className="aspect-[16/9] rounded-t" src={project?.image} alt="" loading="lazy" />
 
       <div className="p-5">
         <h2 className="uppercase text-sm">{project?.title}</h2>
@@ -56,6 +126,7 @@ export function ProjectCard({ project }: IProductCard) {
           <div className="">
             <a
               href={project?.live_url ?? "#"}
+              target="blank"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-500 bg-opacity-30 hover:bg-opacity-20 hover:shadow-md"
             >
               <svg
@@ -70,6 +141,42 @@ export function ProjectCard({ project }: IProductCard) {
                 <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
               </svg>
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div className="animate-pulse bg-slate-500 bg-opacity-10 rounded">
+      <div className="rounded-t bg-slate-500 bg-opacity-30 aspect-[16/9] w-full"></div>
+      <div className="p-5">
+        <div className="flex gap-3">
+          <div className="rounded-full bg-slate-500 bg-opacity-30 h-2 w-full"></div>
+          <div className="rounded-full bg-slate-500 bg-opacity-30 h-2 w-32"></div>
+        </div>
+        <div className="flex gap-3 mt-1">
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-full"></div>
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-16"></div>
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-16"></div>
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-32"></div>
+        </div>
+        <div className="flex gap-3">
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-16"></div>
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-full"></div>
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-32"></div>
+          <div className="mt-2 rounded-full bg-slate-500 bg-opacity-30 h-1.5 w-16"></div>
+        </div>
+        <br />
+        <div className="flex">
+          <div className="flex flex-wrap gap-x-3 gap-y-1.5">
+            <div className="rounded-sm bg-slate-500 bg-opacity-30 h-4 w-16"></div>
+            <div className="rounded-sm bg-slate-500 bg-opacity-30 h-4 w-12"></div>
+            <div className="rounded-sm bg-slate-500 bg-opacity-30 h-4 w-8"></div>
+            <div className="rounded-sm bg-slate-500 bg-opacity-30 h-4 w-14"></div>
+            <div className="rounded-sm bg-slate-500 bg-opacity-30 h-4 w-14"></div>
+            <div className="rounded-sm bg-slate-500 bg-opacity-30 h-4 w-16"></div>
+          </div>
+          <div className="">
+            <div className="rounded-full bg-slate-500 bg-opacity-30 h-8 w-8"></div>
           </div>
         </div>
       </div>
