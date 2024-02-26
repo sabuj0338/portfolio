@@ -6,7 +6,7 @@ import LogoIcon from "../../icons/logo-icon";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="container mx-auto py-10">
+    <footer className="container mx-auto py-10">
         <div className="flex gap-3 justify-center">
           <LogoIcon/>
           <span className="uppercase text-white text-2xl font-bold">

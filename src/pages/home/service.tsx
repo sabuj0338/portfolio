@@ -5,7 +5,7 @@ import WebIcon from "../../icons/web-icon";
 
 export default function Service() {
   return (
-    <section id="services" className="py-10">
+    <section className="py-10">
       <div className="">
         <p className="uppercase text-primary text-sm">Services</p>
         <h2 className="font-extrabold text-5xl">What I Do</h2>

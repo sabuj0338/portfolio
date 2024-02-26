@@ -7,7 +7,7 @@ import WaveHandIcon from "../../icons/wave-hand-icon";
 
 export default function About() {
   return (
-    <section id="about" className="py-0 sm:py-10 mt-0 sm:mt-4">
+    <section className="py-0 sm:py-10 mt-0 sm:mt-4">
       <br />
       <div className="w-full flex flex-wrap">
         <div className="w-full md:w-1/2">

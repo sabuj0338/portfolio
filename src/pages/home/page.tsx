@@ -11,11 +11,11 @@ export default function HomePage() {
     <>
       <AppBar />
 
-      <main className="container mx-auto px-5">
+      <main id="about" className="container mx-auto px-5">
         {/* <!-- about section --> */}
         <About />
 
-        <hr className="border-1 border-gray-900 my-12" />
+        <hr id="services" className="border-1 border-gray-900 my-12" />
 
         {/* <!-- service section --> */}
         <Service />
@@ -25,18 +25,18 @@ export default function HomePage() {
         {/* <!-- companies section --> */}
         <Companies />
 
-        <hr className="border-1 border-gray-900 my-12" />
+        <hr id="projects" className="border-1 border-gray-900 my-12" />
 
         {/* <!-- projects section --> */}
         <Projects />
 
-        <hr className="border-1 border-gray-900 my-12" />
+        <hr id="skills" className="border-1 border-gray-900 my-12" />
 
         {/* <!-- skills section --> */}
         <Skills />
       </main>
 
-      <hr className="border-1 border-gray-900 my-12" />
+      <hr id="contact" className="border-1 border-gray-900 my-12" />
 
       <Footer/>
 

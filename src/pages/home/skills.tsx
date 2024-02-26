@@ -11,7 +11,7 @@ export default function Skills() {
   });
 
   return (
-    <section id="skills" className="py-10">
+    <section className="py-10">
       <div className="">
         <p className="uppercase text-primary text-sm">Skills</p>
       </div>

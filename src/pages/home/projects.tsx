@@ -12,7 +12,7 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" className="py-10">
+    <section className="py-10">
       <div className="">
         <p className="uppercase text-primary text-sm">Projects</p>
         <h2 className="text-gray-200 italic text-xs">
