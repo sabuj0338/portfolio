@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "image": "https://radwananik.com/jmr/qcoom.png",
+      "images": ["https://radwananik.com/jmr/qcoom.png", "images/qcoom.png"],
       "title": "QCOOM-ECOMMERCE",
       "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
       "technologies": ["Tailwind", "Antd", "Next JS", "Tenstack React Query", "React Hook Form", "React Slick"],
@@ -9,7 +9,7 @@
       "type": "frontend"
     },
     {
-      "image": "https://radwananik.com/jmr/qdmin-qcoom.png",
+      "images": ["https://radwananik.com/jmr/qdmin-qcoom.png"],
       "title": "QCOOM: ADMIN",
       "short_description": "Admin panel where manages all qcoom services like qcoom.com, qfood.com.bd, pickmeexpress.com and more",
       "technologies": ["Tailwind", "Antd", "React JS", "Tenstack React Query", "React Hook Form", "React Slick"],
@@ -17,7 +17,7 @@
       "type": "frontend"
     },
     {
-      "image": "https://radwananik.com/jmr/qfood.png",
+      "images": ["https://radwananik.com/jmr/qfood.png", "images/qfood.png"],
       "title": "QFOOD: FOOD & GROCERIES",
       "short_description": "Food delivery system using millions of users in Dhaka",
       "technologies": ["Tailwind", "Next JS", "Tenstack React Query", "React Hook Form"],
@@ -115,6 +115,38 @@
       "name": "Docker",
       "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png",
       "type": "tech"
+    }
+  ],
+  "companies": [
+    {
+      "name": "QFood",
+      "link": "https://qfood.com.bd",
+      "image": "https://qfood.com.bd/_next/static/media/logo.45d10dc6.svg"
+    },
+    {
+      "name": "QCoom",
+      "link": "https://qcoom.com",
+      "image": "https://qcoom.com/logo.svg"
+    },
+    {
+      "name": "Cosmos Group",
+      "link": "https://cosmosgroup.com.bd/",
+      "image": "images/cosmos-group.png"
+    },
+    {
+      "name": "UNB",
+      "link": "https://unb.com.bd/",
+      "image": "https://unb.com.bd/v2/images/logo/unb-logo.png"
+    },
+    {
+      "name": "e-Cab",
+      "link": "https://e-cab.net/",
+      "image": "https://e-cab.net/public/web/img/logo.png"
+    },
+    {
+      "name": "Future Sky Limited",
+      "link": "https://www.facebook.com/FutureSkyLtd",
+      "image": "images/futureskty-logo.png"
     }
   ]
 }
