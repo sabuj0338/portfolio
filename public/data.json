@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "images": ["images/bvideo.png"],
+      "images": ["images/bvideo.webp"],
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
       "technologies": ["Tailwind", "MUI", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL"],
@@ -9,7 +9,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/bvideo.png"],
+      "images": ["images/bvideo.webp"],
       "title": "bVideo",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
       "technologies": ["Tailwind", "MUI", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL"],
@@ -17,7 +17,7 @@
       "type": "backend"
     },
     {
-      "images": ["images/unb.png"],
+      "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
       "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO"],
@@ -25,7 +25,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/unb.png"],
+      "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
       "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO"],
@@ -41,7 +41,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/qfood.png"],
+      "images": ["images/qfood.webp"],
       "title": "QFOOD: FOOD & GROCERIES",
       "short_description": "Food delivery service like foodpanda using millions of users in Dhaka",
       "technologies": ["Tailwind", "Next JS", "Mapbox" , "React Query", "React Hook Form", "JWT", "TypeScript"],
@@ -49,7 +49,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/qcoom.png"],
+      "images": ["images/qcoom.webp"],
       "title": "QCOOM-ECOMMERCE",
       "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
       "technologies": ["Tailwind", "Antd", "Next JS", "React Query", "React Slick", "JWT", "TypeScript"],
@@ -74,7 +74,7 @@
       "type": "backend"
     },
     {
-      "images": ["images/piickme.png"],
+      "images": ["images/piickme.webp"],
       "title": "PIICKME EXPRESS",
       "short_description": "Piickme is an A-Z solution for e-commerce retailers and merchants that provides warehousing, storage, pick & pack, and delivery services across Bangladesh.",
       "technologies": ["Tailwind", "React JS", "JWT", "TypeScript"],
@@ -82,7 +82,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/qdmin-qcoom.png"],
+      "images": ["images/qdmin-qcoom.webp"],
       "title": "QCOOM: ADMIN",
       "short_description": "Admin panel for qcoom ecommerce. Manages all actions for qcomm ecommerce",
       "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript"],
@@ -90,7 +90,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/qfood-admin.png"],
+      "images": ["images/qfood-admin.webp"],
       "title": "QFOOD: ADMIN",
       "short_description": "Food delivery system admin panel where manages all orders, activities, analytics and more.",
       "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript"],
@@ -98,7 +98,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/piickme-admin.png"],
+      "images": ["images/piickme-admin.webp"],
       "title": "PIICKME: ADMIN",
       "short_description": "A centralized dashboard for an overview of system activities, analytics, and key performance indicators",
       "technologies": ["Tailwind", "Antd", "React JS", "React Query", "Chart JS", "JWT", "TypeScript"],
@@ -106,7 +106,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/piickme-merchant.png"],
+      "images": ["images/piickme-merchant.webp"],
       "title": "PIICKME: MERCHANT",
       "short_description": "Merchant panel for a delivery service is a dedicated interface designed for businesses and vendors participating in the delivery service.",
       "technologies": ["Tailwind", "Antd", "React JS", "TypeScript"],
@@ -114,7 +114,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/dc.png"],
+      "images": ["images/dc.webp"],
       "title": "Dhaka Courier",
       "short_description": "The Dhaka Courier is a Bangladeshi English-language news magazine. Founded in 1984, it is the longest running English current affairs magazine in the country. Its content is largely focused on politics, international affairs, economics, travel, literature, society and the arts.",
       "technologies": ["CSS", "Laravel", "jQuery"],
@@ -122,7 +122,7 @@
       "type": "frontend"
     },
     {
-      "images": ["images/dc.png"],
+      "images": ["images/dc.webp"],
       "title": "Dhaka Courier",
       "short_description": "The Dhaka Courier is a Bangladeshi English-language news magazine. Founded in 1984, it is the longest running English current affairs magazine in the country. Its content is largely focused on politics, international affairs, economics, travel, literature, society and the arts.",
       "technologies": ["CSS", "Laravel", "jQuery"],
@@ -130,7 +130,7 @@
       "type": "backend"
     },
     {
-      "images": ["images/wordle.png"],
+      "images": ["images/wordle.webp"],
       "title": "Wordie: Word Guess Game",
       "short_description": "Wordie a word guessing game.",
       "technologies": ["Tailwind", "React JS", "TypeScript"],
@@ -154,7 +154,7 @@
       "type": "app"
     },
     {
-      "images": ["images/peace-time.png", "images/auto_silent.webp"],
+      "images": ["images/peace-time.webp", "images/auto_silent.webp"],
       "title": "Auto Silent Schedular",
       "short_description": "We are always busy and so busy that we forget to turn our phone silent, at very important times and ringtone rings at important times, leaving us in an embarrassing situation.",
       "technologies": ["Flutter", "Provider"],
