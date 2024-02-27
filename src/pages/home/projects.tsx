@@ -111,13 +111,14 @@ export function ProjectCard({ project }: IProductCard) {
       {/* <PhotoGallerySlider arrow={project?.images?.length > 1}> */}
       <PhotoGallerySlider>
         {project?.images?.map((image) => (
-          <img
-            key={image}
-            className="aspect-[16/9] rounded-t"
-            src={image}
-            alt=""
-            loading="lazy"
-          />
+          <div key={image} style={{ backgroundImage: `url(${image})` }}>
+            <img
+              className={`aspect-[16/9] rounded-t object-contain backdrop-blur`}
+              src={image}
+              alt=""
+              loading="lazy"
+            />
+          </div>
         ))}
       </PhotoGallerySlider>
 

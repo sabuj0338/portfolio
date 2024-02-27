@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+Projects List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+qcoom
+<!-- 1. qcoom.com / frontend -->
+<!-- 2. qfood.com.bd / frontend -->
+<!-- 3. admin.qcoom.com / fontend -->
+<!-- 4. piickmeexpress.com / frontend -->
+<!-- 5. admin.piickmeexpress.com / frontend -->
+<!-- 6. lendenlive.com / frontend / ci/cd -->
+<!-- 7. qfood merchant / frontend / ci/cd -->
+<!-- 8. piickmeexpress merchant / frontend / ci/cd -->
 
-Currently, two official plugins are available:
+unb
+<!-- - unb.com.bd / frontend / backend api / ci/cd -->
+<!-- - dhakacourier.com / frontend / backend -->
+<!-- - wordie.unb.com.bd / frontend / backend / ci/cd -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- erp mohamaya / frontend / backend / ci/cd
+<!-- - smef / frontend / backend / android / ios -->
+<!-- - bvideo / frontend / backend -->
 
-## Expanding the ESLint configuration
+- bebsha.com / frontend / backend
+- laalsobuj.com / frontend / backend
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+udjapon
+- admin panel / frontend / backend / ci/cd
+- seller panel / frontend / backend / ci/cd
+- web / frontend / backend / ci/cd
+- backend api / backend / ci/cd
+- app / android / ios / backend / ci/cd
 
-- Configure the top-level `parserOptions` property like this:
+<!-- - peace time - android -->
+<!-- - guess the word - android -->
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<!-- - mui admin dashboard - frontend -->
