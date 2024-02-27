@@ -1,28 +1,173 @@
 {
   "projects": [
     {
-      "images": ["https://radwananik.com/jmr/qcoom.png", "images/qcoom.png"],
-      "title": "QCOOM-ECOMMERCE",
-      "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
-      "technologies": ["Tailwind", "Antd", "Next JS", "Tenstack React Query", "React Hook Form", "React Slick"],
-      "live_url": "https://qcoom.com",
+      "images": ["images/bvideo.png"],
+      "title": "bVideo: AI video generation",
+      "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
+      "technologies": ["Tailwind", "MUI", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL"],
+      "live_url": "https://writebot-pi.vercel.app",
       "type": "frontend"
     },
     {
-      "images": ["https://radwananik.com/jmr/qdmin-qcoom.png"],
+      "images": ["images/bvideo.png"],
+      "title": "bVideo",
+      "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
+      "technologies": ["Tailwind", "MUI", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL"],
+      "live_url": "https://bvideo.cpi4.com/",
+      "type": "backend"
+    },
+    {
+      "images": ["images/unb.png"],
+      "title": "United News of Bangladesh",
+      "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
+      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO"],
+      "live_url": "https://unb.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/unb.png"],
+      "title": "United News of Bangladesh",
+      "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
+      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO"],
+      "live_url": "https://unb.com.bd",
+      "type": "backend"
+    },
+    {
+      "images": ["images/lendenlive.webp", "images/lendenlive_1.webp"],
+      "title": "Lendenlive",
+      "short_description": "Online product bidding system where customers can buy products by bid a product.",
+      "technologies": ["Tailwind", "Next JS", "React Query", "React Hook Form", "JWT", "TypeScript"],
+      "live_url": "https://lendenlive.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qfood.png"],
+      "title": "QFOOD: FOOD & GROCERIES",
+      "short_description": "Food delivery service like foodpanda using millions of users in Dhaka",
+      "technologies": ["Tailwind", "Next JS", "Mapbox" , "React Query", "React Hook Form", "JWT", "TypeScript"],
+      "live_url": "https://qcoom.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qcoom.png"],
+      "title": "QCOOM-ECOMMERCE",
+      "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
+      "technologies": ["Tailwind", "Antd", "Next JS", "React Query", "React Slick", "JWT", "TypeScript"],
+      "live_url": "https://qcoom.com",
+      "type": "frontend"
+    },
+
+    {
+      "images": ["images/smef_banner.webp"],
+      "title": "SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Bootstrap", "Vue JS", "Laravel", "MySQL"],
+      "live_url": "http://wsmesuppliersplatform.smef.gov.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/smef_banner.webp"],
+      "title": "SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Bootstrap", "Vue JS", "Laravel", "MySQL"],
+      "live_url": "http://wsmesuppliersplatform.smef.gov.bd",
+      "type": "backend"
+    },
+    {
+      "images": ["images/piickme.png"],
+      "title": "PIICKME EXPRESS",
+      "short_description": "Piickme is an A-Z solution for e-commerce retailers and merchants that provides warehousing, storage, pick & pack, and delivery services across Bangladesh.",
+      "technologies": ["Tailwind", "React JS", "JWT", "TypeScript"],
+      "live_url": "https://piickmeexpress.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qdmin-qcoom.png"],
       "title": "QCOOM: ADMIN",
-      "short_description": "Admin panel where manages all qcoom services like qcoom.com, qfood.com.bd, pickmeexpress.com and more",
-      "technologies": ["Tailwind", "Antd", "React JS", "Tenstack React Query", "React Hook Form", "React Slick"],
+      "short_description": "Admin panel for qcoom ecommerce. Manages all actions for qcomm ecommerce",
+      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript"],
       "live_url": "https://admin.qcoom.com",
       "type": "frontend"
     },
     {
-      "images": ["https://radwananik.com/jmr/qfood.png", "images/qfood.png"],
-      "title": "QFOOD: FOOD & GROCERIES",
-      "short_description": "Food delivery system using millions of users in Dhaka",
-      "technologies": ["Tailwind", "Next JS", "Tenstack React Query", "React Hook Form"],
-      "live_url": "https://qcoom.com.bd",
+      "images": ["images/qfood-admin.png"],
+      "title": "QFOOD: ADMIN",
+      "short_description": "Food delivery system admin panel where manages all orders, activities, analytics and more.",
+      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript"],
+      "live_url": "https://admin.qfood.com.bd",
       "type": "frontend"
+    },
+    {
+      "images": ["images/piickme-admin.png"],
+      "title": "PIICKME: ADMIN",
+      "short_description": "A centralized dashboard for an overview of system activities, analytics, and key performance indicators",
+      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "Chart JS", "JWT", "TypeScript"],
+      "live_url": "https://admin.piickmeexpress.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/piickme-merchant.png"],
+      "title": "PIICKME: MERCHANT",
+      "short_description": "Merchant panel for a delivery service is a dedicated interface designed for businesses and vendors participating in the delivery service.",
+      "technologies": ["Tailwind", "Antd", "React JS", "TypeScript"],
+      "live_url": "https://piickmeexpress.com/login",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/dc.png"],
+      "title": "Dhaka Courier",
+      "short_description": "The Dhaka Courier is a Bangladeshi English-language news magazine. Founded in 1984, it is the longest running English current affairs magazine in the country. Its content is largely focused on politics, international affairs, economics, travel, literature, society and the arts.",
+      "technologies": ["CSS", "Laravel", "jQuery"],
+      "live_url": "https://www.dhakacourier.com.bd/",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/dc.png"],
+      "title": "Dhaka Courier",
+      "short_description": "The Dhaka Courier is a Bangladeshi English-language news magazine. Founded in 1984, it is the longest running English current affairs magazine in the country. Its content is largely focused on politics, international affairs, economics, travel, literature, society and the arts.",
+      "technologies": ["CSS", "Laravel", "jQuery"],
+      "live_url": "https://www.dhakacourier.com.bd",
+      "type": "backend"
+    },
+    {
+      "images": ["images/wordle.png"],
+      "title": "Wordie: Word Guess Game",
+      "short_description": "Wordie a word guessing game.",
+      "technologies": ["Tailwind", "React JS", "TypeScript"],
+      "live_url": "https://wordie.unb.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
+      "title": "(Android) SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Flutter", "Provider", "Dio", "Refresh Token"],
+      "live_url": "https://play.google.com/store/apps/details?id=com.smef.wsmesuppliersplatform",
+      "type": "app"
+    },
+    {
+      "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
+      "title": "(IOS) SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Flutter", "Provider", "Dio", "Refresh Token"],
+      "live_url": "https://apps.apple.com/us/app/smef-suppliers-platform/id6475778329",
+      "type": "app"
+    },
+    {
+      "images": ["images/peace-time.png", "images/auto_silent.webp"],
+      "title": "Auto Silent Schedular",
+      "short_description": "We are always busy and so busy that we forget to turn our phone silent, at very important times and ringtone rings at important times, leaving us in an embarrassing situation.",
+      "technologies": ["Flutter", "Provider"],
+      "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.peace_time",
+      "type": "app"
+    },
+    {
+      "images": ["images/udjapon.webp", "images/udjapon_1.webp"],
+      "title": "Auto Silent Schedular",
+      "short_description": "Buy your favorite products from your known seller. And get your products within a day or even an hour.",
+      "technologies": ["Flutter", "Provider"],
+      "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.udjapon",
+      "type": "app"
     }
   ],
   "skills": [
