@@ -4,7 +4,7 @@
       "images": ["images/bvideo.webp"],
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
-      "technologies": ["Tailwind", "MUI", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL"],
+      "technologies": ["Tailwind", "MUI", "React JS", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
       "live_url": "https://writebot-pi.vercel.app",
       "type": "frontend"
     },
@@ -12,7 +12,7 @@
       "images": ["images/bvideo.webp"],
       "title": "bVideo",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
-      "technologies": ["Tailwind", "MUI", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL"],
+      "technologies": ["Tailwind", "MUI", "React JS", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
       "live_url": "https://bvideo.cpi4.com/",
       "type": "backend"
     },
@@ -20,7 +20,7 @@
       "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
-      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO"],
+      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO", "Cropper JS"],
       "live_url": "https://unb.com.bd",
       "type": "frontend"
     },
@@ -28,7 +28,7 @@
       "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
-      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO"],
+      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO", "Cropper JS"],
       "live_url": "https://unb.com.bd",
       "type": "backend"
     },
