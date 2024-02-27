@@ -1,6 +1,7 @@
 Projects List
 
 qcoom
+
 <!-- 1. qcoom.com / frontend -->
 <!-- 2. qfood.com.bd / frontend -->
 <!-- 3. admin.qcoom.com / fontend -->
@@ -11,18 +12,20 @@ qcoom
 <!-- 8. piickmeexpress merchant / frontend / ci/cd -->
 
 unb
+
 <!-- - unb.com.bd / frontend / backend api / ci/cd -->
 <!-- - dhakacourier.com / frontend / backend -->
 <!-- - wordie.unb.com.bd / frontend / backend / ci/cd -->
 
 - erp mohamaya / frontend / backend / ci/cd
-<!-- - smef / frontend / backend / android / ios -->
-<!-- - bvideo / frontend / backend -->
+  <!-- - smef / frontend / backend / android / ios -->
+  <!-- - bvideo / frontend / backend -->
 
 - bebsha.com / frontend / backend
 - laalsobuj.com / frontend / backend
 
 udjapon
+
 - admin panel / frontend / backend / ci/cd
 - seller panel / frontend / backend / ci/cd
 - web / frontend / backend / ci/cd
@@ -33,3 +36,12 @@ udjapon
 <!-- - guess the word - android -->
 
 <!-- - mui admin dashboard - frontend -->
+<!-- 
+{
+  "images": ["images/wordle.webp"],
+  "title": "Wordie: Word Guess Game",
+  "short_description": "Wordie a word guessing game.",
+  "technologies": ["Tailwind", "React JS", "TypeScript"],
+  "live_url": "https://wordie.unb.com.bd",
+  "type": "frontend"
+}, -->
