@@ -224,14 +224,6 @@
       "technologies": ["MUI", "React JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
       "live_url": "https://hundred-seller.vercel.app",
       "type": "frontend"
-    },
-    {
-      "images": ["images/h_seller.webp", "images/h_seller_1.webp"],
-      "title": "Udjapon: Seller",
-      "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
-      "technologies": ["MUI", "React JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
-      "live_url": "https://hundred-seller.vercel.app",
-      "type": "frontend"
     }
   ],
   "skills": [
