@@ -139,17 +139,9 @@
     },
     {
       "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
-      "title": "(Android) SMEF Suppliers Platform",
+      "title": "SMEF Suppliers Platform",
       "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
-      "technologies": ["Android", "Flutter", "Provider", "Dio", "Refresh Token"],
-      "live_url": "https://play.google.com/store/apps/details?id=com.smef.wsmesuppliersplatform",
-      "type": "app"
-    },
-    {
-      "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
-      "title": "(IOS) SMEF Suppliers Platform",
-      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
-      "technologies": ["IOS", "Flutter", "Provider", "Dio", "Refresh Token"],
+      "technologies": ["Android", "IOS", "Flutter", "Provider", "Dio", "Refresh Token"],
       "live_url": "https://apps.apple.com/us/app/smef-suppliers-platform/id6475778329",
       "type": "app"
     },
