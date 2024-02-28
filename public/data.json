@@ -4,7 +4,7 @@
       "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
-      "technologies": ["Tailwind", "MUI", "React JS", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
       "live_url": "https://writebot-pi.vercel.app",
       "type": "frontend"
     },
@@ -12,7 +12,7 @@
       "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
       "title": "bVideo",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
-      "technologies": ["Tailwind", "MUI", "React JS", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
       "live_url": "https://bvideo.cpi4.com/",
       "type": "backend"
     },
@@ -45,7 +45,15 @@
       "title": "QFOOD: FOOD & GROCERIES",
       "short_description": "Food delivery service like foodpanda using millions of users in Dhaka",
       "technologies": ["Tailwind", "Next JS", "Mapbox" , "React Query", "React Hook Form", "JWT", "TypeScript"],
-      "live_url": "https://qcoom.com.bd",
+      "live_url": "https://qfood.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/w_udjapon_2.webp", "images/w_udjapon_1.webp", "images/w_udjapon_3.webp", "images/w_udjapon_4.webp", "images/w_udjapon_5.webp", "images/w_udjapon_6.webp"],
+      "title": "Udjapon: Ecommerce Web",
+      "short_description": "Online B2C ecommerce platform for selling products via online. Comming Soon.",
+      "technologies": ["MUI", "Next JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Google Map"],
+      "live_url": "https://udjapon.xyz",
       "type": "frontend"
     },
     {
@@ -149,20 +157,89 @@
       "images": ["images/peace-time.webp", "images/auto_silent.webp"],
       "title": "Auto Silent Schedular",
       "short_description": "We are always busy and so busy that we forget to turn our phone silent, at very important times and ringtone rings at important times, leaving us in an embarrassing situation.",
-      "technologies": ["Flutter", "Provider"],
+      "technologies": ["Flutter", "Provider", "Alarm Manager Plus"],
       "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.peace_time",
       "type": "app"
     },
     {
       "images": ["images/udjapon.webp", "images/udjapon_1.webp"],
-      "title": "Auto Silent Schedular",
+      "title": "Udjapon: E-Commerce Platform",
       "short_description": "Buy your favorite products from your known seller. And get your products within a day or even an hour.",
-      "technologies": ["Flutter", "Provider"],
+      "technologies": ["Flutter", "Provider", "Dio", "Refresh Token", "Dio Cache", "Google Map"],
       "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.udjapon",
       "type": "app"
+    },
+    {
+      "images": ["images/bebsha_1.webp", "images/bebsha.webp"],
+      "title": "Bebsha: B2B Platform",
+      "short_description": "Bebhsa.com is a B2B platform in bangladesh. Still its operation not started.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://www.bebsha.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/bebsha_1.webp", "images/bebsha.webp"],
+      "title": "Bebsha: B2B Platform",
+      "short_description": "Bebhsa.com is a B2B platform in bangladesh. Still its operation not started.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://www.bebsha.com",
+      "type": "backend"
+    },
+    {
+      "images": ["images/laalsobuj.webp"],
+      "title": "Laalsobuj",
+      "short_description": "Laalsobuj, an e-commerce initiative of the National Women's Organization 'Tathya Apa' project under the Ministry of Women and Child Affairs.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://laalsobuj.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/laalsobuj.webp"],
+      "title": "Laalsobuj",
+      "short_description": "Laalsobuj, an e-commerce initiative of the National Women's Organization 'Tathya Apa' project under the Ministry of Women and Child Affairs.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://laalsobuj.com",
+      "type": "backend"
+    },
+    {
+      "images": ["images/h_admin.webp", "images/h_admin_1.webp", "images/h_seller.webp", "images/h_seller_1.webp"],
+      "title": "Udjapon: Backend",
+      "short_description": "Backed APIs developed by using Nest JS for Udjapon.xyz services like Admin panel, Seller Panel, Udjapon Web, Android and IOS app.",
+      "technologies": ["Nest JS", "TypeScript", "MongoDB", "Geo Json","Refresh Token", "Sharp", "SMTP"],
+      "live_url": "https://hundred-api.vercel.app",
+      "type": "backend"
+    },
+    {
+      "images": ["images/h_admin.webp", "images/h_admin_1.webp"],
+      "title": "Udjapon: Admin",
+      "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
+      "technologies": ["MUI", "React JS", "TypeScript", "Google Map", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "live_url": "https://hundred-admin.vercel.app",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/h_seller.webp", "images/h_seller_1.webp"],
+      "title": "Udjapon: Seller",
+      "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
+      "technologies": ["MUI", "React JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "live_url": "https://hundred-seller.vercel.app",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/h_seller.webp", "images/h_seller_1.webp"],
+      "title": "Udjapon: Seller",
+      "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
+      "technologies": ["MUI", "React JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "live_url": "https://hundred-seller.vercel.app",
+      "type": "frontend"
     }
   ],
   "skills": [
+    {
+      "name": "Dart",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png",
+      "type": "tech"
+    },
     {
       "name": "Flutter",
       "icon_url": "https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg",
@@ -181,6 +258,16 @@
     {
       "name": "Lumen",
       "icon_url": "https://cdn.worldvectorlogo.com/logos/lumen-1.svg",
+      "type": "tech"
+    },
+    {
+      "name": "JavaScript",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+      "type": "tech"
+    },
+    {
+      "name": "TypeScript",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
       "type": "tech"
     },
     {
@@ -249,9 +336,64 @@
       "type": "tech"
     },
     {
+      "name": "Nginx",
+      "icon_url": "https://www.svgrepo.com/show/373924/nginx.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Apache",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/1200px-Apache_Feather_Logo.svg.png",
+      "type": "tech"
+    },
+    {
       "name": "Docker",
       "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png",
       "type": "tech"
+    },
+    {
+      "name": "Docker",
+      "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png",
+      "type": "tool"
+    },
+    {
+      "name": "VS Code",
+      "icon_url": "https://code.visualstudio.com/assets/images/code-stable.png",
+      "type": "tool"
+    },
+    {
+      "name": "Android Studio",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/256px-Android_Studio_icon_%282023%29.svg.png?20230919062400",
+      "type": "tool"
+    },
+    {
+      "name": "Git",
+      "icon_url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "type": "tech"
+    },
+    {
+      "name": "Git",
+      "icon_url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "type": "tool"
+    },
+    {
+      "name": "Xcode",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png",
+      "type": "tool"
+    },
+    {
+      "name": "Trello",
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/2504/2504834.png",
+      "type": "tool"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png",
+      "type": "tool"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
+      "type": "tool"
     }
   ],
   "companies": [

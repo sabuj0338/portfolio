@@ -21,16 +21,16 @@ unb
   <!-- - smef / frontend / backend / android / ios -->
   <!-- - bvideo / frontend / backend -->
 
-- bebsha.com / frontend / backend
-- laalsobuj.com / frontend / backend
+<!-- - bebsha.com / frontend / backend
+- laalsobuj.com / frontend / backend -->
 
 udjapon
 
-- admin panel / frontend / backend / ci/cd
+<!-- - admin panel / frontend / backend / ci/cd
 - seller panel / frontend / backend / ci/cd
 - web / frontend / backend / ci/cd
 - backend api / backend / ci/cd
-- app / android / ios / backend / ci/cd
+- app / android / ios / backend / ci/cd -->
 
 <!-- - peace time - android -->
 <!-- - guess the word - android -->
