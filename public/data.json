@@ -141,7 +141,7 @@
       "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
       "title": "(Android) SMEF Suppliers Platform",
       "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
-      "technologies": ["Flutter", "Provider", "Dio", "Refresh Token"],
+      "technologies": ["Android", "Flutter", "Provider", "Dio", "Refresh Token"],
       "live_url": "https://play.google.com/store/apps/details?id=com.smef.wsmesuppliersplatform",
       "type": "app"
     },
@@ -149,7 +149,7 @@
       "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
       "title": "(IOS) SMEF Suppliers Platform",
       "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
-      "technologies": ["Flutter", "Provider", "Dio", "Refresh Token"],
+      "technologies": ["IOS", "Flutter", "Provider", "Dio", "Refresh Token"],
       "live_url": "https://apps.apple.com/us/app/smef-suppliers-platform/id6475778329",
       "type": "app"
     },
@@ -157,7 +157,7 @@
       "images": ["images/peace-time.webp", "images/auto_silent.webp"],
       "title": "Auto Silent Schedular",
       "short_description": "We are always busy and so busy that we forget to turn our phone silent, at very important times and ringtone rings at important times, leaving us in an embarrassing situation.",
-      "technologies": ["Flutter", "Provider", "Alarm Manager Plus"],
+      "technologies": ["Android", "Flutter", "Provider", "Alarm Manager Plus"],
       "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.peace_time",
       "type": "app"
     },
@@ -165,7 +165,7 @@
       "images": ["images/udjapon.webp", "images/udjapon_1.webp"],
       "title": "Udjapon: E-Commerce Platform",
       "short_description": "Buy your favorite products from your known seller. And get your products within a day or even an hour.",
-      "technologies": ["Flutter", "Provider", "Dio", "Refresh Token", "Dio Cache", "Google Map"],
+      "technologies": ["Android", "Flutter", "Provider", "Dio", "Refresh Token", "Dio Cache", "Google Map"],
       "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.udjapon",
       "type": "app"
     },
