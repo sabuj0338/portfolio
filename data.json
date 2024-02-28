@@ -260,6 +260,11 @@
       "type": "tech"
     },
     {
+      "name": "Express JS",
+      "icon_url": "https://e7.pngegg.com/pngimages/247/558/png-clipart-node-js-javascript-express-js-npm-react-github-angle-text.png",
+      "type": "tech"
+    },
+    {
       "name": "Nest JS",
       "icon_url": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg",
       "type": "tech"
@@ -392,6 +397,11 @@
     {
       "name": "Cropper JS",
       "icon_url": "https://jquery-plugins.net/image/plugin/cropperjs-javascript-image-cropper.jpg",
+      "type": "tech"
+    },
+    {
+      "name": "Socket.io",
+      "icon_url": "https://cdn.icon-icons.com/icons2/2389/PNG/512/socket_io_logo_icon_144874.png",
       "type": "tech"
     }
   ],
