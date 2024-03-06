@@ -221,7 +221,7 @@
       "images": ["images/mohamaya_1.webp", "images/mohamaya_2.webp", "images/mohamaya_3.webp", "images/mohamaya_4.webp"],
       "title": "মহামায়া প্রিন্ট শাড়ি",
       "short_description": "This is a cloth business accounts management system.Manage all clients accounts for 'মহামায়া প্রিন্ট শাড়ি' business. Buy raw material and sell cloths to customers.",
-      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable"],
+      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
       "live_url": "http://139.59.117.120",
       "type": "backend"
     },
@@ -229,7 +229,7 @@
       "images": ["images/mohamaya_1.webp", "images/mohamaya_2.webp", "images/mohamaya_3.webp", "images/mohamaya_4.webp"],
       "title": "মহামায়া প্রিন্ট শাড়ি",
       "short_description": "This is a cloth business accounts management system.Manage all clients accounts for 'মহামায়া প্রিন্ট শাড়ি' business. Buy raw material and sell cloths to customers.",
-      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable"],
+      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
       "live_url": "http://139.59.117.120",
       "type": "frontend"
     }
