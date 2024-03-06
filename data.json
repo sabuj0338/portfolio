@@ -5,7 +5,7 @@
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
       "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
-      "live_url": "https://writebot-pi.vercel.app",
+      "live_url": "https://home.cpi4.com",
       "type": "frontend"
     },
     {
