@@ -419,6 +419,16 @@
       "name": "Socket.io",
       "icon_url": "https://cdn.icon-icons.com/icons2/2389/PNG/512/socket_io_logo_icon_144874.png",
       "type": "tech"
+    },
+    {
+      "name": "Jira",
+      "icon_url": "https://static-00.iconduck.com/assets.00/jira-icon-512x512-kkop6eik.png",
+      "type": "tool"
+    },
+    {
+      "name": "Bitbucket",
+      "icon_url": "https://static-00.iconduck.com/assets.00/bitbucket-icon-512x460-aj2zdfts.png",
+      "type": "tool"
     }
   ],
   "companies": [
