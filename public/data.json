@@ -53,7 +53,7 @@
       "title": "Udjapon: Ecommerce Web",
       "short_description": "Online B2C ecommerce platform for selling products via online. Comming Soon.",
       "technologies": ["MUI", "Next JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Google Map"],
-      "live_url": "https://udjapon.xyz",
+      "live_url": "https://hundred-web.onrender.com",
       "type": "frontend"
     },
     {
