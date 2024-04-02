@@ -107,7 +107,7 @@ interface IProductCard {
 
 export function ProjectCard({ project }: IProductCard) {
   return project ? (
-    <div className="bg-slate-500 hover:bg-[#171819] bg-opacity-10 hover:bg-opacity-100 cursor-pointer hover:shadow rounded">
+    <div className="bg-slate-500 hover:bg-[#171819] bg-opacity-10 hover:bg-opacity-100 hover:shadow rounded">
       {/* <PhotoGallerySlider arrow={project?.images?.length > 1}> */}
       <PhotoGallerySlider>
         {project?.images?.map((image) => (
