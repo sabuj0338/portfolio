@@ -1,0 +1,81 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: db
+    image: mongo:latest
+    ports:
+      - 27018:27017
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
+    #   MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+    volumes:
+      - anime:/data/db # Persistent data volume
+    # env_file:
+    #   - .env
+    restart: always
+
+  # backend APIs
+  hundred-api:
+    build:
+      context: ./hundred-api
+      dockerfile: Dockerfile.dev
+    image: hundred-api:latest
+    container_name: hundred-api
+    environment:
+      NODE_ENV: development
+      MONGODB_URL: mongodb://db:27017/hundred-api
+    ports:
+      - 5100:3000
+    depends_on:
+      - db
+    restart: always
+
+  # front-end admin panel
+  hundred-admin:
+    build:
+      context: ./hundred-admin
+      dockerfile: Dockerfile.dev
+    image: hundred-admin:latest
+    container_name: hundred-admin
+    environment:
+      NODE_ENV: development
+    ports:
+      - 5200:4173
+    depends_on:
+      - hundred-api
+    restart: always
+
+  # front-end seller panel
+  hundred-seller:
+    build:
+      context: ./hundred-seller
+      dockerfile: Dockerfile.dev
+    image: hundred-seller:latest
+    container_name: hundred-seller
+    environment:
+      NODE_ENV: development
+    ports:
+      - 5300:4173
+    depends_on:
+      - hundred-api
+    restart: always
+
+  # front-end web
+  hundred-web:
+    build:
+      context: ./hundred-web
+      dockerfile: Dockerfile.dev
+    image: hundred-web:latest
+    container_name: hundred-web
+    environment:
+      NODE_ENV: development
+    ports:
+      - 5400:3000
+    depends_on:
+      - hundred-api
+    restart: always
+
+volumes:
+  anime:
+    # driver: local
