@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
+      "title": "bVideo: AI video generation",
+      "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
+      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "live_url": "https://home.cpi4.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
+      "title": "bVideo: Backend APIs",
+      "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
+      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "live_url": "https://bvideo.cpi4.com/",
+      "type": "backend"
+    },
+    {
       "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
