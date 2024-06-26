@@ -1,0 +1,466 @@
+{
+  "projects": [
+    {
+      "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
+      "title": "bVideo: AI video generation",
+      "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
+      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "live_url": "https://home.cpi4.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
+      "title": "bVideo: Backend APIs",
+      "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
+      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "live_url": "https://bvideo.cpi4.com/",
+      "type": "backend"
+    },
+    {
+      "images": ["images/unb.webp"],
+      "title": "United News of Bangladesh",
+      "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
+      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO", "Cropper JS"],
+      "live_url": "https://unb.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/unb.webp"],
+      "title": "United News of Bangladesh",
+      "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
+      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO", "Cropper JS"],
+      "live_url": "https://unb.com.bd",
+      "type": "backend"
+    },
+    {
+      "images": ["images/lendenlive.webp", "images/lendenlive_1.webp"],
+      "title": "Lendenlive",
+      "short_description": "Online product bidding system where customers can buy products by bid a product.",
+      "technologies": ["Tailwind", "Next JS", "React Query", "React Hook Form", "JWT", "TypeScript"],
+      "live_url": "https://lendenlive.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qfood.webp"],
+      "title": "QFOOD: FOOD & GROCERIES",
+      "short_description": "Food delivery service like foodpanda using millions of users in Dhaka",
+      "technologies": ["Tailwind", "Next JS", "Mapbox" , "React Query", "React Hook Form", "JWT", "TypeScript", "Redux"],
+      "live_url": "https://qfood.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/w_udjapon_2.webp", "images/w_udjapon_1.webp", "images/w_udjapon_3.webp", "images/w_udjapon_4.webp", "images/w_udjapon_5.webp", "images/w_udjapon_6.webp"],
+      "title": "Udjapon: Ecommerce Web",
+      "short_description": "Online B2C ecommerce platform for selling products via online. Comming Soon.",
+      "technologies": ["MUI", "Next JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Google Map"],
+      "live_url": "https://hundred-web.onrender.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qcoom.webp"],
+      "title": "QCOOM-ECOMMERCE",
+      "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
+      "technologies": ["Tailwind", "Antd", "Next JS", "React Query", "React Slick", "JWT", "TypeScript", "Redux"],
+      "live_url": "https://qcoom.com",
+      "type": "frontend"
+    },
+
+    {
+      "images": ["images/smef_banner.webp"],
+      "title": "SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Bootstrap", "Vue JS", "Laravel", "MySQL"],
+      "live_url": "http://wsmesuppliersplatform.smef.gov.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/smef_banner.webp"],
+      "title": "SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Bootstrap", "Vue JS", "Laravel", "MySQL"],
+      "live_url": "http://wsmesuppliersplatform.smef.gov.bd",
+      "type": "backend"
+    },
+    {
+      "images": ["images/piickme.webp"],
+      "title": "PIICKME EXPRESS",
+      "short_description": "Piickme is an A-Z solution for e-commerce retailers and merchants that provides warehousing, storage, pick & pack, and delivery services across Bangladesh.",
+      "technologies": ["Tailwind", "React JS", "JWT", "TypeScript", "Redux"],
+      "live_url": "https://piickmeexpress.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qdmin-qcoom.webp"],
+      "title": "QCOOM: ADMIN",
+      "short_description": "Admin panel for qcoom ecommerce. Manages all actions for qcomm ecommerce",
+      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript", "Redux"],
+      "live_url": "https://admin.qcoom.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/qfood-admin.webp"],
+      "title": "QFOOD: ADMIN",
+      "short_description": "Food delivery system admin panel where manages all orders, activities, analytics and more.",
+      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript", "Redux"],
+      "live_url": "https://admin.qfood.com.bd",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/piickme-admin.webp"],
+      "title": "PIICKME: ADMIN",
+      "short_description": "A centralized dashboard for an overview of system activities, analytics, and key performance indicators",
+      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "Chart JS", "JWT", "TypeScript", "Redux"],
+      "live_url": "https://admin.piickmeexpress.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/piickme-merchant.webp"],
+      "title": "PIICKME: MERCHANT",
+      "short_description": "Merchant panel for a delivery service is a dedicated interface designed for businesses and vendors participating in the delivery service.",
+      "technologies": ["Tailwind", "Antd", "React JS", "TypeScript", "Redux"],
+      "live_url": "https://piickmeexpress.com/login",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/dc.webp"],
+      "title": "Dhaka Courier",
+      "short_description": "The Dhaka Courier is a Bangladeshi English-language news magazine. Founded in 1984, it is the longest running English current affairs magazine in the country. Its content is largely focused on politics, international affairs, economics, travel, literature, society and the arts.",
+      "technologies": ["CSS", "Laravel", "jQuery"],
+      "live_url": "https://www.dhakacourier.com.bd/",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/dc.webp"],
+      "title": "Dhaka Courier",
+      "short_description": "The Dhaka Courier is a Bangladeshi English-language news magazine. Founded in 1984, it is the longest running English current affairs magazine in the country. Its content is largely focused on politics, international affairs, economics, travel, literature, society and the arts.",
+      "technologies": ["CSS", "Laravel", "jQuery"],
+      "live_url": "https://www.dhakacourier.com.bd",
+      "type": "backend"
+    },
+    {
+      "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
+      "title": "SMEF Suppliers Platform",
+      "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
+      "technologies": ["Android", "IOS", "Flutter", "Provider", "Dio", "Refresh Token"],
+      "live_url": "https://apps.apple.com/us/app/smef-suppliers-platform/id6475778329",
+      "type": "app"
+    },
+    {
+      "images": ["images/peace-time.webp", "images/peace-time-1.webp", "images/peace-time-2.webp", "images/peace-time-3.webp", "images/peace-time-4.webp", "images/peace-time-5.webp"],
+      "title": "Auto Silent Schedular",
+      "short_description": "We are always busy and so busy that we forget to turn our phone silent, at very important times and ringtone rings at important times, leaving us in an embarrassing situation.",
+      "technologies": ["Android", "Flutter", "Provider", "Alarm Manager Plus"],
+      "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.peace_time",
+      "type": "app"
+    },
+    {
+      "images": ["images/udjapon.webp", "images/udjapon_1.webp"],
+      "title": "Udjapon: E-Commerce Platform",
+      "short_description": "Buy your favorite products from your known seller. And get your products within a day or even an hour.",
+      "technologies": ["Android", "Flutter", "Provider", "Dio", "Refresh Token", "Dio Cache", "Google Map"],
+      "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.udjapon",
+      "type": "app"
+    },
+    {
+      "images": ["images/bebsha_1.webp", "images/bebsha.webp"],
+      "title": "Bebsha: B2B Platform",
+      "short_description": "Bebhsa.com is a B2B platform in bangladesh. Still its operation not started.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://www.bebsha.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/bebsha_1.webp", "images/bebsha.webp"],
+      "title": "Bebsha: B2B Platform",
+      "short_description": "Bebhsa.com is a B2B platform in bangladesh. Still its operation not started.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://www.bebsha.com",
+      "type": "backend"
+    },
+    {
+      "images": ["images/laalsobuj.webp"],
+      "title": "Laalsobuj",
+      "short_description": "Laalsobuj, an e-commerce initiative of the National Women's Organization 'Tathya Apa' project under the Ministry of Women and Child Affairs.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://laalsobuj.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/laalsobuj.webp"],
+      "title": "Laalsobuj",
+      "short_description": "Laalsobuj, an e-commerce initiative of the National Women's Organization 'Tathya Apa' project under the Ministry of Women and Child Affairs.",
+      "technologies": ["Bootstrap", "PHP", "CakePHP"],
+      "live_url": "https://laalsobuj.com",
+      "type": "backend"
+    },
+    {
+      "images": ["images/h_admin.webp", "images/h_admin_1.webp", "images/h_seller.webp", "images/h_seller_1.webp"],
+      "title": "Udjapon: Backend",
+      "short_description": "Backed APIs developed by using Nest JS for Udjapon.xyz services like Admin panel, Seller Panel, Udjapon Web, Android and IOS app.",
+      "technologies": ["Nest JS", "TypeScript", "MongoDB", "Geo Json","Refresh Token", "Sharp", "SMTP"],
+      "live_url": "https://hundred-api.vercel.app",
+      "type": "backend"
+    },
+    {
+      "images": ["images/h_admin.webp", "images/h_admin_1.webp"],
+      "title": "Udjapon: Admin",
+      "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
+      "technologies": ["MUI", "React JS", "TypeScript", "Google Map", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "live_url": "https://hundred-admin.vercel.app",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/h_seller.webp", "images/h_seller_1.webp"],
+      "title": "Udjapon: Seller",
+      "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
+      "technologies": ["MUI", "React JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "live_url": "https://hundred-seller.vercel.app",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/mohamaya_1.webp", "images/mohamaya_2.webp", "images/mohamaya_3.webp", "images/mohamaya_4.webp"],
+      "title": "মহামায়া প্রিন্ট শাড়ি",
+      "short_description": "This is a cloth business accounts management system.Manage all clients accounts for 'মহামায়া প্রিন্ট শাড়ি' business. Buy raw material and sell cloths to customers.",
+      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
+      "live_url": "http://139.59.117.120",
+      "type": "backend"
+    },
+    {
+      "images": ["images/mohamaya_1.webp", "images/mohamaya_2.webp", "images/mohamaya_3.webp", "images/mohamaya_4.webp"],
+      "title": "মহামায়া প্রিন্ট শাড়ি",
+      "short_description": "This is a cloth business accounts management system.Manage all clients accounts for 'মহামায়া প্রিন্ট শাড়ি' business. Buy raw material and sell cloths to customers.",
+      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
+      "live_url": "http://139.59.117.120",
+      "type": "frontend"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Dart",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png",
+      "type": "tech"
+    },
+    {
+      "name": "Flutter",
+      "icon_url": "https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg",
+      "type": "tech"
+    },
+    {
+      "name": "PHP",
+      "icon_url": "https://www.php.net/images/logos/new-php-logo.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Laravel",
+      "icon_url": "https://laravel.com/img/logomark.min.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Lumen",
+      "icon_url": "https://cdn.worldvectorlogo.com/logos/lumen-1.svg",
+      "type": "tech"
+    },
+    {
+      "name": "JavaScript",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+      "type": "tech"
+    },
+    {
+      "name": "TypeScript",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+      "type": "tech"
+    },
+    {
+      "name": "Node JS",
+      "icon_url": "https://nodejs.org/static/images/logo.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Express JS",
+      "icon_url": "https://e7.pngegg.com/pngimages/247/558/png-clipart-node-js-javascript-express-js-npm-react-github-angle-text.png",
+      "type": "tech"
+    },
+    {
+      "name": "Nest JS",
+      "icon_url": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg",
+      "type": "tech"
+    },
+    {
+      "name": "React JS",
+      "icon_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      "type": "tech"
+    },
+    {
+      "name": "Next JS",
+      "icon_url": "https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png",
+      "type": "tech"
+    },
+    {
+      "name": "Vue JS",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558",
+      "type": "tech"
+    },
+    {
+      "name": "MongoDB",
+      "icon_url": "https://cdn.hackersandslackers.com/2020/05/nosql.png",
+      "type": "tech"
+    },
+    {
+      "name": "SQL",
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/2772/2772128.png",
+      "type": "tech"
+    },
+    {
+      "name": "MUI",
+      "icon_url": "https://mui.com/static/logo.png",
+      "type": "tech"
+    },
+    {
+      "name": "Ant Design",
+      "icon_url": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Tailwind",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/900px-Tailwind_CSS_Logo.svg.png?20211001194333",
+      "type": "tech"
+    },
+    {
+      "name": "Bootstrap",
+      "icon_url": "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Redis",
+      "icon_url": "https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png",
+      "type": "tech"
+    },
+    {
+      "name": "Linux",
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/25/25719.png",
+      "type": "tech"
+    },
+    {
+      "name": "Nginx",
+      "icon_url": "https://www.svgrepo.com/show/373924/nginx.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Apache",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/1200px-Apache_Feather_Logo.svg.png",
+      "type": "tech"
+    },
+    {
+      "name": "Docker",
+      "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png",
+      "type": "tech"
+    },
+    {
+      "name": "Docker",
+      "icon_url": "https://static-00.iconduck.com/assets.00/docker-icon-icon-512x370-m2lt8o0b.png",
+      "type": "tool"
+    },
+    {
+      "name": "VS Code",
+      "icon_url": "https://code.visualstudio.com/assets/images/code-stable.png",
+      "type": "tool"
+    },
+    {
+      "name": "Android Studio",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/256px-Android_Studio_icon_%282023%29.svg.png?20230919062400",
+      "type": "tool"
+    },
+    {
+      "name": "Git",
+      "icon_url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "type": "tech"
+    },
+    {
+      "name": "Git",
+      "icon_url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "type": "tool"
+    },
+    {
+      "name": "Xcode",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png",
+      "type": "tool"
+    },
+    {
+      "name": "Trello",
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/2504/2504834.png",
+      "type": "tool"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png",
+      "type": "tool"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
+      "type": "tool"
+    },
+    {
+      "name": "React Query",
+      "icon_url": "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
+      "type": "tech"
+    },
+    {
+      "name": "Redux",
+      "icon_url": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+      "type": "tech"
+    },
+    {
+      "name": "Cropper JS",
+      "icon_url": "https://jquery-plugins.net/image/plugin/cropperjs-javascript-image-cropper.jpg",
+      "type": "tech"
+    },
+    {
+      "name": "Socket.io",
+      "icon_url": "https://cdn.icon-icons.com/icons2/2389/PNG/512/socket_io_logo_icon_144874.png",
+      "type": "tech"
+    },
+    {
+      "name": "Jira",
+      "icon_url": "https://static-00.iconduck.com/assets.00/jira-icon-512x512-kkop6eik.png",
+      "type": "tool"
+    },
+    {
+      "name": "Bitbucket",
+      "icon_url": "https://static-00.iconduck.com/assets.00/bitbucket-icon-512x460-aj2zdfts.png",
+      "type": "tool"
+    }
+  ],
+  "companies": [
+    {
+      "name": "QFood",
+      "link": "https://qfood.com.bd",
+      "image": "https://qfood.com.bd/_next/static/media/logo.45d10dc6.svg"
+    },
+    {
+      "name": "QCoom",
+      "link": "https://qcoom.com",
+      "image": "https://qcoom.com/logo.svg"
+    },
+    {
+      "name": "Cosmos Group",
+      "link": "https://cosmosgroup.com.bd/",
+      "image": "images/cosmos-group.png"
+    },
+    {
+      "name": "UNB",
+      "link": "https://unb.com.bd/",
+      "image": "https://unb.com.bd/v2/images/logo/unb-logo.png"
+    },
+    {
+      "name": "e-Cab",
+      "link": "https://e-cab.net/",
+      "image": "https://e-cab.net/public/web/img/logo.png"
+    },
+    {
+      "name": "Future Sky Limited",
+      "link": "https://www.facebook.com/FutureSkyLtd",
+      "image": "images/futureskty-logo.png"
+    }
+  ]
+}
