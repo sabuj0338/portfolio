@@ -34,10 +34,10 @@
     },
     {
       "images": ["images/lendenlive.webp", "images/lendenlive_1.webp"],
-      "title": "Lendenlive",
+      "title": "No Syndicate",
       "short_description": "Online product bidding system where customers can buy products by bid a product.",
       "technologies": ["Tailwind", "Next JS", "React Query", "React Hook Form", "JWT", "TypeScript"],
-      "live_url": "https://lendenlive.com",
+      "live_url": "https://nosyndicate.com",
       "type": "frontend"
     },
     {
