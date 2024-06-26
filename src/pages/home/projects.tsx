@@ -145,15 +145,20 @@ export function ProjectCard({ project }: IProductCard) {
               className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-500 bg-opacity-30 hover:bg-opacity-20 hover:shadow-md"
             >
               <svg
-                className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
-                height="24px"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
-                width="24px"
-                fill="currentColor"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4"
               >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+                <path d="M15 3h6v6" />
+                <path d="M10 14 21 3" />
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
               </svg>
             </a>
           </div>
