@@ -5,7 +5,7 @@
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
       "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
-      "live_url": "https://home.cpi4.com",
+      "live_url": "https://app.bvideo.ai",
       "type": "frontend"
     },
     {
@@ -13,7 +13,7 @@
       "title": "bVideo: Backend APIs",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
       "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
-      "live_url": "https://bvideo.cpi4.com/",
+      "live_url": "https://bvideo.cpi4.com",
       "type": "backend"
     },
     {
