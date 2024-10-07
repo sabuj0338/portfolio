@@ -1,31 +1,26 @@
-name: Deploy
- 
+name: Deploy to DigitalOcean VPS
+
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main  # Trigger the workflow on a push to the main branch
+
 jobs:
-  build:
- 
+  deploy:
     runs-on: ubuntu-latest
- 
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
- 
-    - name: Setup SSH connection
-      uses: webfactory/ssh-agent@v0.5.0
+    - name: Checkout code
+      uses: actions/checkout@v3  # Check out the repository code
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3  # Use the SSH agent for deploying
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Deploy
-      uses: fifsky/ssh-action@master
-      with:
-        command: | 
-          cd /var/www/mandubukjahiz.com
-          git pull origin main
-        host: ${{ secrets.VPS_HOST }}
-        port: ${{ secrets.VPS_PORT }}
-        user: ${{ secrets.VPS_USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY}}
-        args: "-tt -vvv"
+    - name: Deploy code via SSH
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          cd /var/www/mandubukjahiz.com  # Navigate to your project directory
+          git pull origin main      # Pull the latest changes
+        EOF
