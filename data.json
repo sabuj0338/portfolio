@@ -422,7 +422,7 @@
     },
     {
       "name": "Electron.js",
-      "icon_url": "hhttps://www.electronjs.org/assets/img/logo.svg",
+      "icon_url": "https://www.electronjs.org/assets/img/logo.svg",
       "type": "tech"
     },
     {
