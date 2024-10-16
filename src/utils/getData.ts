@@ -1,3 +1,9 @@
+/**
+ * This TypeScript function asynchronously fetches data from a specified API endpoint and returns the
+ * parsed JSON response or undefined in case of an error.
+ * @returns The function `getData` returns a Promise that resolves to either `undefined` or an object
+ * of type `IDataResponse`.
+ */
 
 export default async function getData(): Promise<undefined | IDataResponse> {
   try {
