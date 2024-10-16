@@ -43,6 +43,7 @@ export default function AppBar() {
             <a
               href="whatsapp://send?phone=+8801775559622"
               className="text-primary uppercase text-base font-medium border border-primary rounded-full px-1.5 py-1.5 shadow-[0_0_1px,inset_0_0_0px,0_0_1px,0_0_1px,0_0_10px] hover:shadow-[0_0_1px,inset_0_0_0px,0_0_1px,0_0_1px,0_0_15px] shadow-primary"
+              aria-label="Contact using WhatsApp"
             >
               <WhatsAppIcon className="text-primary w-4 h-4"/>
             </a>

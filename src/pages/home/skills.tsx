@@ -11,7 +11,7 @@ export default function Skills() {
   });
 
   return (
-    <section className="py-10">
+    <>
       <div className="">
         <p className="uppercase text-primary text-sm">Skills</p>
       </div>
@@ -40,10 +40,15 @@ export default function Skills() {
         </button>
       </div>
 
-      {query.isLoading && (<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
-        {
-          Array(6).fill(1)?.map((_, index: number) => <SkillCard key={index} />)}
-      </div>)}
+      {query.isLoading && (
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
+          {Array(6)
+            .fill(1)
+            ?.map((_, index: number) => (
+              <SkillCard key={index} />
+            ))}
+        </div>
+      )}
 
       <div
         style={{ display: tab == "tech" ? "" : "none" }}
@@ -68,7 +73,7 @@ export default function Skills() {
               <SkillCard key={`${skill?.type}${index}`} skill={skill} />
             ))}
       </div>
-    </section>
+    </>
   );
 }
 

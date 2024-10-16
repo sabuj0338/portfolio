@@ -8,7 +8,7 @@ export default function Companies() {
   });
 
   return (
-    <section className="py-10">
+    <>
       <div className="">
         <p className="uppercase text-primary text-sm">Companies I Worked For</p>
       </div>
@@ -24,11 +24,17 @@ export default function Companies() {
               target="blank"
               className="w-36"
               key={company?.link}
+              aria-label={`Visit ${company.name}`}
             >
-              <img className="h-10 w-auto" loading="lazy" src={company?.image} alt={company?.name} />
+              <img
+                className="h-10 w-auto"
+                loading="lazy"
+                src={company?.image}
+                alt={company?.name}
+              />
             </a>
           ))}
       </div>
-    </section>
+    </>
   );
 }

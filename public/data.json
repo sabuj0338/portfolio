@@ -421,6 +421,11 @@
       "type": "tech"
     },
     {
+      "name": "Electron.js",
+      "icon_url": "hhttps://www.electronjs.org/assets/img/logo.svg",
+      "type": "tech"
+    },
+    {
       "name": "Jira",
       "icon_url": "https://static-00.iconduck.com/assets.00/jira-icon-512x512-kkop6eik.png",
       "type": "tool"

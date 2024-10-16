@@ -1,13 +1,14 @@
+import Image from "../../components/Image";
 import ArrowMoveRightIcon from "../../icons/arrow-move-right-icon";
 import EmailIcon from "../../icons/email-icon";
-import FacebookIcon from "../../icons/faceboo-icon";
+import FacebookIcon from "../../icons/facebook-icon";
 import GithubIcon from "../../icons/github-icon";
 import LinkedinIcon from "../../icons/linkedin-icon";
 import WaveHandIcon from "../../icons/wave-hand-icon";
 
 export default function About() {
   return (
-    <section className="py-0 sm:py-10 mt-0 sm:mt-4">
+    <>
       <br />
       <div className="w-full flex flex-wrap">
         <div className="w-full md:w-1/2">
@@ -33,30 +34,35 @@ export default function About() {
               <a
                 href="https://github.com/sabuj0338"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
+                aria-label="Visit my Github"
               >
                 <GithubIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="https://www.linkedin.com/in/sabuj0338/"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
+                aria-label="Visit my LinkedIn"
               >
                 <LinkedinIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="https://www.facebook.com/sabuj0338"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
+                aria-label="Visit my Facebook"
               >
                 <FacebookIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="mailto: sabuj0338@gmail.com"
                 className="w-14 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm"
+                aria-label="Contact me through Email"
               >
                 <EmailIcon className="w-6 h-6 text-primary" />
               </a>
               <a
                 href="CV_Sabuj_Islam.pdf"
                 className="px-4 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm border border-gray-800 hover:border-primary hover:text-primary group"
+                aria-label="View my Resume"
               >
                 <span>Resume</span>
                 <ArrowMoveRightIcon />
@@ -86,16 +92,18 @@ export default function About() {
         <div className="w-full md:w-1/2 hidden md:block">
           <div className="flex items-center justify-center">
             <div className="w-52 h-full rounded-full flex items-center justify-center border-b-8 border-x-2 border-t-4 border-dashed border-green-500">
-              <img
+              <Image
                 className="w-52 h-full object-cover bg-white rounded-full"
                 src="sabuj0338_2.webp"
                 alt="sabuj islam"
-                loading="lazy"
+                // loading="lazy"
+                width={204}
+                height={358}
               />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

@@ -12,7 +12,7 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-10">
+    <>
       <div className="">
         <p className="uppercase text-primary text-sm">Projects</p>
         <h2 className="text-gray-200 italic text-xs">
@@ -97,7 +97,7 @@ export default function Projects() {
               <ProjectCard key={`${project?.type}${index}`} project={project} />
             ))}
       </div>
-    </section>
+    </>
   );
 }
 
@@ -115,7 +115,7 @@ export function ProjectCard({ project }: IProductCard) {
             <img
               className={`aspect-[16/9] rounded-t object-contain backdrop-blur`}
               src={image}
-              alt=""
+              alt={image}
               loading="lazy"
             />
           </div>
@@ -143,6 +143,7 @@ export function ProjectCard({ project }: IProductCard) {
               href={project?.live_url ?? "#"}
               target="blank"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-500 bg-opacity-30 hover:bg-opacity-20 hover:shadow-md"
+              aria-label={`Visit ${project.live_url}`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
