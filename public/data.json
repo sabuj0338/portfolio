@@ -232,6 +232,14 @@
       "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
       "live_url": "http://139.59.117.120",
       "type": "frontend"
+    },
+    {
+      "images": ["https://e7.pngegg.com/pngimages/828/432/png-clipart-npm-node-js-computer-icons-computer-software-installation-others-text-rectangle-thumbnail.png"],
+      "title": "@sabuj0338/axios-friday",
+      "short_description": "This is an Axios-based customized class Friday that is designed for making API requests with authentication and token refresh capabilities.",
+      "technologies": ["axios", "js-cookie", "TypeScript"],
+      "live_url": "https://www.npmjs.com/package/@sabuj0338/axios-friday",
+      "type": "package"
     }
   ],
   "skills": [

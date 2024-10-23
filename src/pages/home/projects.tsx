@@ -1,15 +1,20 @@
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import PhotoGallerySlider from "../../components/photo-gallery-slider";
 import getData from "../../utils/getData";
 
 export default function Projects() {
-  const [tab, setTab] = useState<"frontend" | "backend" | "app">("frontend");
+  const [tab, setTab] = useState<string>("frontend");
 
   const query = useQuery({
     queryKey: ["data"],
     queryFn: getData,
   });
+
+  const tabs = useMemo<string[]>(() => {
+    if (!query.data) return [];
+    return [...new Set(query.data?.projects.map((project) => project?.type))];
+  }, [query.data]);
 
   return (
     <>
@@ -22,36 +27,19 @@ export default function Projects() {
 
       <br />
       <div className="flex gap-5">
-        <button
-          onClick={() => setTab("frontend")}
-          className={
-            tab == "frontend"
-              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
-              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
-          }
-        >
-          Frontend
-        </button>
-        <button
-          onClick={() => setTab("backend")}
-          className={
-            tab == "backend"
-              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
-              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
-          }
-        >
-          Backend
-        </button>
-        <button
-          onClick={() => setTab("app")}
-          className={
-            tab == "app"
-              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
-              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
-          }
-        >
-          App
-        </button>
+        {tabs.map((tabItem) => (
+          <button
+            key={tabItem}
+            onClick={() => setTab(tabItem)}
+            className={
+              tab == tabItem
+                ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
+                : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
+            }
+          >
+            {tabItem}
+          </button>
+        ))}
       </div>
 
       {query.isLoading && (
