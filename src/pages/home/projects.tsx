@@ -13,8 +13,18 @@ export default function Projects() {
 
   const tabs = useMemo<string[]>(() => {
     if (!query.data) return [];
-    return [...new Set(query.data?.projects.map((project) => project?.type))];
+    return [...new Set(query.data?.projects?.map((project) => project?.type))];
   }, [query.data]);
+
+  //   const daa = query.data?.projects.reduce(function (r, a) {
+  //     r[a.type] = r[a.type] || [];
+  //     r[a.type].push(a);
+  //     return r;
+  // }, Object.create(null))
+
+  //   console.log(daa)
+  // const grouped = _.mapValues(_.groupBy(query.data?.projects, 'type'),
+  //                           clist => clist.map(car => _.omit(car, 'type')));
 
   return (
     <>
@@ -52,39 +62,24 @@ export default function Projects() {
         </div>
       )}
 
-      <div
-        style={{ display: tab == "frontend" ? "" : "none" }}
-        className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-      >
-        {query.data &&
-          query.data?.projects
-            ?.filter((it) => it?.type == "frontend")
-            ?.map((project: IProject, index: number) => (
-              <ProjectCard key={`${project?.type}${index}`} project={project} />
-            ))}
-      </div>
-      <div
-        style={{ display: tab == "backend" ? "" : "none" }}
-        className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-      >
-        {query.data &&
-          query.data?.projects
-            ?.filter((it) => it?.type == "backend")
-            ?.map((project: IProject, index: number) => (
-              <ProjectCard key={`${project?.type}${index}`} project={project} />
-            ))}
-      </div>
-      <div
-        style={{ display: tab == "app" ? "" : "none" }}
-        className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-      >
-        {query.data &&
-          query.data?.projects
-            ?.filter((it) => it?.type == "app")
-            ?.map((project: IProject, index: number) => (
-              <ProjectCard key={`${project?.type}${index}`} project={project} />
-            ))}
-      </div>
+      {tabs.map((tabItem) => (
+        <div
+          style={{ display: tab == tabItem ? "" : "none" }}
+          className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+          key={tabItem}
+        >
+          {query.data &&
+            query.data?.projects
+              ?.filter((it) => it?.type == tabItem)
+              ?.map((project: IProject, index: number) => (
+                <ProjectCard
+                  key={`${project?.type}${index}`}
+                  project={project}
+                />
+              ))}
+        </div>
+      ))}
+
     </>
   );
 }
