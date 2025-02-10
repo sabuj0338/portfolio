@@ -4,7 +4,7 @@
       "images": ["images/bokbok_1.webp", "images/bokbok_2.webp"],
       "title": "BokBok: Video chat application",
       "short_description": "A video chat application for video calling.",
-      "technologies": ["Tailwind", "React.js", "TypeScript", "Express", "Socket.io"],
+      "technologies": ["Tailwind", "React.js", "TypeScript", "Express", "Socket.io", "WebRTC"],
       "live_url": "https://bokbok-chi.vercel.app",
       "type": "frontend"
     },
