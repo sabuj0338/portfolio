@@ -60,7 +60,7 @@ export default function About() {
                 <EmailIcon className="w-6 h-6 text-primary" />
               </a>
               <a
-                href="CV_Sabuj_Islam.pdf"
+                href="resume.pdf"
                 className="px-4 h-14 bg-slate-500 bg-opacity-10 hover:bg-opacity-20 flex items-center justify-center gap-2 font-semibold text-xs shadow rounded-sm border border-gray-800 hover:border-primary hover:text-primary group"
                 aria-label="View my Resume"
               >

@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "images": ["images/gtm.webp"],
+      "title": "GTM: Real Time Task Manager",
+      "short_description": "A real time task manager for project management.",
+      "technologies": ["Shadcn UI", "Next.js", "TypeScript", "GO (Fiber)", "Websocket", "Redis (Pub/Sub)"],
+      "live_url": "https://go-task-manager-68k1.onrender.com",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/gtm.webp"],
+      "title": "GTM: Real Time Task Manager",
+      "short_description": "A real time task manager for project management.",
+      "technologies": ["Shadcn UI", "Next.js", "TypeScript", "GO (Fiber)", "Websocket", "Redis (Pub/Sub)"],
+      "live_url": "https://go-task-manager-68k1.onrender.com",
+      "type": "backend"
+    },
+    {
+      "images": ["images/bokbok_1.webp", "images/bokbok_2.webp"],
+      "title": "BokBok: Video chat application",
+      "short_description": "A video chat application for video calling.",
+      "technologies": ["Tailwind", "React.js", "TypeScript", "Express", "Socket.io", "WebRTC"],
+      "live_url": "https://alap2.vercel.app",
+      "type": "frontend"
+    },
+    {
       "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
@@ -243,6 +267,16 @@
     }
   ],
   "skills": [
+    {
+      "name": "GO",
+      "icon_url": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png",
+      "type": "tech"
+    },
+    {
+      "name": "GO (Fiber)",
+      "icon_url": "https://raw.githubusercontent.com/gofiber/docs/master/static/img/logo-dark.svg",
+      "type": "tool"
+    },
     {
       "name": "Dart",
       "icon_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png",
