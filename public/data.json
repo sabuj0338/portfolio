@@ -4,7 +4,14 @@
       "images": ["images/gtm.webp"],
       "title": "GTM: Real Time Task Manager",
       "short_description": "A real time task manager for project management.",
-      "technologies": ["Shadcn UI", "Next.js", "TypeScript", "GO (Fiber)", "Websocket", "Redis (Pub/Sub)"],
+      "technologies": [
+        "Shadcn UI",
+        "Next.js",
+        "TypeScript",
+        "GO (Fiber)",
+        "Websocket",
+        "Redis (Pub/Sub)"
+      ],
       "live_url": "https://go-task-manager-68k1.onrender.com",
       "type": "frontend"
     },
@@ -12,7 +19,14 @@
       "images": ["images/gtm.webp"],
       "title": "GTM: Real Time Task Manager",
       "short_description": "A real time task manager for project management.",
-      "technologies": ["Shadcn UI", "Next.js", "TypeScript", "GO (Fiber)", "Websocket", "Redis (Pub/Sub)"],
+      "technologies": [
+        "Shadcn UI",
+        "Next.js",
+        "TypeScript",
+        "GO (Fiber)",
+        "Websocket",
+        "Redis (Pub/Sub)"
+      ],
       "live_url": "https://go-task-manager-68k1.onrender.com",
       "type": "backend"
     },
@@ -20,23 +34,66 @@
       "images": ["images/bokbok_1.webp", "images/bokbok_2.webp"],
       "title": "BokBok: Video chat application",
       "short_description": "A video chat application for video calling.",
-      "technologies": ["Tailwind", "React.js", "TypeScript", "Express", "Socket.io", "WebRTC"],
+      "technologies": [
+        "Tailwind",
+        "React.js",
+        "TypeScript",
+        "Express",
+        "Socket.io",
+        "WebRTC"
+      ],
       "live_url": "https://alap2.vercel.app",
       "type": "frontend"
     },
     {
-      "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
+      "images": [
+        "images/bvideo.webp",
+        "images/bvideo_1.webp",
+        "images/bvideo_2.webp",
+        "images/bvideo_3.webp"
+      ],
       "title": "bVideo: AI video generation",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
-      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "technologies": [
+        "Tailwind",
+        "MUI",
+        "React JS",
+        "TypeScript",
+        "Lumen",
+        "MySQL",
+        "JWT",
+        "Refresh Token",
+        "ACL",
+        "Swiper JS",
+        "React Query",
+        "SSL Commerz"
+      ],
       "live_url": "https://app.bvideo.ai",
       "type": "frontend"
     },
     {
-      "images": ["images/bvideo.webp", "images/bvideo_1.webp", "images/bvideo_2.webp", "images/bvideo_3.webp"],
+      "images": [
+        "images/bvideo.webp",
+        "images/bvideo_1.webp",
+        "images/bvideo_2.webp",
+        "images/bvideo_3.webp"
+      ],
       "title": "bVideo: Backend APIs",
       "short_description": "AI video generation platform. Where user can subscribe in a plan and make text to video or audio to video in any language.",
-      "technologies": ["Tailwind", "MUI", "React JS", "TypeScript", "Lumen", "MySQL", "JWT", "Refresh Token", "ACL", "Swiper JS", "React Query", "SSL Commerz"],
+      "technologies": [
+        "Tailwind",
+        "MUI",
+        "React JS",
+        "TypeScript",
+        "Lumen",
+        "MySQL",
+        "JWT",
+        "Refresh Token",
+        "ACL",
+        "Swiper JS",
+        "React Query",
+        "SSL Commerz"
+      ],
       "live_url": "https://bvideo.cpi4.com",
       "type": "backend"
     },
@@ -44,7 +101,17 @@
       "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
-      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO", "Cropper JS"],
+      "technologies": [
+        "Tailwind",
+        "Laravel",
+        "jQuery",
+        "Redis",
+        "MySQL",
+        "Load Balancher",
+        "Nginx",
+        "SEO",
+        "Cropper JS"
+      ],
       "live_url": "https://unb.com.bd",
       "type": "frontend"
     },
@@ -52,7 +119,17 @@
       "images": ["images/unb.webp"],
       "title": "United News of Bangladesh",
       "short_description": "Latest Online English News/Article Covering various niches, including Bangladesh (BD), Sports, Crime, Entertainment, Business, Politics, Education, Opinion, Lifestyle, Photo, Video, Travel, World, etc.",
-      "technologies": ["Tailwind", "Laravel", "jQuery", "Redis", "MySQL", "Load Balancher", "Nginx", "SEO", "Cropper JS"],
+      "technologies": [
+        "Tailwind",
+        "Laravel",
+        "jQuery",
+        "Redis",
+        "MySQL",
+        "Load Balancher",
+        "Nginx",
+        "SEO",
+        "Cropper JS"
+      ],
       "live_url": "https://unb.com.bd",
       "type": "backend"
     },
@@ -60,7 +137,14 @@
       "images": ["images/lendenlive.webp", "images/lendenlive_1.webp"],
       "title": "No Syndicate",
       "short_description": "Online product bidding system where customers can buy products by bid a product.",
-      "technologies": ["Tailwind", "Next JS", "React Query", "React Hook Form", "JWT", "TypeScript"],
+      "technologies": [
+        "Tailwind",
+        "Next JS",
+        "React Query",
+        "React Hook Form",
+        "JWT",
+        "TypeScript"
+      ],
       "live_url": "https://nosyndicate.com",
       "type": "frontend"
     },
@@ -68,15 +152,42 @@
       "images": ["images/qfood.webp"],
       "title": "QFOOD: FOOD & GROCERIES",
       "short_description": "Food delivery service like foodpanda using millions of users in Dhaka",
-      "technologies": ["Tailwind", "Next JS", "Mapbox" , "React Query", "React Hook Form", "JWT", "TypeScript", "Redux"],
+      "technologies": [
+        "Tailwind",
+        "Next JS",
+        "Mapbox",
+        "React Query",
+        "React Hook Form",
+        "JWT",
+        "TypeScript",
+        "Redux"
+      ],
       "live_url": "https://qfood.com.bd",
       "type": "frontend"
     },
     {
-      "images": ["images/w_udjapon_2.webp", "images/w_udjapon_1.webp", "images/w_udjapon_3.webp", "images/w_udjapon_4.webp", "images/w_udjapon_5.webp", "images/w_udjapon_6.webp"],
+      "images": [
+        "images/w_udjapon_2.webp",
+        "images/w_udjapon_1.webp",
+        "images/w_udjapon_3.webp",
+        "images/w_udjapon_4.webp",
+        "images/w_udjapon_5.webp",
+        "images/w_udjapon_6.webp"
+      ],
       "title": "Udjapon: Ecommerce Web",
       "short_description": "Online B2C ecommerce platform for selling products via online. Comming Soon.",
-      "technologies": ["MUI", "Next JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Google Map"],
+      "technologies": [
+        "MUI",
+        "Next JS",
+        "TypeScript",
+        "React Material Table",
+        "React Query",
+        "React Hook Form",
+        "Chart JS",
+        "JWT",
+        "Refresh Token",
+        "Google Map"
+      ],
       "live_url": "https://hundred-web.onrender.com",
       "type": "frontend"
     },
@@ -84,7 +195,16 @@
       "images": ["images/qcoom.webp"],
       "title": "QCOOM-ECOMMERCE",
       "short_description": "E-Commerce platform using millions of users worlwide, mainly in Bangladesh",
-      "technologies": ["Tailwind", "Antd", "Next JS", "React Query", "React Slick", "JWT", "TypeScript", "Redux"],
+      "technologies": [
+        "Tailwind",
+        "Antd",
+        "Next JS",
+        "React Query",
+        "React Slick",
+        "JWT",
+        "TypeScript",
+        "Redux"
+      ],
       "live_url": "https://qcoom.com",
       "type": "frontend"
     },
@@ -117,7 +237,17 @@
       "images": ["images/qdmin-qcoom.webp"],
       "title": "QCOOM: ADMIN",
       "short_description": "Admin panel for qcoom ecommerce. Manages all actions for qcomm ecommerce",
-      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript", "Redux"],
+      "technologies": [
+        "Tailwind",
+        "Antd",
+        "React JS",
+        "React Query",
+        "ACL",
+        "Chart JS",
+        "JWT",
+        "TypeScript",
+        "Redux"
+      ],
       "live_url": "https://admin.qcoom.com",
       "type": "frontend"
     },
@@ -125,7 +255,17 @@
       "images": ["images/qfood-admin.webp"],
       "title": "QFOOD: ADMIN",
       "short_description": "Food delivery system admin panel where manages all orders, activities, analytics and more.",
-      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "ACL", "Chart JS", "JWT", "TypeScript", "Redux"],
+      "technologies": [
+        "Tailwind",
+        "Antd",
+        "React JS",
+        "React Query",
+        "ACL",
+        "Chart JS",
+        "JWT",
+        "TypeScript",
+        "Redux"
+      ],
       "live_url": "https://admin.qfood.com.bd",
       "type": "frontend"
     },
@@ -133,7 +273,16 @@
       "images": ["images/piickme-admin.webp"],
       "title": "PIICKME: ADMIN",
       "short_description": "A centralized dashboard for an overview of system activities, analytics, and key performance indicators",
-      "technologies": ["Tailwind", "Antd", "React JS", "React Query", "Chart JS", "JWT", "TypeScript", "Redux"],
+      "technologies": [
+        "Tailwind",
+        "Antd",
+        "React JS",
+        "React Query",
+        "Chart JS",
+        "JWT",
+        "TypeScript",
+        "Redux"
+      ],
       "live_url": "https://admin.piickmeexpress.com",
       "type": "frontend"
     },
@@ -162,15 +311,33 @@
       "type": "backend"
     },
     {
-      "images": ["images/smef.webp", "images/smef_1.webp", "images/smef_2.webp"],
+      "images": [
+        "images/smef.webp",
+        "images/smef_1.webp",
+        "images/smef_2.webp"
+      ],
       "title": "SMEF Suppliers Platform",
       "short_description": "SMEF Suppliers Platform for Women Entrepreneurs",
-      "technologies": ["Android", "IOS", "Flutter", "Provider", "Dio", "Refresh Token"],
+      "technologies": [
+        "Android",
+        "IOS",
+        "Flutter",
+        "Provider",
+        "Dio",
+        "Refresh Token"
+      ],
       "live_url": "https://apps.apple.com/us/app/smef-suppliers-platform/id6475778329",
       "type": "app"
     },
     {
-      "images": ["images/peace-time.webp", "images/peace-time-1.webp", "images/peace-time-2.webp", "images/peace-time-3.webp", "images/peace-time-4.webp", "images/peace-time-5.webp"],
+      "images": [
+        "images/peace-time.webp",
+        "images/peace-time-1.webp",
+        "images/peace-time-2.webp",
+        "images/peace-time-3.webp",
+        "images/peace-time-4.webp",
+        "images/peace-time-5.webp"
+      ],
       "title": "Auto Silent Schedular",
       "short_description": "We are always busy and so busy that we forget to turn our phone silent, at very important times and ringtone rings at important times, leaving us in an embarrassing situation.",
       "technologies": ["Android", "Flutter", "Provider", "Alarm Manager Plus"],
@@ -181,7 +348,15 @@
       "images": ["images/udjapon.webp", "images/udjapon_1.webp"],
       "title": "Udjapon: E-Commerce Platform",
       "short_description": "Buy your favorite products from your known seller. And get your products within a day or even an hour.",
-      "technologies": ["Android", "Flutter", "Provider", "Dio", "Refresh Token", "Dio Cache", "Google Map"],
+      "technologies": [
+        "Android",
+        "Flutter",
+        "Provider",
+        "Dio",
+        "Refresh Token",
+        "Dio Cache",
+        "Google Map"
+      ],
       "live_url": "https://play.google.com/store/apps/details?id=com.fivepeacetime.udjapon",
       "type": "app"
     },
@@ -218,10 +393,23 @@
       "type": "backend"
     },
     {
-      "images": ["images/h_admin.webp", "images/h_admin_1.webp", "images/h_seller.webp", "images/h_seller_1.webp"],
+      "images": [
+        "images/h_admin.webp",
+        "images/h_admin_1.webp",
+        "images/h_seller.webp",
+        "images/h_seller_1.webp"
+      ],
       "title": "Udjapon: Backend",
       "short_description": "Backed APIs developed by using Nest JS for Udjapon.xyz services like Admin panel, Seller Panel, Udjapon Web, Android and IOS app.",
-      "technologies": ["Nest JS", "TypeScript", "MongoDB", "Geo Json","Refresh Token", "Sharp", "SMTP"],
+      "technologies": [
+        "Nest JS",
+        "TypeScript",
+        "MongoDB",
+        "Geo Json",
+        "Refresh Token",
+        "Sharp",
+        "SMTP"
+      ],
       "live_url": "https://hundred-api.vercel.app",
       "type": "backend"
     },
@@ -229,7 +417,19 @@
       "images": ["images/h_admin.webp", "images/h_admin_1.webp"],
       "title": "Udjapon: Admin",
       "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
-      "technologies": ["MUI", "React JS", "TypeScript", "Google Map", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "technologies": [
+        "MUI",
+        "React JS",
+        "TypeScript",
+        "Google Map",
+        "React Material Table",
+        "React Query",
+        "React Hook Form",
+        "Chart JS",
+        "JWT",
+        "Refresh Token",
+        "Tailwind"
+      ],
       "live_url": "https://hundred-admin.vercel.app",
       "type": "frontend"
     },
@@ -237,33 +437,82 @@
       "images": ["images/h_seller.webp", "images/h_seller_1.webp"],
       "title": "Udjapon: Seller",
       "short_description": "Administration panel for udjapon.xyz ecommerce platform. Where manages all analytics, seller information, polygons and etc.",
-      "technologies": ["MUI", "React JS", "TypeScript", "React Material Table", "React Query", "React Hook Form", "Chart JS", "JWT", "Refresh Token","Tailwind"],
+      "technologies": [
+        "MUI",
+        "React JS",
+        "TypeScript",
+        "React Material Table",
+        "React Query",
+        "React Hook Form",
+        "Chart JS",
+        "JWT",
+        "Refresh Token",
+        "Tailwind"
+      ],
       "live_url": "https://hundred-seller.vercel.app",
       "type": "frontend"
     },
     {
-      "images": ["images/mohamaya_1.webp", "images/mohamaya_2.webp", "images/mohamaya_3.webp", "images/mohamaya_4.webp"],
+      "images": [
+        "images/mohamaya_1.webp",
+        "images/mohamaya_2.webp",
+        "images/mohamaya_3.webp",
+        "images/mohamaya_4.webp"
+      ],
       "title": "মহামায়া প্রিন্ট শাড়ি",
       "short_description": "This is a cloth business accounts management system.Manage all clients accounts for 'মহামায়া প্রিন্ট শাড়ি' business. Buy raw material and sell cloths to customers.",
-      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
+      "technologies": [
+        "Laravel",
+        "Tailwind",
+        "PHP",
+        "DataTable",
+        "jQuery",
+        "Ajax",
+        "Alpine JS",
+        "Select2"
+      ],
       "live_url": "http://139.59.117.120",
       "type": "backend"
     },
     {
-      "images": ["images/mohamaya_1.webp", "images/mohamaya_2.webp", "images/mohamaya_3.webp", "images/mohamaya_4.webp"],
+      "images": [
+        "images/mohamaya_1.webp",
+        "images/mohamaya_2.webp",
+        "images/mohamaya_3.webp",
+        "images/mohamaya_4.webp"
+      ],
       "title": "মহামায়া প্রিন্ট শাড়ি",
       "short_description": "This is a cloth business accounts management system.Manage all clients accounts for 'মহামায়া প্রিন্ট শাড়ি' business. Buy raw material and sell cloths to customers.",
-      "technologies": ["Laravel", "Tailwind", "PHP", "DataTable","jQuery", "Ajax","Alpine JS","Select2"],
+      "technologies": [
+        "Laravel",
+        "Tailwind",
+        "PHP",
+        "DataTable",
+        "jQuery",
+        "Ajax",
+        "Alpine JS",
+        "Select2"
+      ],
       "live_url": "http://139.59.117.120",
       "type": "frontend"
     },
     {
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png"],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png"
+      ],
       "title": "@sabuj0338/axios-friday",
       "short_description": "This is an Axios-based customized class Friday that is designed for making API requests with authentication and token refresh capabilities.",
       "technologies": ["axios", "js-cookie", "TypeScript"],
       "live_url": "https://www.npmjs.com/package/@sabuj0338/axios-friday",
       "type": "package"
+    },
+    {
+      "images": ["images/speaklar_rag.webp"],
+      "title": "Commerce RAG Assistant",
+      "short_description": "A high-performance, context-aware FastAPI assistant designed for e-commerce sales conversations.",
+      "technologies": ["RAG", "LLM", "Vector Database", "FAISS", "FastAPI"],
+      "live_url": "https://github.com/sabuj0338/speaklar-rag-test-example",
+      "type": "AI Tools"
     }
   ],
   "skills": [
