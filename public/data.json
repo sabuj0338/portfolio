@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "images": ["images/speaklar_rag.webp"],
+      "title": "Commerce RAG Assistant",
+      "short_description": "A high-performance, context-aware FastAPI assistant designed for e-commerce sales conversations.",
+      "technologies": ["RAG", "LLM", "Vector Database", "FAISS", "FastAPI"],
+      "live_url": "https://github.com/sabuj0338/speaklar-rag-test-example",
+      "type": "frontend"
+    },
+    {
+      "images": ["images/speaklar_rag.webp"],
+      "title": "Commerce RAG Assistant",
+      "short_description": "A high-performance, context-aware FastAPI assistant designed for e-commerce sales conversations.",
+      "technologies": ["RAG", "LLM", "Vector Database", "FAISS", "FastAPI"],
+      "live_url": "https://github.com/sabuj0338/speaklar-rag-test-example",
+      "type": "backend"
+    },
+    {
       "images": ["images/gtm.webp"],
       "title": "GTM: Real Time Task Manager",
       "short_description": "A real time task manager for project management.",
@@ -505,14 +521,6 @@
       "technologies": ["axios", "js-cookie", "TypeScript"],
       "live_url": "https://www.npmjs.com/package/@sabuj0338/axios-friday",
       "type": "package"
-    },
-    {
-      "images": ["images/speaklar_rag.webp"],
-      "title": "Commerce RAG Assistant",
-      "short_description": "A high-performance, context-aware FastAPI assistant designed for e-commerce sales conversations.",
-      "technologies": ["RAG", "LLM", "Vector Database", "FAISS", "FastAPI"],
-      "live_url": "https://github.com/sabuj0338/speaklar-rag-test-example",
-      "type": "AI Tools"
     }
   ],
   "skills": [
