@@ -7,34 +7,31 @@ export default function Companies() {
     queryFn: getData,
   });
 
+  const companies = query.data?.companies ?? [];
+
   return (
-    <>
-      <div className="">
-        <p className="uppercase text-primary text-sm">Companies I Worked For</p>
-      </div>
+    <section aria-label="Companies I've worked with" className="pb-[88px] pt-6">
+      <p className="text-center font-mono text-xs uppercase tracking-[0.12em] text-dim">Engineering for teams at</p>
 
-      <br />
-      <br />
-
-      <div className="flex flex-wrap justify-between gap-5">
-        {query.data &&
-          query.data?.companies?.map((company: ICompany) => (
+      <div className="group mt-7 overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_12%,#000_88%,transparent)]">
+        {/* Rendered twice so translateX(-50%) loops seamlessly */}
+        <div className="flex w-max animate-marquee items-center group-hover:[animation-play-state:paused]">
+          {[...companies, ...companies].map((company, i) => (
             <a
-              href={company?.link}
-              target="blank"
-              className="w-36"
-              key={company?.link}
-              aria-label={`Visit ${company.name}`}
+              key={`${company.name}${i}`}
+              href={company.link}
+              aria-hidden={i >= companies.length}
+              tabIndex={i >= companies.length ? -1 : undefined}
+              className="flex items-center gap-[72px] whitespace-nowrap pr-[72px] text-[28px] font-semibold tracking-[-0.03em] text-faint transition-colors hover:text-fg"
             >
-              <img
-                className="h-10 w-auto"
-                loading="lazy"
-                src={company?.image}
-                alt={company?.name}
-              />
+              {company.name}
+              <span aria-hidden="true" className="text-base text-primary">
+                ✦
+              </span>
             </a>
           ))}
+        </div>
       </div>
-    </>
+    </section>
   );
 }
