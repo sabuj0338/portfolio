@@ -1,1 +1,0 @@
-import{j as r}from"./index-CMy3px50.js";function s({className:o}){return r.jsxs("svg",{className:o??"w-6 h-6",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"1.8",strokeLinecap:"round",strokeLinejoin:"round","aria-hidden":"true",children:[r.jsx("path",{d:"M7 7h10v10"}),r.jsx("path",{d:"M7 17 17 7"})]})}export{s as A};
