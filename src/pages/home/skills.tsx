@@ -1,96 +1,53 @@
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import Reveal from "../../components/reveal";
+import SectionHeading from "../../components/section-heading";
 import getData from "../../utils/getData";
 
 export default function Skills() {
-  const [tab, setTab] = useState<"tech" | "tool">("tech");
-
   const query = useQuery({
     queryKey: ["data"],
     queryFn: getData,
   });
 
+  const layers = query.data?.stack ?? [];
+  const core = new Set(query.data?.core_stack ?? []);
+
   return (
-    <>
-      <div className="">
-        <p className="uppercase text-primary text-sm">Skills</p>
-      </div>
+    <section id="stack" className="relative px-5 py-24">
+      <div className="mx-auto max-w-[1200px]">
+        <SectionHeading
+          index="04"
+          label="Stack"
+          title="The toolbox,"
+          accent="by layer."
+          description="Picked for the problem, not the hype. Highlighted tools are the ones I reach for first."
+        />
 
-      <br />
-      <div className="flex gap-5">
-        <button
-          onClick={() => setTab("tech")}
-          className={
-            tab == "tech"
-              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
-              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
-          }
-        >
-          Technology
-        </button>
-        <button
-          onClick={() => setTab("tool")}
-          className={
-            tab == "tool"
-              ? "rounded-sm px-4 py-2 text-black bg-primary uppercase transition delay-100"
-              : "rounded-sm px-4 py-2 border border-gray-500 hover:border-primary text-gray-500 hover:text-primary uppercase transition delay-100"
-          }
-        >
-          Tools
-        </button>
-      </div>
-
-      {query.isLoading && (
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
-          {Array(6)
-            .fill(1)
-            ?.map((_, index: number) => (
-              <SkillCard key={index} />
+        <Reveal className="mt-14">
+          <div className="grid grid-cols-1 gap-px sm:grid-cols-2 lg:grid-cols-3 overflow-hidden rounded-[20px] border border-white/[0.08] bg-white/[0.08]">
+            {layers.map((layer, i) => (
+              <div key={layer.name} className="flex flex-col gap-[18px] bg-deep p-7">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-[17px] font-semibold tracking-tight">{layer.name}</h3>
+                  <span className="font-mono text-[11px] text-dim">L{i + 1}</span>
+                </div>
+                <ul className="flex flex-wrap gap-2">
+                  {layer.items.map((item) => (
+                    <li
+                      key={item}
+                      className={`rounded-full border px-3 py-[7px] text-[13.5px] transition-colors hover:border-primary/50 hover:bg-primary/[0.08] hover:text-fg ${
+                        core.has(item) ? "border-primary/45 text-fg" : "border-white/10 text-fg-soft"
+                      }`}
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-        </div>
-      )}
-
-      <div
-        style={{ display: tab == "tech" ? "" : "none" }}
-        className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4"
-      >
-        {query.data &&
-          query.data?.skills
-            ?.filter((it) => it?.type == "tech")
-            ?.map((skill: ISkill, index: number) => (
-              <SkillCard key={`${skill?.type}${index}`} skill={skill} />
-            ))}
+          </div>
+        </Reveal>
       </div>
-
-      <div
-        style={{ display: tab == "tool" ? "" : "none" }}
-        className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4"
-      >
-        {query.data &&
-          query.data?.skills
-            ?.filter((it) => it?.type == "tool")
-            ?.map((skill: ISkill, index: number) => (
-              <SkillCard key={`${skill?.type}${index}`} skill={skill} />
-            ))}
-      </div>
-    </>
-  );
-}
-
-interface ISkillCard {
-  skill?: ISkill;
-}
-
-export function SkillCard({ skill }: ISkillCard) {
-  return skill ? (
-    <div className="w-40 h-40 flex flex-col items-center justify-center bg-[#171819] hover:bg-primary hover:bg-opacity-20 hover:shadow-lg p-5 rounded">
-      <img className="w-auto h-16" src={skill?.icon_url} alt={skill?.name} />
-      <p className="mt-3 text-sm text-gray-400">{skill?.name}</p>
-    </div>
-  ) : (
-    <div className="animate-pulse w-40 h-40 flex flex-col items-center justify-center bg-[#171819] p-5 rounded">
-      <div className="rounded-full bg-gray-800 h-16 w-16"></div>
-      <div className="mt-3 rounded-full bg-gray-800 h-2 w-16"></div>
-    </div>
+    </section>
   );
 }

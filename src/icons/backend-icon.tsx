@@ -7,16 +7,18 @@ export default function BackendIcon({ className }: Props) {
     <svg
       className={className ?? "w-6 h-6"}
       xmlns="http://www.w3.org/2000/svg"
-      enableBackground="new 0 0 24 24"
-      height="24px"
       viewBox="0 0 24 24"
-      width="24px"
-      fill="currentColor"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
     >
-      <g>
-        <rect fill="none" height="24" width="24" />
-        <path d="M14,12l-2,2l-2-2l2-2L14,12z M12,6l2.12,2.12l2.5-2.5L12,1L7.38,5.62l2.5,2.5L12,6z M6,12l2.12-2.12l-2.5-2.5L1,12 l4.62,4.62l2.5-2.5L6,12z M18,12l-2.12,2.12l2.5,2.5L23,12l-4.62-4.62l-2.5,2.5L18,12z M12,18l-2.12-2.12l-2.5,2.5L12,23l4.62-4.62 l-2.5-2.5L12,18z" />
-      </g>
+      <rect width="20" height="8" x="2" y="2" rx="2" />
+      <rect width="20" height="8" x="2" y="14" rx="2" />
+      <path d="M6 6h.01" />
+      <path d="M6 18h.01" />
     </svg>
   );
 }

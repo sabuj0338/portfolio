@@ -1,55 +1,40 @@
+import ArrowUpRightIcon from "../../icons/arrow-up-right-icon";
 import LogoIcon from "../../icons/logo-icon";
-import WhatsAppIcon from "../../icons/whatsapp-icon";
+
+const links = [
+  { href: "#services", label: "Services" },
+  { href: "#experience", label: "Experience" },
+  { href: "#work", label: "Work" },
+  { href: "#stack", label: "Stack" },
+  { href: "#contact", label: "Contact" },
+];
 
 export default function AppBar() {
   return (
-    <nav className="sticky top-0 bg-[#0e0e0e] z-30">
-      <div className="container mx-auto px-5">
-        <div className="flex items-center justify-between py-5">
-          <div className="">
-            <LogoIcon/>
-          </div>
-          <div className="flex items-center gap-10">
-            <a
-              href="#about"
-              className="text-gray-400 uppercase text-base font-medium hidden md:block"
-            >
-              About
+    <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-5 py-4">
+      <nav
+        aria-label="Primary"
+        className="flex w-full max-w-[1200px] items-center justify-between gap-4 rounded-2xl border border-white/[0.08] bg-[#0a0d0c]/70 py-2.5 pl-4 pr-2.5 backdrop-blur-xl"
+      >
+        <a href="#top" aria-label="Sabuj Islam — home" className="flex items-center gap-2.5 text-fg">
+          <LogoIcon className="h-8 w-8" />
+          <span className="text-[15px] font-semibold tracking-tight">Sabuj Islam</span>
+        </a>
+
+        <div className="hidden items-center gap-7 text-sm md:flex">
+          {links.map((link, i) => (
+            <a key={link.href} href={link.href} className="text-muted transition-colors hover:text-fg">
+              <span className="mr-1.5 font-mono text-[11px] text-primary">0{i + 1}</span>
+              {link.label}
             </a>
-            <a
-              href="#services"
-              className="text-gray-400 uppercase text-base font-medium hidden md:block"
-            >
-              What I Do
-            </a>
-            <a
-              href="#projects"
-              className="text-gray-400 uppercase text-base font-medium hidden md:block"
-            >
-              Projects
-            </a>
-            <a
-              href="#skills"
-              className="text-gray-400 uppercase text-base font-medium hidden md:block"
-            >
-              Skills
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-400 uppercase text-base font-medium hidden md:block"
-            >
-              Contact
-            </a>
-            <a
-              href="whatsapp://send?phone=+8801775559622"
-              className="text-primary uppercase text-base font-medium border border-primary rounded-full px-1.5 py-1.5 shadow-[0_0_1px,inset_0_0_0px,0_0_1px,0_0_1px,0_0_10px] hover:shadow-[0_0_1px,inset_0_0_0px,0_0_1px,0_0_1px,0_0_15px] shadow-primary"
-              aria-label="Contact using WhatsApp"
-            >
-              <WhatsAppIcon className="text-primary w-4 h-4"/>
-            </a>
-          </div>
+          ))}
         </div>
-      </div>
-    </nav>
+
+        <a href="#contact" className="btn-primary min-h-[44px] rounded-[10px] px-[18px] text-sm">
+          Let's talk
+          <ArrowUpRightIcon className="h-4 w-4" />
+        </a>
+      </nav>
+    </header>
   );
 }
