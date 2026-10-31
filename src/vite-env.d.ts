@@ -56,7 +56,7 @@ interface ICompany {
 interface IDataResponse {
   projects: IProject[];
   experience: IExperience[];
-  education: IEducation;
+  education?: IEducation;
   stack: IStackLayer[];
   core_stack: string[];
   companies: ICompany[];
