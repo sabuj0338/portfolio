@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import FullPageLoadingIndicator from "../../components/full-page-loading-indicator";
+import SectionBoundary from "../../components/section-boundary";
 const AppBar = lazy(() => import("./appbar"));
 const About = lazy(() => import("./about"));
 const Companies = lazy(() => import("./companies"));
@@ -18,13 +19,11 @@ export default function HomePage() {
       <AppBar />
 
       <main className="overflow-x-hidden">
-        <About />
-        <Companies />
-        <Service />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
+        {[About, Companies, Service, Experience, Projects, Skills, Contact].map((Section, i) => (
+          <SectionBoundary key={i}>
+            <Section />
+          </SectionBoundary>
+        ))}
       </main>
 
       <footer className="px-5 pb-12 pt-8">
